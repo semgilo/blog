@@ -1,0 +1,13 @@
+
+
+#+TITLE: "我来了，Hexo"
+#+DATE: <2017-04-08 Sat 09:00>
+#+TAGS: 
+#+LAYOUT: 
+#+CATEGORIES: 
+
+仅仅想留下我职业生涯的某些精彩片刻，那些简单的CODE就是最好的标志。
+
+[[https://zilongshanren.com/css/images/avatar.jpg][大哥要]]
+#+ATTR_HTML:  :alt caption
+[[http://qq.yh31.com/tp/zr/zr132.gif]]
