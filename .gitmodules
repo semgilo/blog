@@ -10,3 +10,9 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
 	url = https://github.com/vimux/mainroad
+[submodule "themes/hugo_theme_begin"]
+	path = themes/hugo_theme_begin
+	url = https://github.com/dim0627/hugo_theme_beg.git
+[submodule "themes/hugo_theme_beg"]
+	path = themes/hugo_theme_beg
+	url = https://github.com/dim0627/hugo_theme_beg.git
