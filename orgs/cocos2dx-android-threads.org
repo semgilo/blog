@@ -1,8 +1,15 @@
-#+TITLE: "cocos2dx android ui and gl threads "
-#+DATE: <2017-05-19 Fri 01:18>
-#+TAGS: cocos2dx, android, threads
-#+LAYOUT: 
-#+CATEGORIES: 笔记
+#+HUGO_BASE_DIR: ../
+#+TITLE: cocos2dx android ui and gl threads
+#+DATE:  <2017-05-19 Fri 01:18>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx android
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
+#+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
+
 
 * 环境
 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互

@@ -16,3 +16,9 @@
 [submodule "themes/hugo_theme_beg"]
 	path = themes/hugo_theme_beg
 	url = https://github.com/dim0627/hugo_theme_beg.git
+[submodule "themes/indigo"]
+	path = themes/indigo
+	url = https://github.com/AngeloStavrow/indigo.git
+[submodule "themes/casper"]
+	path = themes/casper
+	url = https://github.com/vjeantet/hugo-theme-casper

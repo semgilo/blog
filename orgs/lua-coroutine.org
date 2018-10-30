@@ -1,9 +1,14 @@
+#+HUGO_BASE_DIR: ../
 #+TITLE: 巧妙的使用coroutine分散计算量
 #+DATE: <2017-04-28 Fri 15:06>
-#+TAGS: lua
-#+LAYOUT: 
-#+CATEGORIES: 笔记
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: lua
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
 
 * 背景
 最近一直在优化android相关的内容

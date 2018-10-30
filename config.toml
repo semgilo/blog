@@ -2,25 +2,30 @@ baseurl = "https://lanhuzi.com/"
 googleAnalytics = "" # Optional
 languageCode = "zh_CN" #语言
 title = "蓝胡子" #博客标题
+Subtitle = "Hugo is Absurdly Fast!"
 paginate = 10 #分页每页记录数
 DisqusShortname = "lanhuzi" #评论时显示的名字
 Copyright = "All rights reserved - 2017" #版权
 canonifyurls = true 
-theme = "hugo_theme_beg"
+theme = "casper"
 [params]
-  author = "蓝胡子" #文章作者
+  description = "就是不想将就，仅此而已！" #加段提升逼格的副标题
+  cover = "images/timg.png" #自己找的博客封面，要够大够酷
+  author = "semgilo" #文章作者
   githubName = "semgilo" #github用户名
-  dateformat = "Jan 2, 2006" # Optional
+  highlightStyle = "github"
+  bio= "京东|高级软件工程师" #作者简介
+  Subtitle = "Hugo is Absurdly Fast!"
   
 
 [[menu.main]] #页面菜单参数
-  name = "蓝胡子"
+  name = "博客"
   weight = -120
   identifier = "blog"
-  url = "/"
+  url = "/posts"
 
 [[menu.main]]
-  name = "About me"
+  name = "首页"
   weight = -110
-  identifier = "about"
-  url = "/about"
+  identifier = "home"
+  url = "/"

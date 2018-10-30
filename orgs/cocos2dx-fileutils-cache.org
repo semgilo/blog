@@ -1,9 +1,15 @@
-#+TITLE: "Cocos2dx FileUtils 缓存机制"
+#+HUGO_BASE_DIR: ../
+#+TITLE: cocos2dx FileUtils 缓存机制
 #+DATE: <2017-05-12 Fri 15:36>
-#+TAGS: Cococs2dx, FileUtils
-#+LAYOUT: 
-#+CATEGORIES: 笔记
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx FileUtils
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
+
 
 * 背景
 处理热lua更新功能

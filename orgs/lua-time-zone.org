@@ -1,8 +1,0 @@
-#+TITLE: "lua-time-zone"
-#+DATE: <2017-10-13 Fri 15:10>
-#+TAGS: 
-#+LAYOUT: 
-#+CATEGORIES: 
-
-
-** lua 时区问题 

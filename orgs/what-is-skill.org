@@ -1,9 +1,15 @@
+#+HUGO_BASE_DIR: ../
 #+TITLE: "游戏里面的技能该如何定义？"
 #+DATE: <2018-04-18 Wed 19:43>
-#+TAGS: 
-#+LAYOUT: 
-#+CATEGORIES: Game
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: game
+#+HUGO_CATEGORIES: 分享
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
+
 
 * 导火索
 英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。

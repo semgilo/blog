@@ -1,8 +1,14 @@
+#+HUGO_BASE_DIR: ../
 #+TITLE: 如何在lua正确识别字符串长度
 #+DATE: <2017-04-28 Fri 15:06>
-#+TAGS: lua
-#+LAYOUT: 
-#+CATEGORIES: 
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: lua
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
+#+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
 
 #+BEGIN_SRC lua
 function getCharacterLen(str)

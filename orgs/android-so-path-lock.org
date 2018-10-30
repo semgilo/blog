@@ -1,9 +1,16 @@
-#+TITLE: "android so 路径被锁定"
-#+DATE: <2018-01-25 Thu 22:38>
-#+TAGS: Android 
-#+LAYOUT: 
-#+CATEGORIES: 笔记
-#+OPTIONS: top:2 ^:nil author:nil num:2
+
+#+HUGO_BASE_DIR: ../
+#+TITLE: android so path 被锁定
+#+DATE: <2018-10-31 星期三 01:44:33>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: android cocos2dx
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
+#+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
+
 
 * 环境
 接XXSDK的时候

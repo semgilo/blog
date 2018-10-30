@@ -1,9 +1,15 @@
-#+TITLE: cocos2dx-android-黑块问题
+#+HUGO_BASE_DIR: ../
+#+TITLE: android etc1 黑块问题
 #+DATE: <2017-05-03 Wed 03:40>
-#+TAGS: cocos2dx, android, sdk
-#+LAYOUT: 
-#+CATEGORIES: 笔记
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx android
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
+
+
+
 
 * 环境
 接android SDK 

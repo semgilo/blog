@@ -1,5 +1,0 @@
-title: learn-opengl-task.
-#+DATE: <2018-01-30 Tue 23:02>
-#+TAGS: 
-#+LAYOUT: 
-#+CATEGORIES: 
