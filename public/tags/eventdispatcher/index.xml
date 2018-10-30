@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eventdispatcher on 蓝胡子</title>
+    <link>https://lanhuzi.com/tags/eventdispatcher/</link>
+    <description>Recent content in Eventdispatcher on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Sun, 30 Apr 2017 08:29:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://lanhuzi.com/tags/eventdispatcher/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cocos2dx 重新创建机制</title>
+      <link>https://lanhuzi.com/posts/cocos2dx-recreate-event/</link>
+      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
+      
+      <guid>https://lanhuzi.com/posts/cocos2dx-recreate-event/</guid>
+      <description>.ox-hugo-toc ul { list-style: none; }  
+Table of Contents  1 背景 2 问题 3 解决思路  3.1 重新创建时机  4 结果 5 注意事项   
+1 背景 接android SDK的时候
+2 问题 SDK在游戏里面切换activity的时候，会导致自己的shader被删除，截屏丢失
+3 解决思路 找到重新创建时机，把自己添加的shader重新创建，自己的截图重新截一次
+3.1 重新创建时机 cocos2dx 3.x 使用的是EventDispatcher,所有的事件都是向事件分发器注册事件 然后我在CCEventType.h里面找到了
+#define EVENT_COME_TO_FOREGROUND &amp;quot;event_come_to_foreground&amp;quot; // The renderer[android:GLSurfaceView.Renderer WP8:Cocos2dRenderer] was recreated. // This message is used for reloading resources before renderer is recreated on Android/WP8. // This message is posted in cocos/platform/android/javaactivity.</description>
+    </item>
+    
+  </channel>
+</rss>

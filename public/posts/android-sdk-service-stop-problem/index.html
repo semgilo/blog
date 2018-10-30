@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Android SDK 不会自己删除服务问题"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Android SDK 不会自己删除服务问题 &middot; 蓝胡子" />
+  	<meta property="og:site_name" content="蓝胡子" />
+  	<meta property="og:url" content="https://lanhuzi.com/posts/android-sdk-service-stop-problem/" />
+
+    
+        
+            <meta property="og:image" content="/images/timg.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-07-26T16:04:00&#43;08:00" />
+
+    
+    <meta property="article:tag" content="android" />
+    
+    <meta property="article:tag" content="cocos2dx" />
+    
+    
+
+    <title>Android SDK 不会自己删除服务问题 &middot; 蓝胡子</title>
+
+    
+    <meta name="description" content=".ox-hugo-toc ul { list-style: none; }  
+Table of Contents  1 环境 2 问题 3 解决思路  3.1 查找根源 3.2 解决方案  4 结果   
+1 环境 接android SDK
+2 问题 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
+3 解决思路 3.1" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://lanhuzi.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://lanhuzi.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://lanhuzi.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://lanhuzi.com/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="https://lanhuzi.com/index.xml" rel="alternate" type="application/rss+xml" title="蓝胡子" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.49.2" />
+
+    <link rel="canonical" href="https://lanhuzi.com/posts/android-sdk-service-stop-problem/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": ,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Android SDK 不会自己删除服务问题,
+    "name": Android SDK 不会自己删除服务问题,
+    "wordCount": 42,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://lanhuzi.com/posts/android-sdk-service-stop-problem/,
+    "datePublished": 2017-07-26T16:04Z,
+    "dateModified": 2018-10-31T01:52Z,
+    
+    "keywords": android, cocos2dx,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://lanhuzi.com/posts/android-sdk-service-stop-problem/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://lanhuzi.com/">首页</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://lanhuzi.com/posts">博客</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://lanhuzi.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post posts">
+
+    <header class="post-header">
+        <h1 class="post-title">Android SDK 不会自己删除服务问题</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+         
+          <span class="post-tag small"><a href="https://lanhuzi.com//tags/android/">#android</a></span>
+         
+          <span class="post-tag small"><a href="https://lanhuzi.com//tags/cocos2dx/">#cocos2dx</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p><style>
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+</style>
+<div class="ox-hugo-toc toc">
+<div></div></p>
+
+<div class="heading">Table of Contents</div>
+
+<ul>
+<li><span class="section-num">1</span> <a href="#环境">环境</a></li>
+<li><span class="section-num">2</span> <a href="#问题">问题</a></li>
+<li><span class="section-num">3</span> <a href="#解决思路">解决思路</a>
+
+<ul>
+<li><span class="section-num">3.1</span> <a href="#查找根源">查找根源</a></li>
+<li><span class="section-num">3.2</span> <a href="#解决方案">解决方案</a></li>
+</ul></li>
+<li><span class="section-num">4</span> <a href="#结果">结果</a></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
+<h2 id="环境"><span class="section-num">1</span> 环境</h2>
+
+<p>接android SDK</p>
+
+<h2 id="问题"><span class="section-num">2</span> 问题</h2>
+
+<p>游戏退出或者崩溃后，快速进入游戏会一直崩溃。</p>
+
+<h2 id="解决思路"><span class="section-num">3</span> 解决思路</h2>
+
+<h3 id="查找根源"><span class="section-num">3.1</span> 查找根源</h3>
+
+<p>打开游戏后台发现游戏里面一直有一个服务存在，是SDK的浮窗服务，经过跟渠道交流后，主要有因为SDK
+如果浮窗没有初始化成功，就会主动退出游戏。
+还有一种情况是服务本身会自起动，所以如果一进游戏未初始化好，服务因为自启动会没有成功导致崩溃</p>
+
+<h3 id="解决方案"><span class="section-num">3.2</span> 解决方案</h3>
+
+<p>修改SDK
+在Apllication的onCreate方法里面把浮窗服务先停止并关闭自启动</p>
+
+<h2 id="结果"><span class="section-num">4</span> 结果</h2>
+
+<p>完美解决</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://lanhuzi.com/">semgilo</a></h4>
+  
+  <p>Read <a href="https://lanhuzi.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this posts</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Android%20SDK%20%e4%b8%8d%e4%bc%9a%e8%87%aa%e5%b7%b1%e5%88%a0%e9%99%a4%e6%9c%8d%e5%8a%a1%e9%97%ae%e9%a2%98&nbsp;-&nbsp;%e8%93%9d%e8%83%a1%e5%ad%90&amp;url=https%3a%2f%2flanhuzi.com%2fposts%2fandroid-sdk-service-stop-problem%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flanhuzi.com%2fposts%2fandroid-sdk-service-stop-problem%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2flanhuzi.com%2fposts%2fandroid-sdk-service-stop-problem%2f&amp;description=Android%20SDK%20%e4%b8%8d%e4%bc%9a%e8%87%aa%e5%b7%b1%e5%88%a0%e9%99%a4%e6%9c%8d%e5%8a%a1%e9%97%ae%e9%a2%98"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2flanhuzi.com%2fposts%2fandroid-sdk-service-stop-problem%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/lanhuzi.com\/posts\/android-sdk-service-stop-problem\/";  
+this.page.identifier = "https:\/\/lanhuzi.com\/posts\/android-sdk-service-stop-problem\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://lanhuzi.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="https://lanhuzi.com/posts/android-apk-download-cant-open/">
+          <section class="post">
+              <h2>android apk 下载无法识别</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://lanhuzi.com/posts/iap-productid-take-effect-time/">
+          <section class="post">
+              <h2>iap 产品生效时间</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">蓝胡子</a> All rights reserved - 2017</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://lanhuzi.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://lanhuzi.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://lanhuzi.com/js/index.js"></script>
+    
+</body>
+</html>
+
