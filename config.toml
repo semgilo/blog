@@ -1,63 +1,26 @@
-baseurl = "/"
-title = "蓝胡子"
-languageCode = "en-us"
-paginate = "10" # Number of posts per page
-theme = "mainroad"
-disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+baseurl = "https://lanhuzi.com/"
+googleAnalytics = "" # Optional
+languageCode = "zh_CN" #语言
+title = "蓝胡子" #博客标题
+paginate = 10 #分页每页记录数
+DisqusShortname = "lanhuzi" #评论时显示的名字
+Copyright = "All rights reserved - 2017" #版权
+canonifyurls = true 
+theme = "hugo_theme_beg"
+[params]
+  author = "蓝胡子" #文章作者
+  githubName = "semgilo" #github用户名
+  dateformat = "Jan 2, 2006" # Optional
+  
 
-
-[Author] # Used in authorbox
+[[menu.main]] #页面菜单参数
   name = "蓝胡子"
-  bio = "捡起放下 x N，才懂得什么是重要的."
-  avatar = "img/avatar.png"
+  weight = -120
+  identifier = "blog"
+  url = "/"
 
-[Params]
-  subtitle = "捡起放下 x N，才懂得什么是重要的." # Subtitle of your site. Used in site header
-  description = "蓝胡子的博客" # Site description. Used in meta description
-  copyright = "蓝胡子" # copyright holder, otherwise will use site title
-  opengraph = true # Enable OpenGraph if true
-  twitter_cards = true # Enable Twitter Cards if true
-  readmore = false # Show "Read more" button in list if true
-  authorbox = true # Show authorbox at bottom of pages if true
-  toc = true # Enable Table of Contents
-  post_navigation = true # Show post navigation at bottom of pages if true
-  # post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
-  #postSections = ["posts"] # the section pages to show on home page and the "Recent articles" widget
-  postSections = ["posts", "news", "about"] # alternative that shows more than one section's pages
-  #dateformat = "2006-01-02" # change the format of dates
-  #mathjax = true # Enable MathJax
-  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
-  #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  sectionPagesMenu = "main"
-[Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
-  single = false # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social"]
-
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
-
-[Params.widgets.social]
-  # Enable parts of social widget
-  facebook = "username"
-  twitter = "username"
-  linkedin = "username"
-  telegram = "username"
-  github = "username"
-  gitlab = "username"
-  bitbucket = "username"
-  email = "example@example.com"
-  google_plus = "profileid"
-
-
-[menu]
-  [[menu.main]]
-    identifier = "blog"
-    name = "博客"
-    title = "blog section"
-    url = "/posts/"
-    weight = -110
+[[menu.main]]
+  name = "About me"
+  weight = -110
+  identifier = "about"
+  url = "/about"

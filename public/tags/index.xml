@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 蓝胡子</title>
-    <link>/tags/</link>
+    <link>https://lanhuzi.com/tags/</link>
     <description>Recent content in Tags on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh_CN</language>
+    <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Wed, 09 Aug 2017 16:15:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lanhuzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android</title>
-      <link>/tags/android/</link>
+      <link>https://lanhuzi.com/tags/android/</link>
       <pubDate>Wed, 09 Aug 2017 16:15:00 +0800</pubDate>
       
-      <guid>/tags/android/</guid>
+      <guid>https://lanhuzi.com/tags/android/</guid>
       <description></description>
     </item>
     
