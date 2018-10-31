@@ -1,7 +1,7 @@
 +++
 title = "cocos2dx 重新创建机制"
 date = 2017-04-30T08:29:00+08:00
-lastmod = 2018-10-31T02:01:09+08:00
+lastmod = 2018-10-31T07:29:32+08:00
 tags = ["cococs2dx", "android", "EventDispatcher", "recreate"]
 categories = ["笔记"]
 draft = false

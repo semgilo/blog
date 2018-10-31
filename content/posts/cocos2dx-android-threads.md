@@ -1,7 +1,7 @@
 +++
 title = "cocos2dx android ui and gl threads"
 date = 2017-05-19T01:18:00+08:00
-lastmod = 2018-10-31T01:54:33+08:00
+lastmod = 2018-10-31T07:28:39+08:00
 tags = ["cocos2dx", "android"]
 categories = ["笔记"]
 draft = false

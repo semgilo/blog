@@ -1,7 +1,7 @@
 +++
 title = "如何在lua正确识别字符串长度"
 date = 2017-04-28T15:06:00+08:00
-lastmod = 2018-10-31T02:07:30+08:00
+lastmod = 2018-10-31T07:31:03+08:00
 tags = ["lua"]
 categories = ["笔记"]
 draft = false

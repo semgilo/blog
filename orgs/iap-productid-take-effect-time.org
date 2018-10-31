@@ -4,7 +4,7 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: ios 
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: .
+#+HUGO_SECTION: posts
 #+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
 

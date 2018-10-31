@@ -1,7 +1,7 @@
 +++
 title = "游戏里面的技能该如何定义？"
 date = 2018-04-18T19:43:00+08:00
-lastmod = 2018-10-31T02:08:32+08:00
+lastmod = 2018-10-31T07:31:42+08:00
 tags = ["game"]
 categories = ["分享"]
 draft = false

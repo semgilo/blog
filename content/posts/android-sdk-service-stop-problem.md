@@ -1,7 +1,7 @@
 +++
 title = "Android SDK 不会自己删除服务问题"
 date = 2017-07-26T16:04:00+08:00
-lastmod = 2018-10-31T01:52:42+08:00
+lastmod = 2018-10-31T07:26:55+08:00
 tags = ["android", "cocos2dx"]
 categories = ["笔记"]
 draft = false

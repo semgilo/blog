@@ -1,7 +1,7 @@
 +++
 title = "cocos2dx etc 闪退问题"
 date = 2017-05-16T10:19:00+08:00
-lastmod = 2018-10-31T01:59:08+08:00
+lastmod = 2018-10-31T07:28:58+08:00
 tags = ["cocos2dx", "etc1", "android"]
 draft = false
 +++

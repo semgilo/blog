@@ -1,7 +1,7 @@
 +++
 title = "android etc1 黑块问题"
 date = 2017-05-03T03:40:00+08:00
-lastmod = 2018-10-31T01:47:49+08:00
+lastmod = 2018-10-31T07:28:16+08:00
 tags = ["cocos2dx", "android"]
 categories = ["笔记"]
 draft = false
