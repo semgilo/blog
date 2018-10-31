@@ -1,7 +1,7 @@
 +++
 title = "游戏里面的技能该如何定义？"
 date = 2018-04-18T19:43:00+08:00
-lastmod = 2018-10-31T07:31:42+08:00
+lastmod = 2018-10-31T12:49:34+08:00
 tags = ["game"]
 categories = ["分享"]
 draft = false
@@ -110,16 +110,3 @@ BUFF = BUFF参数 + BUFF表现 + 若干通道
 就不一一列出来了，如果你还坚持你自己的观点的话，那你可以尝试分析下面两个等于。
 1.会赚钱 `= 我有钱？
 2.女人会生孩子 =` 女人有孩子？
-
-fajsdklfja;lsdkjf;laskdjf;laksdjf;kjasd fjas;ldkjf<br />
-falskdjfl;aksdjfaf<br />
-
-<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
-
-<div class="org-center">
-  <div></div>
-
-faskdjflaksjdf;ljasd
-asdfasdfsadf
-
-</div>

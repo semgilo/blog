@@ -1,8 +1,8 @@
 +++
 title = "cocos2dx 重新创建机制"
 date = 2017-04-30T08:29:00+08:00
-lastmod = 2018-10-31T07:29:32+08:00
-tags = ["cococs2dx", "android", "EventDispatcher", "recreate"]
+lastmod = 2018-10-31T12:51:59+08:00
+tags = ["cocos2dx", "android", "EventDispatcher"]
 categories = ["笔记"]
 draft = false
 +++
@@ -37,6 +37,7 @@ draft = false
 ## <span class="section-num">2</span> 问题 {#问题}
 
 SDK在游戏里面切换activity的时候，会导致自己的shader被删除，截屏丢失
+<!--more-->
 
 
 ## <span class="section-num">3</span> 解决思路 {#解决思路}

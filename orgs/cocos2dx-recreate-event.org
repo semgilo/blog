@@ -2,7 +2,7 @@
 #+TITLE: cocos2dx 重新创建机制
 #+DATE: <2017-04-30 Sun 08:29>
 #+HUGO_AUTO_SET_LASTMOD: t
-#+HUGO_TAGS: cococs2dx android EventDispatcher recreate
+#+HUGO_TAGS: cocos2dx android EventDispatcher
 #+HUGO_CATEGORIES: 笔记
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
@@ -14,6 +14,7 @@
 接android SDK的时候
 * 问题
 SDK在游戏里面切换activity的时候，会导致自己的shader被删除，截屏丢失
+<!--more-->
 * 解决思路
 找到重新创建时机，把自己添加的shader重新创建，自己的截图重新截一次
 ** 重新创建时机

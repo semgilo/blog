@@ -1,5 +1,5 @@
 #+HUGO_BASE_DIR: ../
-#+TITLE: "游戏里面的技能该如何定义？"
+#+TITLE: 游戏里面的技能该如何定义？
 #+DATE: <2018-04-18 Wed 19:43>
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: game
@@ -7,8 +7,6 @@
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
-
-
 
 
 * 导火索
@@ -66,12 +64,3 @@ BUFF = BUFF参数 + BUFF表现 + 若干通道
 1.会赚钱 == 我有钱？  
 2.女人会生孩子 == 女人有孩子？
 
-
-#+BEGIN_VERSE
-fajsdklfja;lsdkjf;laskdjf;laksdjf;kjasd fjas;ldkjf
-falskdjfl;aksdjfaf
-#+END_VERSE
-#+BEGIN_CENTER
-faskdjflaksjdf;ljasd
-asdfasdfsadf
-#+END_CENTER
