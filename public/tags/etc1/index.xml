@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etc1 on 蓝胡子</title>
+    <link>/tags/etc1/</link>
+    <description>Recent content in Etc1 on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Tue, 16 May 2017 10:19:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/etc1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cocos2dx etc 闪退问题</title>
+      <link>/post/cocos2dx-etc1-crash/</link>
+      <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
+      
+      <guid>/post/cocos2dx-etc1-crash/</guid>
+      <description>.ox-hugo-toc ul { list-style: none; }  
+Table of Contents  1 环境 2 问题 3 思路及解决  3.1 问题分析 3.2 解决方案  4 结果   
+1 环境 稳定性测试期
+2 问题 部分机型和部分模拟器会因为ETC1资源导致闪退
+07-13 21:59:43.727 E/szipinf (21935): Error reading asset data 07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1  3 思路及解决 3.1 问题分析 经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律， 然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩 的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
+3.2 解决方案 我尝试在整张图片周围画一个距形的红框，目的让资源四周都有像素，果然闪退解决
+4 结果 做图工具升级，完美解决</description>
+    </item>
+    
+  </channel>
+</rss>

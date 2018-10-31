@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>游戏里面的技能该如何定义？</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.49.2" />
+	
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+			<a class="logo__link" href="/" title="蓝胡子" rel="home">
+				<div class="logo__title">蓝胡子</div>
+				
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">About Hugo</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">游戏里面的技能该如何定义？</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+	<time class="meta__text" datetime="2018-04-18T19:43:00">April 18, 2018</time>
+	<time class="meta__text" datetime="2018-10-31T07:31:42"> (Last Modified: October 31, 2018)</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/%e5%88%86%e4%ba%ab" rel="category">分享</a></span>
+</div>
+</div>
+		</header><div class="content post__content clearfix">
+			<style>
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+</style>
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- <span class="section-num">1</span> [导火索](#导火索)
+- <span class="section-num">2</span> [什么是技能？](#什么是技能)
+    - <span class="section-num">2.1</span> [百度的技能](#百度的技能)
+    - <span class="section-num">2.2</span> [我的翻译](#我的翻译)
+- <span class="section-num">3</span> [为什么要去深究这个问题？](#为什么要去深究这个问题)
+    - <span class="section-num">3.1</span> [不同的拆解会有不同的结构](#不同的拆解会有不同的结构)
+    - <span class="section-num">3.2</span> [合理的定义会让结构更清晰](#合理的定义会让结构更清晰)
+- <span class="section-num">4</span> [我的做法](#我的做法)
+    - <span class="section-num">4.1</span> [通道](#通道)
+    - <span class="section-num">4.2</span> [全部指向通道](#全部指向通道)
+
+</div>
+<!--endtoc-->
+
+
+
+## <span class="section-num">1</span> 导火索 {#导火索}
+
+英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。
+
+火球和灼烧效果是属于这个技能的吗？
+有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
+
+
+## <span class="section-num">2</span> 什么是技能？ {#什么是技能}
+
+
+### <span class="section-num">2.1</span> 百度的技能 {#百度的技能}
+
+**技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。**  [百度百科](https://baike.baidu.com/item/技能/33065?fr=aladdin   )
+
+
+### <span class="section-num">2.2</span> 我的翻译 {#我的翻译}
+
+技能：个体经过学习后会干什么，这个“会干什么”就是技能。
+1.经过学习后  -  就表示不是天生的，比如人生下来就会吸奶，这个不属于技能
+2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。
+
+
+## <span class="section-num">3</span> 为什么要去深究这个问题？ {#为什么要去深究这个问题}
+
+
+### <span class="section-num">3.1</span> 不同的拆解会有不同的结构 {#不同的拆解会有不同的结构}
+
+
+#### 火球（子弹）和灼烧效果（Buff）属于技能。（方案1） {#火球-子弹-和灼烧效果-buff-属于技能-方案1}
+
+技能 = 技能参数 + 技能表现 + 多种子弹 + 多种BUFF + 多种光环 + 多种召唤物（这个可能会被拿出来）
+解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。
+解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。
+
+
+#### 火球（子弹）和灼烧效果（Buff）不属于技能 （方案2） {#火球-子弹-和灼烧效果-buff-不属于技能-方案2}
+
+技能 = 技能参数 + 技能表现 + 技能会干什么
+解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始
+这种似乎会理贴近技能的定义了吗？
+
+
+### <span class="section-num">3.2</span> 合理的定义会让结构更清晰 {#合理的定义会让结构更清晰}
+
+在这边我想问两个问题
+1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？
+2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？
+
+现在我们回来我们的导火索。我来拆解一下这个技能
+英雄技能就变成：英雄会产生一个火球飞向敌人
+火球：会对敌人造成伤害并会对敌人添加一个灼烧效果
+燃烧效果：会每秒对敌人造成50点伤害
+
+有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。
+
+
+## <span class="section-num">4</span> 我的做法 {#我的做法}
+
+
+### <span class="section-num">4.1</span> 通道 {#通道}
+
+通道：一定条件下对谁做什么。
+一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。
+对谁：也就是目标。
+做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等
+
+
+### <span class="section-num">4.2</span> 全部指向通道 {#全部指向通道}
+
+技能 = 技能参数 + 技能表现 + 若干通道
+BUFF = BUFF参数 + BUFF表现 + 若干通道
+子弹 = 子弹参数 + 子弹表现 + 若干通道
+
+就不一一列出来了，如果你还坚持你自己的观点的话，那你可以尝试分析下面两个等于。
+1.会赚钱 `= 我有钱？
+2.女人会生孩子 =` 女人有孩子？
+
+fajsdklfja;lsdkjf;laskdjf;laksdjf;kjasd fjas;ldkjf<br />
+falskdjfl;aksdjfaf<br />
+
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+
+<div class="org-center">
+  <div></div>
+
+<p>faskdjflaksjdf;ljasd
+asdfasdfsadf</p>
+
+<p></div></p>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/game/" rel="tag">game</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/android-so-path-lock/">android so path 被锁定</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/what-is-skill/">游戏里面的技能该如何定义？</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android-armeabi-lib-lock/">android-armeabi-lib-lock</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android-apk-download-cant-open/">android apk 下载无法识别</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android-sdk-service-stop-problem/">Android SDK 不会自己删除服务问题</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/%e5%88%86%e4%ba%ab">分享</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e7%ac%94%e8%ae%b0">笔记</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/android" title="Android">Android</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cococs2dx" title="Cococs2dx">Cococs2dx</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cocos2dx" title="Cocos2dx">Cocos2dx</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/etc1" title="Etc1">Etc1</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/eventdispatcher" title="Eventdispatcher">Eventdispatcher</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fileutils" title="Fileutils">Fileutils</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/game" title="Game">Game</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ios" title="Ios">Ios</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lua" title="Lua">Lua</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/recreate" title="Recreate">Recreate</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2018 蓝胡子.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
+</html>

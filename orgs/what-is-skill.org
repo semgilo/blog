@@ -4,7 +4,7 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: game
 #+HUGO_CATEGORIES: 分享
-#+HUGO_SECTION: posts
+#+HUGO_SECTION: post
 #+HUGO_DRAFT: false
 #+OPTIONS: toc:2  ^:nil author:nil num:2
 
