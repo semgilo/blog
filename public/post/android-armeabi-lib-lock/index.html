@@ -1,69 +1,357 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-us">
+<html lang="zh-Hans">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>android-armeabi-lib-lock</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
-	<meta name="generator" content="Hugo 0.49.2" />
-	
-	
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="shortcut icon" href="/favicon.ico">
-		
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.0.0">
+  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="author" content="蓝胡子">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="
+
+
+
+Table of Contents
+
+
+1 描述
+2 分析
+3 细节
+4 结果
+5 备注
+
+
+
+
+
+1 描述
+
+cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
+">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="www.lanhuzi.com/post/android-armeabi-lib-lock/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/www.lanhuzi.com/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="www.lanhuzi.com/index.xml" type="application/rss+xml" title="蓝胡子">
+  <link rel="feed" href="www.lanhuzi.com/index.xml" type="application/rss+xml" title="蓝胡子">
+  
+
+  <link rel="manifest" href="/www.lanhuzi.com/site.webmanifest">
+  <link rel="icon" type="image/png" href="/www.lanhuzi.com/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/www.lanhuzi.com/img/icon-192.png">
+
+  <link rel="canonical" href="www.lanhuzi.com/post/android-armeabi-lib-lock/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="蓝胡子">
+  <meta property="og:url" content="www.lanhuzi.com/post/android-armeabi-lib-lock/">
+  <meta property="og:title" content="android-armeabi-lib-lock | 蓝胡子">
+  <meta property="og:description" content="
+
+
+
+Table of Contents
+
+
+1 描述
+2 分析
+3 细节
+4 结果
+5 备注
+
+
+
+
+
+1 描述
+
+cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
+">
+  
+  
+    
+  <meta property="og:image" content="www.lanhuzi.com/img/icon-192.png">
+  <meta property="og:locale" content="zh-Hans">
+  
+  <meta property="article:published_time" content="2017-10-13T15:05:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-11-01T23:31:36&#43;08:00">
+  
+
+  
+
+  
+
+  <title>android-armeabi-lib-lock | 蓝胡子</title>
+
 </head>
-<body class="body">
-	<div class="container container--outer">
-		<header class="header">
-	<div class="container">
-		<div class="logo" role="banner">
-			<a class="logo__link" href="/" title="蓝胡子" rel="home">
-				<div class="logo__title">蓝胡子</div>
-				
-			</a>
-		</div>
-		
-<nav class="menu">
-	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
-	</button>
-	<ul class="menu__list">
-		<li class="menu__item">
-			<a class="menu__link" href="/about/">About Hugo</a>
-		</li>
-	</ul>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/www.lanhuzi.com/">蓝胡子</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/www.lanhuzi.com/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/www.lanhuzi.com/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
 </nav>
 
-	</div>
-</header>
-		<div class="wrapper flex">
-			<section class="primary">
-			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">android-armeabi-lib-lock</h1>
-			<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-	<time class="meta__text" datetime="2017-10-13T15:05:00">October 13, 2017</time>
-	<time class="meta__text" datetime="2018-10-31T07:26:36"> (Last Modified: October 31, 2018)</time>
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">android-armeabi-lib-lock</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="蓝胡子">
+  </span>
+  
+
+  <span class="article-date">
+    
+        最近更新于
+    
+    <meta content="2017-10-13 15:05:00 &#43;0800 CST" itemprop="datePublished">
+    <time datetime="2018-11-01 23:31:36 &#43;0800 CST" itemprop="dateModified">
+      Nov 1, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="蓝胡子">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 分钟阅读时间
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=android-armeabi-lib-lock&amp;url=www.lanhuzi.com%2fpost%2fandroid-armeabi-lib-lock%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=www.lanhuzi.com%2fpost%2fandroid-armeabi-lib-lock%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=www.lanhuzi.com%2fpost%2fandroid-armeabi-lib-lock%2f&amp;title=android-armeabi-lib-lock"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=www.lanhuzi.com%2fpost%2fandroid-armeabi-lib-lock%2f&amp;title=android-armeabi-lib-lock"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=android-armeabi-lib-lock&amp;body=www.lanhuzi.com%2fpost%2fandroid-armeabi-lib-lock%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/%e7%ac%94%e8%ae%b0" rel="category">笔记</a></span>
-</div>
-</div>
-		</header><div class="content post__content clearfix">
-			
 
-<p><style>
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p><style>
   .ox-hugo-toc ul {
     list-style: none;
   }
@@ -74,89 +362,280 @@
 <div class="heading">Table of Contents</div>
 
 <ul>
-<li><span class="section-num">1</span> <a href="#问题-cocos2dxlua-dot-so-放在armeabi-v7a下-接sdk又引入-armeabi-几个so-结果会出现找不到cocos2dxlua-dot-so-这个文件-导致崩溃">问题 cocos2dxlua.so 放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃</a></li>
-<li><span class="section-num">2</span> <a href="#armeabi-路径会搜索一次-如果找到会锁定-下次就只会在这个目录下查找">armeabi 路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找</a></li>
+<li><span class="section-num">1</span> <a href="#描述">描述</a></li>
+<li><span class="section-num">2</span> <a href="#分析">分析</a></li>
+<li><span class="section-num">3</span> <a href="#细节">细节</a></li>
+<li><span class="section-num">4</span> <a href="#结果">结果</a></li>
+<li><span class="section-num">5</span> <a href="#备注">备注</a></li>
 </ul>
 
 <p></div>
 <!--endtoc--></p>
 
-<h2 id="问题-cocos2dxlua-dot-so-放在armeabi-v7a下-接sdk又引入-armeabi-几个so-结果会出现找不到cocos2dxlua-dot-so-这个文件-导致崩溃"><span class="section-num">1</span> 问题 cocos2dxlua.so 放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃</h2>
+<h2 id="描述"><span class="section-num">1</span> 描述</h2>
 
-<h2 id="armeabi-路径会搜索一次-如果找到会锁定-下次就只会在这个目录下查找"><span class="section-num">2</span> armeabi 路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找</h2>
+<p>cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
+</p>
 
-		</div>
-		
-<div class="post__tags tags clearfix">
-	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/android/" rel="tag">android</a></li>
-		<li class="tags__item"><a class="tags__link btn" href="/tags/cocos2dx/" rel="tag">cocos2dx</a></li>
-	</ul>
+<h2 id="分析"><span class="section-num">2</span> 分析</h2>
+
+<h2 id="细节"><span class="section-num">3</span> 细节</h2>
+
+<p>armeabi路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找</p>
+
+<h2 id="结果"><span class="section-num">4</span> 结果</h2>
+
+<p>问题解决</p>
+
+<h2 id="备注"><span class="section-num">5</span> 备注</h2>
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="www.lanhuzi.com/tags/android/">android</a>
+  
+  <a class="badge badge-light" href="www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a>
+  
 </div>
-	</article>
-</main>
+
+
+
+    
 
 
 
 
-			</section>
-			<aside class="sidebar"><div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
-		<label>
-			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="/" />
-	</form>
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/www.lanhuzi.com/img/avatar.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/www.lanhuzi.com/">蓝胡子</a></h5>
+    <h6 class="card-subtitle">手游戏开发工程师</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/www.lanhuzi.com/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/gcushen" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 </div>
-<div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/android-so-path-lock/">android so path 被锁定</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/what-is-skill/">游戏里面的技能该如何定义？</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/android-armeabi-lib-lock/">android-armeabi-lib-lock</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/android-apk-download-cant-open/">android apk 下载无法识别</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/android-sdk-service-stop-problem/">Android SDK 不会自己删除服务问题</a></li>
-		</ul>
-	</div>
-</div>
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/categories/%e5%88%86%e4%ba%ab">分享</a></li>
-			<li class="widget__item"><a class="widget__link" href="/categories/%e7%ac%94%e8%ae%b0">笔记</a></li>
-		</ul>
-	</div>
-</div>
-<div class="widget-taglist widget">
-	<h4 class="widget__title">Tags</h4>
-	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/android" title="Android">Android</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cococs2dx" title="Cococs2dx">Cococs2dx</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cocos2dx" title="Cocos2dx">Cocos2dx</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/etc1" title="Etc1">Etc1</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/eventdispatcher" title="Eventdispatcher">Eventdispatcher</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fileutils" title="Fileutils">Fileutils</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/game" title="Game">Game</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ios" title="Ios">Ios</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lua" title="Lua">Lua</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/recreate" title="Recreate">Recreate</a>
-	</div>
-</div>
-</aside>
-		</div>
-		<footer class="footer">
-	<div class="container footer__container flex">
-		
-		<div class="footer__copyright">
-			&copy; 2018 蓝胡子.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
-		</div>
-	</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>相关</h3>
+      <ul>
+        
+        <li><a href="www.lanhuzi.com/post/android-apk-download-cant-open/">android apk 下载无法识别</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
 </footer>
-	</div>
-<script async defer src="/js/menu.js"></script></body>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    <script src="/www.lanhuzi.com/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/www.lanhuzi.com/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/www.lanhuzi.com/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
 </html>
+

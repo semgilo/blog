@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/post/android-armeabi-lib-lock/</loc>
+      <lastmod>2018-11-01T23:31:36+08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/post/android-apk-download-cant-open/</loc>
+      <lastmod>2018-11-01T23:28:31+08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/post/</loc>
+      <lastmod>2017-01-01T00:00:00+08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/publication/</loc>
+      <lastmod>2017-01-01T00:00:00+08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/en/categories/" hreflang="en"/>
+    
+      <loc>www.lanhuzi.com/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/publication_types/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/en/publication_types/" hreflang="en"/>
+    
+      <loc>www.lanhuzi.com/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/en/tags/" hreflang="en"/>
+    
+      <loc>www.lanhuzi.com/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/tags/android/</loc>
+      <lastmod>2018-11-01T23:31:36+08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/tags/cocos2dx/</loc>
+      <lastmod>2018-11-01T23:31:36+08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
+      <lastmod>2018-11-01T23:31:36+08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="www.lanhuzi.com/en/" hreflang="en"/>
+    
+      <loc>www.lanhuzi.com/</loc>
+      <lastmod>2017-10-15T00:00:00+08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+</urlset>

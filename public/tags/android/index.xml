@@ -1,127 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on 蓝胡子</title>
-    <link>/tags/android/</link>
-    <description>Recent content in Android on 蓝胡子</description>
+    <title>android on 蓝胡子</title>
+    <link>www.lanhuzi.com/tags/android/</link>
+    <description>Recent content in android on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All rights reserved - 2018</copyright>
-    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 13 Oct 2017 15:05:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="www.lanhuzi.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>android so path 被锁定</title>
-      <link>/post/android-so-path-lock/</link>
-      <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>
-      
-      <guid>/post/android-so-path-lock/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题 3 思路及解决  3.1 问题分析 3.2 解决方案  4 结果   
-1 环境 接XXSDK的时候
-2 问题 java 加载so的时候闪退
-3 思路及解决 3.1 问题分析 首先定位到闪退的地方是在加载cocos2dxlua.so的地方，因为接过不少SDK，之前SDK在这个地方没有出现闪退的现象，就开始找不同之处。 很快问题就缩小到几个平台的SO文件夹里面，后面经过去一些QQ群讨论，发现linux搜索SO库的时候会有一个“锁定机制”。 也就是第一个去找的路径会被锁定，锁定后就不会再变更，下次再找会直接去这个目录下查找，哪怕是找不到。
-3.2 解决方案 方法一：将每个平台都放满SO 方法二：没用到的平台直接删除了
-4 结果 正常运行。</description>
-    </item>
     
     <item>
       <title>android-armeabi-lib-lock</title>
-      <link>/post/android-armeabi-lib-lock/</link>
+      <link>www.lanhuzi.com/post/android-armeabi-lib-lock/</link>
       <pubDate>Fri, 13 Oct 2017 15:05:00 +0800</pubDate>
       
-      <guid>/post/android-armeabi-lib-lock/</guid>
-      <description>  .ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 问题 cocos2dxlua.so 放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃 2 armeabi 路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找   
-1 问题 cocos2dxlua.so 放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃 2 armeabi 路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找 </description>
+      <guid>www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
+      <description>&lt;p&gt;&lt;style&gt;
+  .ox-hugo-toc ul {
+    list-style: none;
+  }
+&lt;/style&gt;
+&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; &lt;a href=&#34;#描述&#34;&gt;描述&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; &lt;a href=&#34;#分析&#34;&gt;分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;3&lt;/span&gt; &lt;a href=&#34;#细节&#34;&gt;细节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;4&lt;/span&gt; &lt;a href=&#34;#结果&#34;&gt;结果&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;section-num&#34;&gt;5&lt;/span&gt; &lt;a href=&#34;#备注&#34;&gt;备注&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;!--endtoc--&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;描述&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 描述&lt;/h2&gt;
+
+&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>android apk 下载无法识别</title>
-      <link>/post/android-apk-download-cant-open/</link>
+      <link>www.lanhuzi.com/post/android-apk-download-cant-open/</link>
       <pubDate>Wed, 09 Aug 2017 16:15:00 +0800</pubDate>
       
-      <guid>/post/android-apk-download-cant-open/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题   
-1 环境 因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。 我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因：
-for (int i = 0; i &amp;lt; 10; i++) { }  2 问题 问题一：服务器的mine配置里面type选项问题 mine type 要设置成 application/android 能下载但不能访问 mine type 要设置成 application/vnd.android.package-archive , 这样安卓默认的 浏览器 下载后可以安装. 问题二：通过CDN转换后不能弹出打开或者保存 暂没得到解决</description>
-    </item>
-    
-    <item>
-      <title>Android SDK 不会自己删除服务问题</title>
-      <link>/post/android-sdk-service-stop-problem/</link>
-      <pubDate>Wed, 26 Jul 2017 16:04:00 +0800</pubDate>
-      
-      <guid>/post/android-sdk-service-stop-problem/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题 3 解决思路  3.1 查找根源 3.2 解决方案  4 结果   
-1 环境 接android SDK
-2 问题 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
-3 解决思路 3.1 查找根源 打开游戏后台发现游戏里面一直有一个服务存在，是SDK的浮窗服务，经过跟渠道交流后，主要有因为SDK 如果浮窗没有初始化成功，就会主动退出游戏。 还有一种情况是服务本身会自起动，所以如果一进游戏未初始化好，服务因为自启动会没有成功导致崩溃
-3.2 解决方案 修改SDK 在Apllication的onCreate方法里面把浮窗服务先停止并关闭自启动
-4 结果 完美解决</description>
-    </item>
-    
-    <item>
-      <title>cocos2dx android ui and gl threads</title>
-      <link>/post/cocos2dx-android-threads/</link>
-      <pubDate>Fri, 19 May 2017 01:18:00 +0800</pubDate>
-      
-      <guid>/post/cocos2dx-android-threads/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题 3 思路及解决  3.1 思路 3.2 解决方案  4 结果   
-1 环境 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互
-2 问题 java 跟 lua 交互有概率性的会出现闪退
-3 思路及解决 3.1 思路 这种概率性的闪退，一般都是线程不安全导致的，于是我就去找，看到cocos2dx 里面有很多用到
-mActivity:runOnUiThread(new Runnable(){ public void run() { // xxoo xxoo } })  然后我就认为这个是cocos2dx的主线程，然后就拼命的用它去调用lua,结果就是闪退不断， 这个时候我觉得是不对的，如果这个是主线程是不可能有这个问题，于是我再去找，发现一个方法长得跟它很像的
-mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo } })  这时候我才清楚，原来这个GL线程才是我们游戏线程，UI线程是UI框架的，如果调用高级UI或者SDK就需要用UI线程。</description>
-    </item>
-    
-    <item>
-      <title>cocos2dx etc 闪退问题</title>
-      <link>/post/cocos2dx-etc1-crash/</link>
-      <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
-      
-      <guid>/post/cocos2dx-etc1-crash/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题 3 思路及解决  3.1 问题分析 3.2 解决方案  4 结果   
-1 环境 稳定性测试期
-2 问题 部分机型和部分模拟器会因为ETC1资源导致闪退
-07-13 21:59:43.727 E/szipinf (21935): Error reading asset data 07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1  3 思路及解决 3.1 问题分析 经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律， 然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩 的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
-3.2 解决方案 我尝试在整张图片周围画一个距形的红框，目的让资源四周都有像素，果然闪退解决
-4 结果 做图工具升级，完美解决</description>
-    </item>
-    
-    <item>
-      <title>android etc1 黑块问题</title>
-      <link>/post/cocos2dx-android-black-block/</link>
-      <pubDate>Wed, 03 May 2017 03:40:00 +0800</pubDate>
-      
-      <guid>/post/cocos2dx-android-black-block/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 环境 2 问题 3 解决思路  3.1 查找根源 3.2 查找为什么会出现黑块  4 结果   
-1 环境 接android SDK
-2 问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
-3 解决思路 3.1 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
-function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end  3.2 查找为什么会出现黑块 4 结果 完美解决黑块问题</description>
-    </item>
-    
-    <item>
-      <title>cocos2dx 重新创建机制</title>
-      <link>/post/cocos2dx-recreate-event/</link>
-      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
-      
-      <guid>/post/cocos2dx-recreate-event/</guid>
-      <description>.ox-hugo-toc ul { list-style: none; }  
-Table of Contents  1 背景 2 问题 3 解决思路  3.1 重新创建时机  4 结果 5 注意事项   
-1 背景 接android SDK的时候
-2 问题 SDK在游戏里面切换activity的时候，会导致自己的shader被删除，截屏丢失
-3 解决思路 找到重新创建时机，把自己添加的shader重新创建，自己的截图重新截一次
-3.1 重新创建时机 cocos2dx 3.x 使用的是EventDispatcher,所有的事件都是向事件分发器注册事件 然后我在CCEventType.h里面找到了
-#define EVENT_COME_TO_FOREGROUND &amp;quot;event_come_to_foreground&amp;quot; // The renderer[android:GLSurfaceView.Renderer WP8:Cocos2dRenderer] was recreated. // This message is used for reloading resources before renderer is recreated on Android/WP8. // This message is posted in cocos/platform/android/javaactivity.</description>
+      <guid>www.lanhuzi.com/post/android-apk-download-cant-open/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
+我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因
+&lt;/p&gt;</description>
     </item>
     
   </channel>

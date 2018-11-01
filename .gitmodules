@@ -1,3 +1,9 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
 	url = https://github.com/vimux/mainroad
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/olOwOlo/hugo-theme-even
+[submodule "themes/academic"]
+	path = themes/academic
+	url = https://github.com/sourcethemes/academic-kickstart.git
