@@ -4,10 +4,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/en/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/categories/" hreflang="zh"/>
     
-      <loc>/en/categories/</loc>
+      <loc>http://www.lanhuzi.com/en/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -15,10 +15,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/en/publication_types/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/publication_types/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/en/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/publication_types/" hreflang="zh"/>
     
-      <loc>/en/publication_types/</loc>
+      <loc>http://www.lanhuzi.com/en/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -26,10 +26,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/en/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/tags/" hreflang="zh"/>
     
-      <loc>/en/tags/</loc>
+      <loc>http://www.lanhuzi.com/en/tags/</loc>
       <priority>0</priority>
     </url>
     
@@ -37,10 +37,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/en/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="http://www.lanhuzi.com/" hreflang="zh"/>
     
-      <loc>/en/</loc>
+      <loc>http://www.lanhuzi.com/en/</loc>
       <priority>0</priority>
     </url>
     

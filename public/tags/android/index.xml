@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>android on 蓝胡子</title>
-    <link>/tags/android/</link>
+    <link>http://www.lanhuzi.com/tags/android/</link>
     <description>Recent content in android on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 13 Oct 2017 15:05:00 +0800</lastBuildDate>
     
-	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.lanhuzi.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>android-armeabi-lib-lock</title>
-      <link>/post/android-armeabi-lib-lock/</link>
+      <link>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</link>
       <pubDate>Fri, 13 Oct 2017 15:05:00 +0800</pubDate>
       
-      <guid>/post/android-armeabi-lib-lock/</guid>
+      <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
       <description>&lt;p&gt;&lt;style&gt;
   .ox-hugo-toc ul {
     list-style: none;
@@ -47,10 +47,10 @@
     
     <item>
       <title>android apk 下载无法识别</title>
-      <link>/post/android-apk-download-cant-open/</link>
+      <link>http://www.lanhuzi.com/post/android-apk-download-cant-open/</link>
       <pubDate>Wed, 09 Aug 2017 16:15:00 +0800</pubDate>
       
-      <guid>/post/android-apk-download-cant-open/</guid>
+      <guid>http://www.lanhuzi.com/post/android-apk-download-cant-open/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
