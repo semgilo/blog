@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/post/lua-coroutine/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>巧妙的使用coroutine分散计算量 - 蓝胡子</title>
+    
+<meta name="description" content="背景 最近一直在优化android相关的内容问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &amp;gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来">
+
+<meta property="og:title" content="巧妙的使用coroutine分散计算量 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/post/lua-coroutine/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="背景 最近一直在优化android相关的内容问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &amp;gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/post/lua-coroutine/">
+<meta name="twitter:title" content="巧妙的使用coroutine分散计算量 - 蓝胡子">
+<meta name="twitter:description" content="背景 最近一直在优化android相关的内容问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &amp;gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.lanhuzi.com/"
+    },
+    "headline": "巧妙的使用coroutine分散计算量 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.lanhuzi.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-04-28T15:06:00JST",
+    "dateModified": "2018-11-16T09:47:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.lanhuzi.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "背景 最近一直在优化android相关的内容
+问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡
+解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果
+多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。
+协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一
+for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二
+local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低
+注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来"
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About Hugo</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.lanhuzi.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">巧妙的使用coroutine分散计算量</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:47:07JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">巧妙的使用coroutine分散计算量</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="背景">背景</h2>
+
+<p>最近一直在优化android相关的内容</p>
+
+<h2 id="问题">问题</h2>
+
+<p>在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡</p>
+
+<h2 id="解决思路">解决思路</h2>
+
+<h3 id="优化算法">优化算法</h3>
+
+<p>一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果</p>
+
+<h3 id="多线程">多线程</h3>
+
+<p>考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。
+因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。</p>
+
+<h3 id="协程">协程</h3>
+
+<p>在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。
+方式一</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span> <span class="kr">do</span>
+    <span class="c1">-- do something</span>
+    <span class="c1">-- ...</span>
+    <span class="kr">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">then</span>
+	<span class="n">coroutine.yield</span><span class="p">()</span>
+    <span class="kr">end</span>
+<span class="kr">end</span></code></pre></div>
+<p>方式二</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kd">local</span> <span class="n">nLastClock</span> <span class="o">=</span> <span class="n">os.clock</span><span class="p">()</span>
+<span class="kr">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span> <span class="kr">do</span>
+    <span class="c1">-- do something</span>
+    <span class="c1">-- ...</span>
+    <span class="kr">if</span> <span class="n">os.clock</span><span class="p">()</span> <span class="o">-</span> <span class="n">nLastClock</span> <span class="o">&gt;</span> <span class="mi">16</span> <span class="kr">then</span>
+	<span class="n">coroutine.yield</span><span class="p">()</span>
+    <span class="kr">end</span>
+<span class="kr">end</span></code></pre></div>
+<h2 id="结果">结果</h2>
+
+<p>结局还是挺满意的，到少在运算上的压力已经降到非常低</p>
+
+<h2 id="注意事项">注意事项</h2>
+
+<p>一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/lua/">lua</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "semgilo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/post/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+      <a href="http://www.lanhuzi.com/post/what-is-skill/" class="list-group-item">游戏里面的技能该如何定义？</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-armeabi-lib-lock/" class="list-group-item">android-armeabi-lib-lock</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-apk-download-cant-open/" class="list-group-item">android apk 下载无法识别</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-sdk-service-stop-problem/" class="list-group-item">Android SDK 不会自己删除服务问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/iap-productid-take-effect-time/" class="list-group-item">iap 产品生效时间</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/" class="list-group-item">cocos2dx android ui and gl threads</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-etc1-crash/" class="list-group-item">cocos2dx etc 闪退问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/" class="list-group-item">cocos2dx FileUtils 缓存机制</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/" class="list-group-item">android etc1 黑块问题</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+      <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

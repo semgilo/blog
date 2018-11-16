@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eventdispatcher on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/eventdispatcher/</link>
+    <description>Recent content in Eventdispatcher on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 30 Apr 2017 08:29:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lanhuzi.com/tags/eventdispatcher/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cocos2dx 重新创建机制</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</link>
+      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;SDK在游戏里面切换activity的时候花屏
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

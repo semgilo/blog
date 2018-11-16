@@ -1,8 +1,13 @@
 baseURL = "http://www.lanhuzi.com/"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "蓝胡子"
-theme = "beautifulhugo"
+theme = "beg"
 
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+#googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+disqusShortname = "semgilo"
+
+[params]
+  dateformat = "Jan 2, 2006" # Optional

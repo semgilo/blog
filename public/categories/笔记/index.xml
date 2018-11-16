@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>笔记 on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 笔记 on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>android so path 被锁定</title>
+      <link>http://www.lanhuzi.com/post/android-so-path-lock/</link>
+      <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;接XXSDK的时候java 加载so的时候闪退
+   &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>android-armeabi-lib-lock</title>
+      <link>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</link>
+      <pubDate>Fri, 13 Oct 2017 15:05:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>android apk 下载无法识别</title>
+      <link>http://www.lanhuzi.com/post/android-apk-download-cant-open/</link>
+      <pubDate>Wed, 09 Aug 2017 16:15:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/android-apk-download-cant-open/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
+我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android SDK 不会自己删除服务问题</title>
+      <link>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</link>
+      <pubDate>Wed, 26 Jul 2017 16:04:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iap 产品生效时间</title>
+      <link>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</link>
+      <pubDate>Thu, 20 Jul 2017 19:13:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</guid>
+      <description>换了一个开发者帐号发布应该，结果内购一直提示“无效产品ID”，实际上是需要24小时后才会生效的。 官方文档 https://developer.apple.com/library/content/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_</description>
+    </item>
+    
+    <item>
+      <title>cocos2dx android ui and gl threads</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-android-threads/</link>
+      <pubDate>Fri, 19 May 2017 01:18:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-android-threads/</guid>
+      <description>环境 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互
+问题 java 跟 lua 交互有概率性的会出现闪退
+思路及解决 思路 这种概率性的闪退，一般都是线程不安全导致的，于是我就去找，看到cocos2dx 里面有很多用到
+mActivity:runOnUiThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 然后我就认为这个是cocos2dx的主线程，然后就拼命的用它去调用lua,结果就是闪退不断， 这个时候我觉得是不对的，如果这个是主线程是不可能有这个问题，于是我再去找，发现一个方法长得跟它很像的
+mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 这时候我才清楚，原来这个GL线程才是我们游戏线程，UI线程是UI框架的，如果调用高级UI或者SDK就需要用UI线程。
+解决方案 cocos2dx的东西使用 GL线程 android高线UI使用 UI线程
+结果 不闪退</description>
+    </item>
+    
+    <item>
+      <title>cocos2dx FileUtils 缓存机制</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</link>
+      <pubDate>Fri, 12 May 2017 15:36:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</guid>
+      <description>背景 处理热lua更新功能
+问题 有些文件没有没有获取最新下载的资源，依然是使用旧的
+思路及解决 首先查看搜索路径 dump(cc.FileUtils:getInstance():getSearchPaths()) -- 结果是没有问题的 路径缓存起来 std::string FileUtils::fullPathForFilename(const std::string &amp;amp;filename) const { if (filename.empty()) { return &amp;#34;&amp;#34;; } if (isAbsolutePath(filename)) { return filename; } // Already Cached ?  auto cacheIter = _fullPathCache.find(filename); if(cacheIter != _fullPathCache.end()) { return cacheIter-&amp;gt;second; } // Get the new file name.  const std::string newFilename( getNewFilename(filename) ); std::string fullpath; for (const auto&amp;amp; searchIt : _searchPathArray) { for (const auto&amp;amp; resolutionIt : _searchResolutionsOrderArray) { fullpath = this-&amp;gt;getPathForFilename(newFilename, resolutionIt, searchIt); if (!</description>
+    </item>
+    
+    <item>
+      <title>android etc1 黑块问题</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</link>
+      <pubDate>Wed, 03 May 2017 03:40:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</guid>
+      <description>环境 接android SDK
+问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
+function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end 查找为什么会出现黑块 结果 完美解决黑块问题</description>
+    </item>
+    
+    <item>
+      <title>cocos2dx 重新创建机制</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</link>
+      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;SDK在游戏里面切换activity的时候花屏
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何在lua正确识别字符串长度</title>
+      <link>http://www.lanhuzi.com/post/lua-utf8-string-length/</link>
+      <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/lua-utf8-string-length/</guid>
+      <description>function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &amp;#34;[%z\1-\127\194-\244][\128-\191]*&amp;#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end</description>
+    </item>
+    
+    <item>
+      <title>巧妙的使用coroutine分散计算量</title>
+      <link>http://www.lanhuzi.com/post/lua-coroutine/</link>
+      <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/lua-coroutine/</guid>
+      <description>背景 最近一直在优化android相关的内容
+问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡
+解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果
+多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。
+协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一
+for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二
+local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &amp;gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低
+注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来</description>
+    </item>
+    
+  </channel>
+</rss>

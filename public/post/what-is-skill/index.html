@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/post/what-is-skill/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>游戏里面的技能该如何定义？ - 蓝胡子</title>
+    
+<meta name="description" content="导火索 英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。火球和灼烧效果是属于这个技能的吗？ 有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。什么是技能？ 百度的技能 技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。 百度百科我的翻译 技能：个体经过学习后会干什么，这个“会干什么”就是技能。 1.经过学习后 - 就表示不是天生的，比如人生下来就会吸奶，这个不属于技能 2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。为什么要去深究这个问题？ 不同的拆解会有不同的结构 火球（子弹）和灼烧效果（Buff）属于技能。（方案1） 技能 = 技能参数 &#43; 技能表现 &#43; 多种子弹 &#43; 多种BUFF &#43; 多种光环 &#43; 多种召唤物（这个可能会被拿出来） 解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。 解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。火球（子弹）和灼烧效果（Buff）不属于技能 （方案2） 技能 = 技能参数 &#43; 技能表现 &#43; 技能会干什么 解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始 这种似乎会理贴近技能的定义了吗？合理的定义会让结构更清晰 在这边我想问两个问题 1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？ 2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？现在我们回来我们的导火索。我来拆解一下这个技能 英雄技能就变成：英雄会产生一个火球飞向敌人 火球：会对敌人造成伤害并会对敌人添加一个灼烧效果 燃烧效果：会每秒对敌人造成50点伤害有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。我的做法 通道 通道：一定条件下对谁做什么。 一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。 对谁：也就是目标。 做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等全部指向通道 技能 = 技能参数 &#43; 技能表现 &#43; 若干通道 BUFF = BUFF参数 &#43; BUFF表现 &#43; 若干通道 子弹 = 子弹参数 &#43; 子弹表现 &#43; 若干通道">
+
+<meta property="og:title" content="游戏里面的技能该如何定义？ - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/post/what-is-skill/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="导火索 英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。火球和灼烧效果是属于这个技能的吗？ 有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。什么是技能？ 百度的技能 技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。 百度百科我的翻译 技能：个体经过学习后会干什么，这个“会干什么”就是技能。 1.经过学习后 - 就表示不是天生的，比如人生下来就会吸奶，这个不属于技能 2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。为什么要去深究这个问题？ 不同的拆解会有不同的结构 火球（子弹）和灼烧效果（Buff）属于技能。（方案1） 技能 = 技能参数 &#43; 技能表现 &#43; 多种子弹 &#43; 多种BUFF &#43; 多种光环 &#43; 多种召唤物（这个可能会被拿出来） 解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。 解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。火球（子弹）和灼烧效果（Buff）不属于技能 （方案2） 技能 = 技能参数 &#43; 技能表现 &#43; 技能会干什么 解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始 这种似乎会理贴近技能的定义了吗？合理的定义会让结构更清晰 在这边我想问两个问题 1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？ 2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？现在我们回来我们的导火索。我来拆解一下这个技能 英雄技能就变成：英雄会产生一个火球飞向敌人 火球：会对敌人造成伤害并会对敌人添加一个灼烧效果 燃烧效果：会每秒对敌人造成50点伤害有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。我的做法 通道 通道：一定条件下对谁做什么。 一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。 对谁：也就是目标。 做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等全部指向通道 技能 = 技能参数 &#43; 技能表现 &#43; 若干通道 BUFF = BUFF参数 &#43; BUFF表现 &#43; 若干通道 子弹 = 子弹参数 &#43; 子弹表现 &#43; 若干通道">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/post/what-is-skill/">
+<meta name="twitter:title" content="游戏里面的技能该如何定义？ - 蓝胡子">
+<meta name="twitter:description" content="导火索 英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。火球和灼烧效果是属于这个技能的吗？ 有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。什么是技能？ 百度的技能 技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。 百度百科我的翻译 技能：个体经过学习后会干什么，这个“会干什么”就是技能。 1.经过学习后 - 就表示不是天生的，比如人生下来就会吸奶，这个不属于技能 2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。为什么要去深究这个问题？ 不同的拆解会有不同的结构 火球（子弹）和灼烧效果（Buff）属于技能。（方案1） 技能 = 技能参数 &#43; 技能表现 &#43; 多种子弹 &#43; 多种BUFF &#43; 多种光环 &#43; 多种召唤物（这个可能会被拿出来） 解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。 解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。火球（子弹）和灼烧效果（Buff）不属于技能 （方案2） 技能 = 技能参数 &#43; 技能表现 &#43; 技能会干什么 解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始 这种似乎会理贴近技能的定义了吗？合理的定义会让结构更清晰 在这边我想问两个问题 1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？ 2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？现在我们回来我们的导火索。我来拆解一下这个技能 英雄技能就变成：英雄会产生一个火球飞向敌人 火球：会对敌人造成伤害并会对敌人添加一个灼烧效果 燃烧效果：会每秒对敌人造成50点伤害有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。我的做法 通道 通道：一定条件下对谁做什么。 一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。 对谁：也就是目标。 做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等全部指向通道 技能 = 技能参数 &#43; 技能表现 &#43; 若干通道 BUFF = BUFF参数 &#43; BUFF表现 &#43; 若干通道 子弹 = 子弹参数 &#43; 子弹表现 &#43; 若干通道">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://www.lanhuzi.com/"
+    },
+    "headline": "游戏里面的技能该如何定义？ - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://www.lanhuzi.com/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-04-18T19:43:00JST",
+    "dateModified": "2018-11-16T09:47:28JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.lanhuzi.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "导火索 英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。
+火球和灼烧效果是属于这个技能的吗？ 有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
+什么是技能？ 百度的技能 技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。 百度百科
+我的翻译 技能：个体经过学习后会干什么，这个“会干什么”就是技能。 1.经过学习后 - 就表示不是天生的，比如人生下来就会吸奶，这个不属于技能 2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。
+为什么要去深究这个问题？ 不同的拆解会有不同的结构 火球（子弹）和灼烧效果（Buff）属于技能。（方案1） 技能 = 技能参数 + 技能表现 + 多种子弹 + 多种BUFF + 多种光环 + 多种召唤物（这个可能会被拿出来） 解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。 解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。
+火球（子弹）和灼烧效果（Buff）不属于技能 （方案2） 技能 = 技能参数 + 技能表现 + 技能会干什么 解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始 这种似乎会理贴近技能的定义了吗？
+合理的定义会让结构更清晰 在这边我想问两个问题 1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？ 2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？
+现在我们回来我们的导火索。我来拆解一下这个技能 英雄技能就变成：英雄会产生一个火球飞向敌人 火球：会对敌人造成伤害并会对敌人添加一个灼烧效果 燃烧效果：会每秒对敌人造成50点伤害
+有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。
+我的做法 通道 通道：一定条件下对谁做什么。 一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。 对谁：也就是目标。 做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等
+全部指向通道 技能 = 技能参数 + 技能表现 + 若干通道 BUFF = BUFF参数 + BUFF表现 + 若干通道 子弹 = 子弹参数 + 子弹表现 + 若干通道"
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">About Hugo</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.lanhuzi.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">游戏里面的技能该如何定义？</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:47:28JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">游戏里面的技能该如何定义？</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="导火索">导火索</h2>
+
+<p>英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。</p>
+
+<p>火球和灼烧效果是属于这个技能的吗？
+有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。</p>
+
+<h2 id="什么是技能">什么是技能？</h2>
+
+<h3 id="百度的技能">百度的技能</h3>
+
+<p><strong>技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。</strong>  <a href="https://baike.baidu.com/item/技能/33065?fr=aladdin">百度百科</a></p>
+
+<h3 id="我的翻译">我的翻译</h3>
+
+<p>技能：个体经过学习后会干什么，这个“会干什么”就是技能。
+1.经过学习后  -  就表示不是天生的，比如人生下来就会吸奶，这个不属于技能
+2.会干什么 - 这里我要强调的是“会”。比如我会赚钱，赚钱是我的技能。</p>
+
+<h2 id="为什么要去深究这个问题">为什么要去深究这个问题？</h2>
+
+<h3 id="不同的拆解会有不同的结构">不同的拆解会有不同的结构</h3>
+
+<h4 id="火球-子弹-和灼烧效果-buff-属于技能-方案1">火球（子弹）和灼烧效果（Buff）属于技能。（方案1）</h4>
+
+<p>技能 = 技能参数 + 技能表现 + 多种子弹 + 多种BUFF + 多种光环 + 多种召唤物（这个可能会被拿出来）
+解释1：加上“多种”是因为一个技能会有一种或者多种效果，比如对对敌方丢一个爆弹，同时对己方生命最低加血。
+解释2：为什么召唤物可能会被拿出来，因为召唤物也会放技能，会和其它有明显的不一样。</p>
+
+<h4 id="火球-子弹-和灼烧效果-buff-不属于技能-方案2">火球（子弹）和灼烧效果（Buff）不属于技能 （方案2）</h4>
+
+<p>技能 = 技能参数 + 技能表现 + 技能会干什么
+解释1：技能会干什么？1.会产生BUFF 2.会产生光环 3.技能会产生光环 4.技能会产生召唤物 。。。。看到这里你会开始
+这种似乎会理贴近技能的定义了吗？</p>
+
+<h3 id="合理的定义会让结构更清晰">合理的定义会让结构更清晰</h3>
+
+<p>在这边我想问两个问题
+1.当技能被中断的时候，技能所产生的子弹、BUFF、光环等这些怎么不会被中断？因为他们已经被生产出来了？那技能中断并不是表示技能结束？
+2.有一些奇怪的BUFF会做一些奇怪的事，比如闪电盾，被攻击的时候会释放一条闪电，那是BUFF有可能会释放技能？如果会释放技能那么这个技能跟技能是同一种技能？</p>
+
+<p>现在我们回来我们的导火索。我来拆解一下这个技能
+英雄技能就变成：英雄会产生一个火球飞向敌人
+火球：会对敌人造成伤害并会对敌人添加一个灼烧效果
+燃烧效果：会每秒对敌人造成50点伤害</p>
+
+<p>有没有变得更清晰？当然这个也因人而异。而且完全满足“会干什么”这条规则了。</p>
+
+<h2 id="我的做法">我的做法</h2>
+
+<h3 id="通道">通道</h3>
+
+<p>通道：一定条件下对谁做什么。
+一定条件下：就是这条通道可以被执行的条件。比如：目录只有一个的时候。
+对谁：也就是目标。
+做什么：比如：添加一个子弹，造成伤害，治疗，添加BUFF等等</p>
+
+<h3 id="全部指向通道">全部指向通道</h3>
+
+<p>技能 = 技能参数 + 技能表现 + 若干通道
+BUFF = BUFF参数 + BUFF表现 + 若干通道
+子弹 = 子弹参数 + 子弹表现 + 若干通道</p>
+
+<p>就不一一列出来了，如果你还坚持你自己的观点的话，那你可以尝试分析下面两个等于。
+1.会赚钱 <code>= 我有钱？
+2.女人会生孩子 =</code> 女人有孩子？</p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/">分享</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/game/">game</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "semgilo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/post/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+      <a href="http://www.lanhuzi.com/post/what-is-skill/" class="list-group-item">游戏里面的技能该如何定义？</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-armeabi-lib-lock/" class="list-group-item">android-armeabi-lib-lock</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-apk-download-cant-open/" class="list-group-item">android apk 下载无法识别</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-sdk-service-stop-problem/" class="list-group-item">Android SDK 不会自己删除服务问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/iap-productid-take-effect-time/" class="list-group-item">iap 产品生效时间</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/" class="list-group-item">cocos2dx android ui and gl threads</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-etc1-crash/" class="list-group-item">cocos2dx etc 闪退问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/" class="list-group-item">cocos2dx FileUtils 缓存机制</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/" class="list-group-item">android etc1 黑块问题</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+      <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

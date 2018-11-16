@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/android-so-path-lock/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/what-is-skill/</loc>
+    <lastmod>2018-11-16T09:47:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</loc>
+    <lastmod>2018-11-16T09:45:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/android-apk-download-cant-open/</loc>
+    <lastmod>2018-11-16T09:44:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</loc>
+    <lastmod>2018-11-16T09:45:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</loc>
+    <lastmod>2018-11-16T09:46:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-android-threads/</loc>
+    <lastmod>2018-11-16T09:46:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-etc1-crash/</loc>
+    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</loc>
+    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</loc>
+    <lastmod>2018-11-16T09:45:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</loc>
+    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/lua-utf8-string-length/</loc>
+    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/lua-coroutine/</loc>
+    <lastmod>2018-11-16T09:47:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/android/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/etc1/</loc>
+    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/eventdispatcher/</loc>
+    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/fileutils/</loc>
+    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/game/</loc>
+    <lastmod>2018-11-16T09:47:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/ios/</loc>
+    <lastmod>2018-11-16T09:46:55+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/lua/</loc>
+    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2018-11-16T09:47:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/</loc>
+    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
