@@ -6,7 +6,7 @@
 #+HUGO_CATEGORIES: 分享
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:2
 
 
 * 导火索
@@ -14,7 +14,7 @@
 
 火球和灼烧效果是属于这个技能的吗？
 有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
-
+<!--more-->
 * 什么是技能？
 ** 百度的技能
 *技能：个体运用已有的知识经验，通过练习而形成的一定的动作方式或智力活动方式成为技能。*  [[https://baike.baidu.com/item/技能/33065?fr=aladdin   ][百度百科]]
