@@ -1,5 +1,5 @@
 baseURL = "http://www.lanhuzi.com/"
-defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
+defaultContentLanguage = "zh-cn"                            
 title = "蓝胡子"
 theme = "beg"
 
