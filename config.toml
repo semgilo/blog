@@ -7,7 +7,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 #googleAnalytics = "UA-XXXXXXXX-XX" # Optional
-disqusShortname = "semgilo"
+disqusShortname = "lanhuzi"
 
 [params]
   dateformat = "Jan 2, 2006" # Optional
