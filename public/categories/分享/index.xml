@@ -5,10 +5,21 @@
     <link>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</link>
     <description>Recent content in 分享 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Apr 2018 19:43:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 16 Nov 2018 14:33:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mac下svn常用操作命令</title>
+      <link>http://www.lanhuzi.com/post/svn-common-operation/</link>
+      <pubDate>Fri, 16 Nov 2018 14:33:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/svn-common-operation/</guid>
+      <description> svn配置BeyondCompare对比工具 Beyond Compare 官方说明
+常规操作 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
+进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34;</description>
+    </item>
     
     <item>
       <title>游戏里面的技能该如何定义？</title>

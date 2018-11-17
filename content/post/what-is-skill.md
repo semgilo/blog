@@ -2,7 +2,7 @@
 title = "游戏里面的技能该如何定义？"
 author = ["semgilo"]
 date = 2018-04-18T19:43:00+08:00
-lastmod = 2018-11-16T09:56:23+08:00
+lastmod = 2018-11-16T09:56:59+08:00
 tags = ["game"]
 categories = ["分享"]
 draft = false
