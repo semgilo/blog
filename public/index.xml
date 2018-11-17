@@ -213,16 +213,18 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
     </item>
     
     <item>
-      <title>About Hugo</title>
+      <title>蓝胡子</title>
       <link>http://www.lanhuzi.com/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://www.lanhuzi.com/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>自从大二学期（2010年）学习了手机游戏开发就爱上了这个行业，从小就有一个制作游戏的梦，从J2ME到Android再到IOS再到跨平台的Cocos2dx，再到Unity3D，估计还会有虚幻4.
+时间在走，梦想依旧.
+Just Do It!
+个人主页:http://www.lanhuzi.com
+Github主页:https://github.com/semgilo
+QQ:9737935
+Mail:semgilo@gmail.com</description>
     </item>
     
   </channel>
