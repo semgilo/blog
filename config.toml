@@ -6,7 +6,7 @@ theme = "beg"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-#googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+googleAnalytics = "UA-129516066-1" # Optional
 disqusShortname = "lanhuzi"
 
 [params]
