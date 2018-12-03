@@ -10,6 +10,10 @@
 [[https://www.scootersoftware.com/features.php?zz=kb_vcs_osx][Beyond Compare 官方说明]]
 
 * 常规操作
+** 检出工程
+#+BEGIN_SRC shell
+svn co url
+#+END_SRC
 ** 查看当前状态
 #+BEGIN_SRC shell
 svn st

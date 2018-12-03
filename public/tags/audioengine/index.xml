@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audioengine on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/audioengine/</link>
+    <description>Recent content in Audioengine on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 22 Nov 2018 15:17:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lanhuzi.com/tags/audioengine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cosos2dx fmod 声音引擎集成</title>
+      <link>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
+      <description> 环境 Cocos2d-x: 3.17
+fmod官方文档
+过程 问题 </description>
+    </item>
+    
+  </channel>
+</rss>

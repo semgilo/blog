@@ -5,10 +5,33 @@
     <link>http://www.lanhuzi.com/</link>
     <description>Recent content on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Nov 2018 14:33:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 22:03:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cocos2dx 2.2.6 file not found</title>
+      <link>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</link>
+      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</guid>
+      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.
+解决方法：
+1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </description>
+    </item>
+    
+    <item>
+      <title>Cosos2dx fmod 声音引擎集成</title>
+      <link>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
+      <description> 环境 Cocos2d-x: 3.17
+fmod官方文档
+过程 问题 </description>
+    </item>
     
     <item>
       <title>mac下svn常用操作命令</title>
@@ -17,7 +40,7 @@
       
       <guid>http://www.lanhuzi.com/post/svn-common-operation/</guid>
       <description> svn配置BeyondCompare对比工具 Beyond Compare 官方说明
-常规操作 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
+常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
 进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34;</description>
     </item>
     

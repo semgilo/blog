@@ -2,7 +2,7 @@
 title = "mac下svn常用操作命令"
 author = ["semgilo"]
 date = 2018-11-16T14:33:00+08:00
-lastmod = 2018-11-17T10:18:56+08:00
+lastmod = 2018-11-23T09:59:31+08:00
 tags = ["SVN"]
 categories = ["分享"]
 draft = false
@@ -14,6 +14,13 @@ draft = false
 
 
 ## 常规操作 {#常规操作}
+
+
+### 检出工程 {#检出工程}
+
+```shell
+svn co url
+```
 
 
 ### 查看当前状态 {#查看当前状态}

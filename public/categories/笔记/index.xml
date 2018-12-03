@@ -5,10 +5,22 @@
     <link>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 笔记 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 22:03:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cocos2dx 2.2.6 file not found</title>
+      <link>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</link>
+      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</guid>
+      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.
+解决方法：
+1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </description>
+    </item>
     
     <item>
       <title>android so path 被锁定</title>
