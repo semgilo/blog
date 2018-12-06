@@ -23,4 +23,5 @@ draft = false
 1.cocos2dx.xcodeproj ==> BuildSetting ==> IOS Development Target
 修改为：8.0
 2.bitcode 修改 NO
+3.c++ Standard Library  修改为 Compiler Default
 ```

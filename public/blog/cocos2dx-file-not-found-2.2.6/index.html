@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>cocos2dx 2.2.6 file not found - 蓝胡子</title>
     
-<meta name="description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO ">
+<meta name="description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c&#43;&#43; Standard Library 修改为 Compiler Default ">
 
 <meta property="og:title" content="cocos2dx 2.2.6 file not found - 蓝胡子">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO ">
+<meta property="og:description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c&#43;&#43; Standard Library 修改为 Compiler Default ">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
 <meta name="twitter:url" content="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/">
 <meta name="twitter:title" content="cocos2dx 2.2.6 file not found - 蓝胡子">
-<meta name="twitter:description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO ">
+<meta name="twitter:description" content="今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.解决方法：1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c&#43;&#43; Standard Library 修改为 Compiler Default ">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -68,7 +68,7 @@
     "description": "今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
 &lt;string&gt; file not found &lt;cctype&gt; file not found  各种google.
 解决方法：
-1.cocos2dx.xcodeproj ==&gt; BuildSetting ==&gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO "
+1.cocos2dx.xcodeproj ==&gt; BuildSetting ==&gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c++ Standard Library 修改为 Compiler Default "
   }
 </script>
 
@@ -166,6 +166,7 @@ if (!doNotTrack) {
 <div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="mf">1.</span><span class="n">cocos2dx</span><span class="p">.</span><span class="n">xcodeproj</span> <span class="o">==&gt;</span> <span class="n">BuildSetting</span> <span class="o">==&gt;</span> <span class="n">IOS</span> <span class="n">Development</span> <span class="n">Target</span>
 <span class="err">修改为：</span><span class="mf">8.0</span>
 <span class="mf">2.</span><span class="n">bitcode</span> <span class="err">修改</span> <span class="n">NO</span>
+<span class="mf">3.</span><span class="n">c</span><span class="o">++</span> <span class="n">Standard</span> <span class="n">Library</span>  <span class="err">修改为</span> <span class="n">Compiler</span> <span class="n">Default</span>
 </code></pre></div></div>
 
   <footer class="article-footer">
