@@ -2,11 +2,33 @@
 title = "BlackHole 使用说明"
 author = ["semgilo"]
 date = 2018-12-07T23:27:00+08:00
-lastmod = 2018-12-07T23:45:38+08:00
+lastmod = 2018-12-07T23:55:26+08:00
 tags = ["Blackhole"]
 categories = ["教程"]
 draft = false
 +++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [配置工程](#配置工程)
+    - [网络使用权限](#网络使用权限)
+    - [Other Link Flag](#other-link-flag)
+- [代码使用](#代码使用)
+    - [初始化](#初始化)
+    - [启动判断](#启动判断)
+    - [生命周期处理](#生命周期处理)
+- [测试需求](#测试需求)
+    - [7天前](#7天前)
+    - [45天前](#45天前)
+    - [45天后](#45天后)
+
+</div>
+<!--endtoc-->
+
+
 
 ## 配置工程 {#配置工程}
 

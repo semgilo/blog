@@ -6,6 +6,7 @@
 #+HUGO_CATEGORIES: 教程
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
+#+OPTIONS: toc:2
 
 * 配置工程
 ** 网络使用权限
