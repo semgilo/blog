@@ -5,19 +5,10 @@
     <link>http://www.lanhuzi.com/blog/</link>
     <description>Recent content in Blogs on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Dec 2018 23:27:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 22:03:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>BlackHole 使用说明</title>
-      <link>http://www.lanhuzi.com/blog/blackhole-sdk-introduction/</link>
-      <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/blackhole-sdk-introduction/</guid>
-      <description>配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &amp;lt; 6.0) { // warning: addSubView doesn&amp;#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</description>
-    </item>
     
     <item>
       <title>cocos2dx 2.2.6 file not found</title>
