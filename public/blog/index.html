@@ -87,6 +87,27 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-07T23:45:00JST">Dec 7, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
+  </header>
+
+  
+  <div class="summary">配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0) { // warning: addSubView doesn&#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-03T22:12:51JST">Dec 3, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
       
@@ -139,6 +160,10 @@ fmod官方文档
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
+      
+      <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
+      
       <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
       <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
@@ -155,10 +180,6 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/post/android-sdk-service-stop-problem/" class="list-group-item">Android SDK 不会自己删除服务问题</a>
       
-      <a href="http://www.lanhuzi.com/post/iap-productid-take-effect-time/" class="list-group-item">iap 产品生效时间</a>
-      
-      <a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/" class="list-group-item">cocos2dx android ui and gl threads</a>
-      
     </div>
   </section>
 
@@ -173,6 +194,8 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
+      <a href="http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B" class="list-group-item">教程</a>
+      
     </div>
   </section>
   
@@ -185,6 +208,8 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
@@ -199,8 +224,6 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
       
       <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
-      
-      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
     </div>
   </section>

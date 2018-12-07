@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/blog/blackhole-sdk-introduction/</loc>
+    <lastmod>2018-12-07T23:45:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</loc>
+    <lastmod>2018-12-07T23:45:38+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</loc>
     <lastmod>2018-12-03T22:12:51+08:00</lastmod>
   </url>
@@ -100,8 +110,14 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
+    <lastmod>2018-12-07T23:45:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/blog/</loc>
-    <lastmod>2018-12-03T22:12:51+08:00</lastmod>
+    <lastmod>2018-12-07T23:45:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,7 +176,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+    <lastmod>2018-12-07T23:45:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,6 +199,12 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2018-12-07T23:45:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2018-12-03T22:12:51+08:00</lastmod>
     <priority>0</priority>
@@ -190,7 +212,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2018-12-03T22:12:51+08:00</lastmod>
+    <lastmod>2018-12-07T23:45:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -83,6 +83,48 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-07T23:45:00JST">Dec 7, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
+  </header>
+
+  
+  <div class="summary">配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0) { // warning: addSubView doesn&#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-07T23:45:38JST">Dec 7, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
+  </header>
+
+  
+  <div class="summary">配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0) { // warning: addSubView doesn&#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-03T22:12:51JST">Dec 3, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
       
@@ -292,46 +334,6 @@ fmod官方文档
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:55JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/iap-productid-take-effect-time/">iap 产品生效时间</a></h2>
-  </header>
-
-  
-  <div class="summary">换了一个开发者帐号发布应该，结果内购一直提示“无效产品ID”，实际上是需要24小时后才会生效的。 官方文档 https://developer.apple.com/library/content/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:02JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/">cocos2dx android ui and gl threads</a></h2>
-  </header>
-
-  
-  <div class="summary">环境 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互
-问题 java 跟 lua 交互有概率性的会出现闪退
-思路及解决 思路 这种概率性的闪退，一般都是线程不安全导致的，于是我就去找，看到cocos2dx 里面有很多用到
-mActivity:runOnUiThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 然后我就认为这个是cocos2dx的主线程，然后就拼命的用它去调用lua,结果就是闪退不断， 这个时候我觉得是不对的，如果这个是主线程是不可能有这个问题，于是我再去找，发现一个方法长得跟它很像的
-mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 这时候我才清楚，原来这个GL线程才是我们游戏线程，UI线程是UI框架的，如果调用高级UI或者SDK就需要用UI线程。
-解决方案 cocos2dx的东西使用 GL线程 android高线UI使用 UI线程
-结果 不闪退</div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -362,6 +364,10 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
+      
+      <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
+      
       <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
       <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
@@ -378,10 +384,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/post/android-sdk-service-stop-problem/" class="list-group-item">Android SDK 不会自己删除服务问题</a>
       
-      <a href="http://www.lanhuzi.com/post/iap-productid-take-effect-time/" class="list-group-item">iap 产品生效时间</a>
-      
-      <a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/" class="list-group-item">cocos2dx android ui and gl threads</a>
-      
     </div>
   </section>
 
@@ -396,6 +398,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
+      <a href="http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B" class="list-group-item">教程</a>
+      
     </div>
   </section>
   
@@ -408,6 +412,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
@@ -422,8 +428,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
       
       <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
-      
-      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
     </div>
   </section>

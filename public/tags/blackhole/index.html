@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.49.2" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/tags/etc1/index.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/tags/blackhole/index.xml">
 
-<link rel="canonical" href="http://www.lanhuzi.com/tags/etc1/">
+<link rel="canonical" href="http://www.lanhuzi.com/tags/blackhole/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Etc1 - 蓝胡子</title>
+    <title>Blackhole - 蓝胡子</title>
     
     <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
     
@@ -78,7 +78,7 @@ if (!doNotTrack) {
 
     
     <header class="page-header">
-      <h1>Etc1</h1>
+      <h1>Blackhole</h1>
     </header>
     
 
@@ -87,20 +87,41 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:12JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-07T23:45:00JST">Dec 7, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-etc1-crash/">cocos2dx etc 闪退问题</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
   </header>
 
   
-  <div class="summary">环境 稳定性测试期
-问题 部分机型和部分模拟器会因为ETC1资源导致闪退
-07-13 21:59:43.727 E/szipinf (21935): Error reading asset data 07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1 思路及解决 问题分析 经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律， 然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩 的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
-解决方案 我尝试在整张图片周围画一个距形的红框，目的让资源四周都有像素，果然闪退解决
-结果 做图工具升级，完美解决</div>
+  <div class="summary">配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0) { // warning: addSubView doesn&#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</div>
 
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/blog/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-07T23:45:38JST">Dec 7, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
+  </header>
+
+  
+  <div class="summary">配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &lt; 6.0) { // warning: addSubView doesn&#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
+  </footer>
   
 </article>
 </li>

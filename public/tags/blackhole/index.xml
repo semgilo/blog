@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/blog/</link>
-    <description>Recent content in Blogs on 蓝胡子</description>
+    <title>Blackhole on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/blackhole/</link>
+    <description>Recent content in Blackhole on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 07 Dec 2018 23:27:00 +0800</lastBuildDate>
     
-	<atom:link href="http://www.lanhuzi.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.lanhuzi.com/tags/blackhole/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,26 +20,12 @@
     </item>
     
     <item>
-      <title>cocos2dx 2.2.6 file not found</title>
-      <link>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</link>
-      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
+      <title>BlackHole 使用说明</title>
+      <link>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</link>
+      <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</guid>
-      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
-&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.
-解决方法：
-1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c++ Standard Library 修改为 Compiler Default </description>
-    </item>
-    
-    <item>
-      <title>Cosos2dx fmod 声音引擎集成</title>
-      <link>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</link>
-      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
-      <description> 环境 Cocos2d-x: 3.17
-fmod官方文档
-过程 问题 </description>
+      <guid>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</guid>
+      <description>配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].systemVersion floatValue] &amp;lt; 6.0) { // warning: addSubView doesn&amp;#39;t work on iOS6 	[window addSubview: viewController.view]; } else { // use this method on ios6 	[window setRootViewController:viewController]; } } else { // 游戏原来的启动 } [[UIApplication sharedApplication] setStatusBarHidden:true]; [window makeKeyAndVisible]; 生命周期处理 - (void)applicationDidBecomeActive:(UIApplication *)application { /* Restart any tasks that were paused (or not yet started) while the application was inactive.</description>
     </item>
     
   </channel>
