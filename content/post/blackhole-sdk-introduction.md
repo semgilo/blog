@@ -2,7 +2,7 @@
 title = "BlackHole 使用说明"
 author = ["semgilo"]
 date = 2018-12-07T23:27:00+08:00
-lastmod = 2018-12-07T23:55:26+08:00
+lastmod = 2018-12-08T00:48:20+08:00
 tags = ["Blackhole"]
 categories = ["教程"]
 draft = false
@@ -13,6 +13,7 @@ draft = false
 
 <div class="heading">Table of Contents</div>
 
+- [下载](#下载)
 - [配置工程](#配置工程)
     - [网络使用权限](#网络使用权限)
     - [Other Link Flag](#other-link-flag)
@@ -28,6 +29,11 @@ draft = false
 </div>
 <!--endtoc-->
 
+
+
+## 下载 {#下载}
+
+[点击下载](/files/BlackHole.zip)
 
 
 ## 配置工程 {#配置工程}

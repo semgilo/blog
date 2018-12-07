@@ -7,7 +7,8 @@
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
 #+OPTIONS: toc:2
-
+* 下载
+[[/files/BlackHole.zip][点击下载]]
 * 配置工程
 ** 网络使用权限
 #+BEGIN_SRC 

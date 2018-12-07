@@ -16,7 +16,8 @@
       <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</guid>
-      <description>Table of Contents  配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
+      <description>Table of Contents  下载 配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
+下载 点击下载
 配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].</description>
     </item>
     
