@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>BlackHole 使用说明 - 蓝胡子</title>
     
-<meta name="description" content="Table of Contents  下载 配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].">
+<meta name="description" content="Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 添加Url Types    Figure 1: 示意图   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].">
 
 <meta property="og:title" content="BlackHole 使用说明 - 蓝胡子">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.lanhuzi.com/post/blackhole-sdk-introduction/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content="Table of Contents  下载 配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].">
+<meta property="og:description" content="Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 添加Url Types    Figure 1: 示意图   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
 <meta name="twitter:url" content="http://www.lanhuzi.com/post/blackhole-sdk-introduction/">
 <meta name="twitter:title" content="BlackHole 使用说明 - 蓝胡子">
-<meta name="twitter:description" content="Table of Contents  下载 配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice].">
+<meta name="twitter:description" content="Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    下载 点击下载配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 添加Url Types    Figure 1: 示意图   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -50,7 +50,7 @@
       "width": 800
     },
     "datePublished": "2018-12-07T23:27:00JST",
-    "dateModified": "2018-12-08T00:48:20JST",
+    "dateModified": "2018-12-08T10:51:26JST",
     "author": {
       "@type": "Person",
       "name": "蓝胡子"
@@ -65,9 +65,9 @@
         "height": 60
       }
     },
-    "description": "Table of Contents  下载 配置工程  网络使用权限 Other Link Flag  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
+    "description": "Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
 下载 点击下载
-配置工程 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].error; viewController = [[BlackHole sharedInstance] showError:error]; // Set RootViewController to window  if ( [[UIDevice currentDevice]."
+配置工程 添加framework WebKit.framework 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 添加Url Types    Figure 1: 示意图   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance]."
   }
 </script>
 
@@ -145,7 +145,7 @@ if (!doNotTrack) {
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-08T00:48:20JST">Dec 8, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-08T10:51:26JST">Dec 8, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
@@ -167,8 +167,10 @@ if (!doNotTrack) {
 <li><a href="#配置工程">配置工程</a>
 
 <ul>
+<li><a href="#添加framework">添加framework</a></li>
 <li><a href="#网络使用权限">网络使用权限</a></li>
 <li><a href="#other-link-flag">Other Link Flag</a></li>
+<li><a href="#添加url-types">添加Url Types</a></li>
 </ul></li>
 <li><a href="#代码使用">代码使用</a>
 
@@ -195,6 +197,8 @@ if (!doNotTrack) {
 
 <h2 id="配置工程">配置工程</h2>
 
+<h3 id="添加framework">添加framework</h3>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="n">WebKit</span><span class="p">.</span><span class="n">framework</span></code></pre></div>
 <h3 id="网络使用权限">网络使用权限</h3>
 <div class="highlight"><pre class="chroma"><code class="language-nil" data-lang="nil">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
 &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;
@@ -206,6 +210,26 @@ if (!doNotTrack) {
 &lt;/plist&gt;</code></pre></div>
 <h3 id="other-link-flag">Other Link Flag</h3>
 <div class="highlight"><pre class="chroma"><code class="language-nil" data-lang="nil">-ObjC</code></pre></div>
+<h3 id="添加url-types">添加Url Types</h3>
+
+
+<figure>
+    
+        <img src="/images/blackhole_001.png" alt="Figure 1: 示意图" />
+    
+    
+    <figcaption>
+        <p>
+        Figure 1: 示意图
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
 <h2 id="代码使用">代码使用</h2>
 
 <h3 id="初始化">初始化</h3>

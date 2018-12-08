@@ -10,6 +10,10 @@
 * 下载
 [[/files/BlackHole.zip][点击下载]]
 * 配置工程
+** 添加framework
+#+BEGIN_SRC c
+WebKit.framework
+#+END_SRC
 ** 网络使用权限
 #+BEGIN_SRC 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -26,6 +30,10 @@
 #+BEGIN_SRC 
 -ObjC
 #+END_SRC
+** 添加Url Types
+#+caption: 示意图
+[[/images/blackhole_001.png]]
+
 
 * 代码使用
 ** 初始化

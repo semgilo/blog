@@ -2,7 +2,7 @@
 title = "BlackHole 使用说明"
 author = ["semgilo"]
 date = 2018-12-07T23:27:00+08:00
-lastmod = 2018-12-08T00:48:20+08:00
+lastmod = 2018-12-08T10:51:26+08:00
 tags = ["Blackhole"]
 categories = ["教程"]
 draft = false
@@ -15,8 +15,10 @@ draft = false
 
 - [下载](#下载)
 - [配置工程](#配置工程)
+    - [添加framework](#添加framework)
     - [网络使用权限](#网络使用权限)
     - [Other Link Flag](#other-link-flag)
+    - [添加Url Types](#添加url-types)
 - [代码使用](#代码使用)
     - [初始化](#初始化)
     - [启动判断](#启动判断)
@@ -39,6 +41,13 @@ draft = false
 ## 配置工程 {#配置工程}
 
 
+### 添加framework {#添加framework}
+
+```c
+WebKit.framework
+```
+
+
 ### 网络使用权限 {#网络使用权限}
 
 ```nil
@@ -58,6 +67,11 @@ draft = false
 ```nil
 -ObjC
 ```
+
+
+### 添加Url Types {#添加url-types}
+
+{{< figure src="/images/blackhole_001.png" caption="Figure 1: 示意图" >}}
 
 
 ## 代码使用 {#代码使用}
