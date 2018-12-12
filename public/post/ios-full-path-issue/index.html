@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="http://www.lanhuzi.com/post/android-armeabi-lib-lock/">
+<link rel="canonical" href="http://www.lanhuzi.com/post/ios-full-path-issue/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>android-armeabi-lib-lock - 蓝胡子</title>
+    <title>ios 获取全路径问题 - 蓝胡子</title>
     
-<meta name="description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;">
+<meta name="description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别对应资源，如果资源格式被破坏后，就没办法取到fullpath.   &lt;/p&gt;">
 
-<meta property="og:title" content="android-armeabi-lib-lock - 蓝胡子">
+<meta property="og:title" content="ios 获取全路径问题 - 蓝胡子">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.lanhuzi.com/post/android-armeabi-lib-lock/">
+<meta property="og:url" content="http://www.lanhuzi.com/post/ios-full-path-issue/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;">
+<meta property="og:description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别对应资源，如果资源格式被破坏后，就没办法取到fullpath.   &lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
-<meta name="twitter:url" content="http://www.lanhuzi.com/post/android-armeabi-lib-lock/">
-<meta name="twitter:title" content="android-armeabi-lib-lock - 蓝胡子">
-<meta name="twitter:description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;">
+<meta name="twitter:url" content="http://www.lanhuzi.com/post/ios-full-path-issue/">
+<meta name="twitter:title" content="ios 获取全路径问题 - 蓝胡子">
+<meta name="twitter:description" content="&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;&lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别对应资源，如果资源格式被破坏后，就没办法取到fullpath.   &lt;/p&gt;">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://www.lanhuzi.com/"
     },
-    "headline": "android-armeabi-lib-lock - 蓝胡子",
+    "headline": "ios 获取全路径问题 - 蓝胡子",
     "image": {
       "@type": "ImageObject",
       "url": "http://www.lanhuzi.com/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2017-10-13T15:05:00JST",
-    "dateModified": "2018-11-16T09:45:09JST",
+    "datePublished": "2018-12-12T12:05:00JST",
+    "dateModified": "2018-12-12T12:15:05JST",
     "author": {
       "@type": "Person",
       "name": "蓝胡子"
@@ -67,8 +67,9 @@
     },
     "description": "<h2 id="描述">描述</h2>
 
-<p>cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
-</p>"
+<p>在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
+对应资源，如果资源格式被破坏后，就没办法取到fullpath.
+   </p>"
   }
 </script>
 
@@ -139,39 +140,58 @@ if (!doNotTrack) {
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.lanhuzi.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">android-armeabi-lib-lock</li>
+        <li class="active">ios 获取全路径问题</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:09JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-12T12:15:05JST">Dec 12, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">android-armeabi-lib-lock</h1>
+    <h1 class="title">ios 获取全路径问题</h1>
   </header>
 
   
 
   <div class="article-body"><h2 id="描述">描述</h2>
 
-<p>cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
-</p>
+<p>在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
+对应资源，如果资源格式被破坏后，就没办法取到fullpath.
+   </p>
 
 <h2 id="分析">分析</h2>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">CCFileUtilsIOS</span><span class="o">::</span><span class="n">getFullPathForDirectoryAndFilename</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strDirectory</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strFilename</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">strDirectory</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="sc">&#39;/&#39;</span><span class="p">)</span>
+    <span class="p">{</span>
+	<span class="n">NSString</span><span class="o">*</span> <span class="n">fullpath</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSBundle</span> <span class="n">mainBundle</span><span class="p">]</span> <span class="nl">pathForResource</span><span class="p">:[</span><span class="n">NSString</span> <span class="nl">stringWithUTF8String</span><span class="p">:</span><span class="n">strFilename</span><span class="p">.</span><span class="n">c_str</span><span class="p">()]</span>
+							     <span class="nl">ofType</span><span class="p">:</span><span class="n">nil</span>
+							<span class="nl">inDirectory</span><span class="p">:[</span><span class="n">NSString</span> <span class="nl">stringWithUTF8String</span><span class="p">:</span><span class="n">strDirectory</span><span class="p">.</span><span class="n">c_str</span><span class="p">()]];</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">fullpath</span> <span class="o">!=</span> <span class="n">nil</span><span class="p">)</span> <span class="p">{</span>
+	    <span class="k">return</span> <span class="p">[</span><span class="n">fullpath</span> <span class="n">UTF8String</span><span class="p">];</span>
+	<span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">fullPath</span> <span class="o">=</span> <span class="n">strDirectory</span><span class="o">+</span><span class="n">strFilename</span><span class="p">;</span>
+	<span class="c1">// Search path is an absolute path.
+</span><span class="c1"></span>	<span class="k">if</span> <span class="p">([</span><span class="n">s_fileManager</span> <span class="nl">fileExistsAtPath</span><span class="p">:[</span><span class="n">NSString</span> <span class="nl">stringWithUTF8String</span><span class="p">:</span><span class="n">fullPath</span><span class="p">.</span><span class="n">c_str</span><span class="p">()]])</span> <span class="p">{</span>
+	    <span class="k">return</span> <span class="n">fullPath</span><span class="p">;</span>
+	<span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>这个是ios 获取资源全路径的方法，因为之前我有在其它项目上成功过，所以这个问题，因为通过对比取不一样的地方，应该就是问题所在。
+最后发现，只要是虚拟上目录下就可以正常获取加密的资源，真实目录会检测它对应格式数据是不是正确（我只对png做了测试）。</p>
 
-<h2 id="细节">细节</h2>
+<h2 id="解决">解决</h2>
 
-<p>armeabi路径会搜索一次 如果找到会锁定 下次就只会在这个目录下查找</p>
-
-<h2 id="结果">结果</h2>
-
-<p>问题解决</p>
-
-<h2 id="备注">备注</h2></div>
+<p>使用虚拟目录，把资源都放虚拟目录就可以正常读取资源了，如果需要多一层目录，可以使用</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="n">CCFileUtils</span><span class="o">::</span><span class="n">sharedFileUtils</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">addSearchPath</span><span class="p">(</span><span class="s">&#34;res/&#34;</span><span class="p">);</span></code></pre></div></div>
 
   <footer class="article-footer">
     
@@ -199,9 +219,7 @@ if (!doNotTrack) {
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://www.lanhuzi.com/tags/android/">android</a></li>
-          
-          <li><a href="http://www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a></li>
+          <li><a href="http://www.lanhuzi.com/tags/ios/">ios</a></li>
           
         </ul>
       </div>
