@@ -1,0 +1,23 @@
+#+HUGO_BASE_DIR: ../
+#+TITLE: Expressionism os ninja
+#+DATE: <2018-12-13 星期四 15:21:51>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: game
+#+HUGO_CATEGORIES: game
+#+HUGO_SECTION: post
+#+HUGO_DRAFT: false
+
+* introduction
+a funny mini game which you can play a day and a day, and you never want to remove it.
+* shotscreen
+  [[/images/game2/1.png]]
+  [[/images/game2/2.png]]
+  [[/images/game2/3.png]]
+  [[/images/game2/4.png]]
+  [[/images/game2/5.png]]
+* contact
+  #+BEGIN_SRC c
+  athor: semgilo
+  email: 9737935@qq.com
+  phone: +8618150133345
+  #+END_SRC

@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/post/game2/</loc>
+    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/game1/</loc>
+    <lastmod>2018-12-13T15:30:04+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/ios-full-path-issue/</loc>
     <lastmod>2018-12-12T12:15:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</loc>
-    <lastmod>2018-12-08T10:51:26+08:00</lastmod>
+    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
   </url>
   
   <url>
@@ -111,7 +121,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
-    <lastmod>2018-12-08T10:51:26+08:00</lastmod>
+    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,7 +168,13 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/game/</loc>
-    <lastmod>2018-11-16T09:56:59+08:00</lastmod>
+    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/game/</loc>
+    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -176,7 +192,13 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/product/</loc>
+    <lastmod>2018-12-13T15:30:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -200,7 +222,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-08T10:51:26+08:00</lastmod>
+    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -212,7 +234,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   

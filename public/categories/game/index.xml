@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/categories/game/</link>
+    <description>Recent content in Game on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Dec 2018 15:21:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lanhuzi.com/categories/game/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Expressionism os ninja</title>
+      <link>http://www.lanhuzi.com/post/game2/</link>
+      <pubDate>Thu, 13 Dec 2018 15:21:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/game2/</guid>
+      <description> introduction a funny mini game which you can play a day and a day, and you never want to remove it.
+shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</description>
+    </item>
+    
+  </channel>
+</rss>

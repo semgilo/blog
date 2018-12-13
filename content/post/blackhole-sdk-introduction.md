@@ -2,7 +2,7 @@
 title = "BlackHole 使用说明"
 author = ["semgilo"]
 date = 2018-12-07T23:27:00+08:00
-lastmod = 2018-12-08T10:51:26+08:00
+lastmod = 2018-12-13T15:01:27+08:00
 tags = ["Blackhole"]
 categories = ["教程"]
 draft = false
