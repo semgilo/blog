@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/post/game4/</loc>
+    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/game3/</loc>
+    <lastmod>2018-12-15T22:47:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/game2/</loc>
     <lastmod>2018-12-13T15:29:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/game1/</loc>
-    <lastmod>2018-12-13T15:30:04+08:00</lastmod>
+    <lastmod>2018-12-15T21:35:08+08:00</lastmod>
   </url>
   
   <url>
@@ -168,13 +178,13 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/game/</loc>
-    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/categories/game/</loc>
-    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,13 +202,13 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/categories/product/</loc>
-    <lastmod>2018-12-13T15:30:04+08:00</lastmod>
+    <lastmod>2018-12-15T21:35:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -234,7 +244,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
+    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   

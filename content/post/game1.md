@@ -2,7 +2,7 @@
 title = "百层更男人"
 author = ["semgilo"]
 date = 2018-12-13T14:36:00+08:00
-lastmod = 2018-12-13T15:30:04+08:00
+lastmod = 2018-12-15T21:35:08+08:00
 tags = ["game"]
 categories = ["product"]
 draft = false
@@ -22,6 +22,6 @@ draft = false
 
 ```c
 athor: semgilo
-email: 9737935@qq.com
+email: semgilo@gmail.com
 phone: +8618150133345
 ```

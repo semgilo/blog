@@ -14,7 +14,7 @@
 * 联系方式
   #+BEGIN_SRC c
   athor: semgilo
-  email: 9737935@qq.com
+  email: semgilo@gmail.com
   phone: +8618150133345
   #+END_SRC
  
