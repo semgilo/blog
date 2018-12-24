@@ -5,10 +5,19 @@
     <link>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 笔记 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Dec 2018 12:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Dec 2018 18:10:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>经典正则表达式语句</title>
+      <link>http://www.lanhuzi.com/post/classic-regular-expression-statement/</link>
+      <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/classic-regular-expression-statement/</guid>
+      <description> 会持续更新中 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39;</description>
+    </item>
     
     <item>
       <title>ios 获取全路径问题</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/post/classic-regular-expression-statement/</loc>
+    <lastmod>2018-12-25T06:46:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/game4/</loc>
     <lastmod>2018-12-15T22:54:04+08:00</lastmod>
   </url>
@@ -202,13 +207,19 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
+    <lastmod>2018-12-25T06:46:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/categories/product/</loc>
     <lastmod>2018-12-15T21:35:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/regex/</loc>
+    <lastmod>2018-12-25T06:46:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -238,13 +249,13 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <lastmod>2018-12-25T06:46:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
+    <lastmod>2018-12-25T06:46:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
