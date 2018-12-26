@@ -9,6 +9,10 @@
 
 * 会持续更新中
 
+#+BEGIN_SRC python
+VAR_TYPE = r'id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*'
+#+END_SRC
+
 ** 双引号里面的内容
 #+BEGIN_SRC python
 r'\"(?:[^"\\]|\\.)*\"'
@@ -19,3 +23,7 @@ r'\"(?:[^"\\]|\\.)*\"'
 r'/[*]([^*]|([*][^/]))*[*]/'
 #+END_SRC
 
+** 选取方法块
+#+BEGIN_SRC python
+r'[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?<rec>\{(?:[^{}]+|(?&rec))*\})' % VAR_TYPE
+#+END_SRC

@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>经典正则表达式语句 - 蓝胡子</title>
     
-<meta name="description" content=" 会持续更新中 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39;">
+<meta name="description" content=" 会持续更新中 VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]&#43;\b|\bUI[\w]&#43;\b|\bNS[\w]&#43;\b|[\w]&#43;[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39; 选取方法块 r&amp;#39;[ ]*[&#43;-][ ]*\((%s)\)[ ]*(\w&#43;)[ ]*(:.*)?[ ]*[\s]&#43;?(?&amp;lt;rec&amp;gt;\{(?:[^{}]&#43;|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE">
 
 <meta property="og:title" content="经典正则表达式语句 - 蓝胡子">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.lanhuzi.com/post/classic-regular-expression-statement/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content=" 会持续更新中 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39;">
+<meta property="og:description" content=" 会持续更新中 VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]&#43;\b|\bUI[\w]&#43;\b|\bNS[\w]&#43;\b|[\w]&#43;[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39; 选取方法块 r&amp;#39;[ ]*[&#43;-][ ]*\((%s)\)[ ]*(\w&#43;)[ ]*(:.*)?[ ]*[\s]&#43;?(?&amp;lt;rec&amp;gt;\{(?:[^{}]&#43;|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
 <meta name="twitter:url" content="http://www.lanhuzi.com/post/classic-regular-expression-statement/">
 <meta name="twitter:title" content="经典正则表达式语句 - 蓝胡子">
-<meta name="twitter:description" content=" 会持续更新中 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39;">
+<meta name="twitter:description" content=" 会持续更新中 VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]&#43;\b|\bUI[\w]&#43;\b|\bNS[\w]&#43;\b|[\w]&#43;[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39; 选取方法块 r&amp;#39;[ ]*[&#43;-][ ]*\((%s)\)[ ]*(\w&#43;)[ ]*(:.*)?[ ]*[\s]&#43;?(?&amp;lt;rec&amp;gt;\{(?:[^{}]&#43;|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -50,7 +50,7 @@
       "width": 800
     },
     "datePublished": "2018-12-24T18:10:00JST",
-    "dateModified": "2018-12-25T06:46:14JST",
+    "dateModified": "2018-12-26T23:52:44JST",
     "author": {
       "@type": "Person",
       "name": "蓝胡子"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": " 会持续更新中 双引号里面的内容 r&#39;\&#34;(?:[^&#34;\\]|\\.)*\&#34;&#39; 注释 (***) r&#39;/[*]([^*]|([*][^/]))*[*]/&#39;"
+    "description": " 会持续更新中 VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&#39; 双引号里面的内容 r&#39;\&#34;(?:[^&#34;\\]|\\.)*\&#34;&#39; 注释 (***) r&#39;/[*]([^*]|([*][^/]))*[*]/&#39; 选取方法块 r&#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&lt;rec&gt;\{(?:[^{}]+|(?&amp;rec))*\})&#39; % VAR_TYPE"
   }
 </script>
 
@@ -143,7 +143,7 @@ if (!doNotTrack) {
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-25T06:46:14JST">Dec 25, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-26T23:52:44JST">Dec 26, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
@@ -156,11 +156,13 @@ if (!doNotTrack) {
   <div class="article-body">
 
 <h2 id="会持续更新中">会持续更新中</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">VAR_TYPE</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&#39;</span></code></pre></div>
 <h3 id="双引号里面的内容">双引号里面的内容</h3>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="sa">r</span><span class="s1">&#39;\&#34;(?:[^&#34;</span><span class="se">\\</span><span class="s1">]|</span><span class="se">\\</span><span class="s1">.)*\&#34;&#39;</span></code></pre></div>
 <h3 id="注释">注释 (<em>*<strong><em>*</em></strong>*</em>)</h3>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="sa">r</span><span class="s1">&#39;/[*]([^*]|([*][^/]))*[*]/&#39;</span></code></pre></div></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="sa">r</span><span class="s1">&#39;/[*]([^*]|([*][^/]))*[*]/&#39;</span></code></pre></div>
+<h3 id="选取方法块">选取方法块</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="sa">r</span><span class="s1">&#39;[ ]*[+-][ ]*\((</span><span class="si">%s</span><span class="s1">)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&lt;rec&gt;\{(?:[^{}]+|(?&amp;rec))*\})&#39;</span> <span class="o">%</span> <span class="n">VAR_TYPE</span></code></pre></div></div>
 
   <footer class="article-footer">
     
