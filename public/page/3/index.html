@@ -83,6 +83,26 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:54JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/">android etc1 黑块问题</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 接android SDK
+问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
+function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end 查找为什么会出现黑块 结果 完美解决黑块问题</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:44JST">Nov 16, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -198,6 +218,8 @@ Mail:semgilo@gmail.com</div>
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/post/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
+      
       <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
       <a href="http://www.lanhuzi.com/post/game4/" class="list-group-item">LuckyChicken2</a>
@@ -216,8 +238,6 @@ Mail:semgilo@gmail.com</div>
       
       <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
       
-      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
-      
     </div>
   </section>
 
@@ -235,6 +255,8 @@ Mail:semgilo@gmail.com</div>
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
       <a href="http://www.lanhuzi.com/categories/product" class="list-group-item">product</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
       <a href="http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B" class="list-group-item">教程</a>
       

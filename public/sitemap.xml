@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/post/lucky-confuser/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/classic-regular-expression-statement/</loc>
     <lastmod>2018-12-26T23:52:44+08:00</lastmod>
   </url>
@@ -207,7 +212,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2018-12-26T23:52:44+08:00</lastmod>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,8 +247,26 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -255,7 +278,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2018-12-26T23:52:44+08:00</lastmod>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   

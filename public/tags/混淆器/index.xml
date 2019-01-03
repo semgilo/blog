@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>混淆器 on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</link>
+    <description>Recent content in 混淆器 on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Jan 2019 22:51:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>模拟人工的混淆器</title>
+      <link>http://www.lanhuzi.com/post/lucky-confuser/</link>
+      <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/lucky-confuser/</guid>
+      <description>个人使用混淆器背景 简单的垃圾代码生成器 https://github.com/semgilo/gen-code
+开源编译混淆工具：obfuscator https://github.com/obfuscator-llvm/obfuscator
+升级版本混淆工具：Hikari https://github.com/HikariObfuscator/Hikari
+专业加密软件 公司购买的 几维加密 顶象加密
+其它 有一个让我有点“震惊”的混淆工具，做得非常的简陋的界面，一个月需要3K，各种全局替换。希望你们没有被坑。 我只是稍微吐槽一下。
+特色介绍 目前支持C++和ObjC两个语言 效果截图 为了演示精准程度，特别找了一个比较垃圾的旧代码过来混淆。 即将支持功能 方法添加额外参数 资源混淆 垃圾方法 垃圾变量 垃圾类 提供混淆工程服务（收费） 稳定后可能会考虑开源 如果有需要工程混淆，可以联系博主 QQ微信同号：9737935</description>
+    </item>
+    
+  </channel>
+</rss>
