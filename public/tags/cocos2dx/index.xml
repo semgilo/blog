@@ -28,9 +28,12 @@
       <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
-      <description> 环境 Cocos2d-x: 3.17
+      <description>Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
+环境 Cocos2d-x: 3.17
 fmod官方文档
-过程 问题 </description>
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .</description>
     </item>
     
     <item>

@@ -30,7 +30,9 @@
       <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/post/classic-regular-expression-statement/</guid>
-      <description> 会持续更新中 VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*]([^*]|([*][^/]))*[*]/&amp;#39; 选取方法块 r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE</description>
+      <description> 推荐学习地方 http://www.zjmainstay.cn/
+会持续更新中 python 需要
+pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (***) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE</description>
     </item>
     
     <item>
@@ -115,9 +117,12 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
-      <description> 环境 Cocos2d-x: 3.17
+      <description>Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
+环境 Cocos2d-x: 3.17
 fmod官方文档
-过程 问题 </description>
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .</description>
     </item>
     
     <item>

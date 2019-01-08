@@ -7,7 +7,15 @@
 #+HUGO_SECTION: post
 #+HUGO_DRAFT: false
 
+* 推荐学习地方
+[[http://www.zjmainstay.cn/][http://www.zjmainstay.cn/]]
+
 * 会持续更新中
+
+python 需要
+#+BEGIN_SRC python
+pip install regex
+#+END_SRC
 
 #+BEGIN_SRC python
 VAR_TYPE = r'id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*'
@@ -20,10 +28,12 @@ r'\"(?:[^"\\]|\\.)*\"'
 
 ** 注释 (/*****/)
 #+BEGIN_SRC python
-r'/[*]([^*]|([*][^/]))*[*]/'
+r'/[*][\s\S]+?[*]/'
 #+END_SRC
 
 ** 选取方法块(objc)
 #+BEGIN_SRC python
 r'[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?<rec>\{(?:[^{}]+|(?&rec))*\})' % VAR_TYPE
 #+END_SRC
+
+

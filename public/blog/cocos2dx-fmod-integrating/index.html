@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Cosos2dx fmod 声音引擎集成 - 蓝胡子</title>
     
-<meta name="description" content=" 环境 Cocos2d-x: 3.17fmod官方文档过程 问题 ">
+<meta name="description" content="Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17fmod官方文档教程文件配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .">
 
 <meta property="og:title" content="Cosos2dx fmod 声音引擎集成 - 蓝胡子">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content=" 环境 Cocos2d-x: 3.17fmod官方文档过程 问题 ">
+<meta property="og:description" content="Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17fmod官方文档教程文件配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
 <meta name="twitter:url" content="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/">
 <meta name="twitter:title" content="Cosos2dx fmod 声音引擎集成 - 蓝胡子">
-<meta name="twitter:description" content=" 环境 Cocos2d-x: 3.17fmod官方文档过程 问题 ">
+<meta name="twitter:description" content="Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17fmod官方文档教程文件配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -50,7 +50,7 @@
       "width": 800
     },
     "datePublished": "2018-11-22T15:17:00JST",
-    "dateModified": "2018-11-22T15:31:01JST",
+    "dateModified": "2019-01-08T12:24:18JST",
     "author": {
       "@type": "Person",
       "name": "蓝胡子"
@@ -65,9 +65,12 @@
         "height": 60
       }
     },
-    "description": " 环境 Cocos2d-x: 3.17
+    "description": "Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
+环境 Cocos2d-x: 3.17
 fmod官方文档
-过程 问题 "
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34; // 2.添加导入 bool LuaStack::init(void) { ."
   }
 </script>
 
@@ -145,7 +148,7 @@ if (!doNotTrack) {
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-22T15:31:01JST">Nov 22, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-08T12:24:18JST">Jan 8, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
       
     </ul>
@@ -157,15 +160,217 @@ if (!doNotTrack) {
 
   <div class="article-body">
 
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+<ul>
+<li><a href="#环境">环境</a></li>
+<li><a href="#配置">配置</a>
+
+<ul>
+<li><a href="#文件">文件</a></li>
+<li><a href="#win32">win32</a></li>
+<li><a href="#ios">ios</a></li>
+<li><a href="#android">android</a></li>
+</ul></li>
+<li><a href="#lua中使用">lua中使用</a></li>
+<li><a href="#备注">备注</a>
+
+<ul>
+<li><a href="#在fmodaudioengine类中记得添加cc-dll-动态库导出标记">在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）</a></li>
+</ul></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
 <h2 id="环境">环境</h2>
 
 <p>Cocos2d-x: 3.17</p>
 
 <p><a href="https://fmod.com/resources/documentation-api?page=content/generated/common/introduction%5Fweb.html#/">fmod官方文档</a></p>
 
-<h2 id="过程">过程</h2>
+<p><a href="https://github.com/semgilo/cocos2d-x-fmod">教程文件</a></p>
 
-<h2 id="问题">问题</h2>
+<h2 id="配置">配置</h2>
+
+<h3 id="文件">文件</h3>
+
+<h4 id="拷贝fmod文件夹">拷贝fmod文件夹</h4>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">frameworks</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos2d</span><span class="o">-</span><span class="n">x</span><span class="err">⁩</span> <span class="err">▸</span> <span class="n">external</span>
+</code></pre></div>
+<h4 id="拷贝lua导出文件lua-fmod-auto-dot-hpp和lua-fmod-auto-dot-cpp">拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp</h4>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">frameworks</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos2d</span><span class="o">-</span><span class="n">x</span><span class="err">⁩</span> <span class="err">▸</span> <span class="n">cocos</span> <span class="err">▸</span> <span class="n">scripting</span> <span class="err">▸</span> <span class="n">lua</span><span class="o">-</span><span class="n">bindings</span> <span class="err">▸</span> <span class="k">auto</span>
+</code></pre></div>
+<h4 id="修改ccluastack-dot-cpp">修改CCLuaStack.cpp</h4>
+
+<p>文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual</p>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">// 1.添加引用
+</span><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="c1">// 2.添加导入
+</span><span class="c1"></span><span class="kt">bool</span> <span class="n">LuaStack</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">...</span>
+    <span class="n">register_all_cocos2dx_fmod</span><span class="p">(</span><span class="n">_state</span><span class="p">);</span>
+    <span class="p">...</span>
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="win32">win32</h3>
+
+<h4 id="添加代码到工程">添加代码到工程</h4>
+
+
+<figure>
+    
+        <img src="/images/fmod/win/add_engine.png" />
+    
+    
+</figure>
+
+
+<h4 id="配置libs">配置libs</h4>
+
+<p><img src="/images/fmod/win/add_lib_search_path.png" alt="" />
+<img src="/images/fmod/win/add_libs.png" alt="" /></p>
+
+<h3 id="ios">ios</h3>
+
+<h4 id="配置静态库">配置静态库</h4>
+
+
+<figure>
+    
+        <img src="/images/fmod/ios/add_lib.png" />
+    
+    
+</figure>
+
+
+<h4 id="配置搜索路径">配置搜索路径</h4>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="mf">1.</span><span class="n">cocos2d_libs</span><span class="p">.</span><span class="n">xcodeproj</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">build</span> <span class="n">setting</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">User</span> <span class="n">Header</span> <span class="n">Search</span> <span class="n">Paths</span>
+<span class="s">&#34;$(SRCROOT)/../external/fmod/include/ios&#34;</span>
+
+<span class="mf">2.</span><span class="n">cocos2d_libs</span><span class="p">.</span><span class="n">xcodeproj</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">build</span> <span class="n">setting</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">Library</span> <span class="n">Search</span> <span class="n">Paths</span>
+<span class="s">&#34;$(SRCROOT)/../external/fmod/prebuilt/ios&#34;</span>
+</code></pre></div>
+<h4 id="配置代码文件">配置代码文件</h4>
+
+<p><img src="/images/fmod/ios/add_files.png" alt="" />
+<img src="/images/fmod/ios/add_lua_files.png" alt="" /></p>
+
+<h3 id="android">android</h3>
+
+<h4 id="添加jar和so文件到工程">添加jar和so文件到工程</h4>
+
+
+<figure>
+    
+        <img src="/images/fmod/android/add_libs.png" />
+    
+    
+</figure>
+
+
+<h4 id="添加代码到appactivity-dot-java">添加代码到AppActivity.java</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">org.cocos2dx.lua</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.cocos2dx.lib.Cocos2dxActivity</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AppActivity</span> <span class="kd">extends</span> <span class="n">Cocos2dxActivity</span><span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+	<span class="kd">super</span><span class="o">.</span><span class="na">setEnableVirtualButton</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+	<span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+	<span class="c1">// Workaround in https://stackoverflow.com/questions/16283079/re-launch-of-activity-on-home-button-but-only-the-first-time/16447508
+</span><span class="c1"></span>	<span class="k">if</span> <span class="o">(!</span><span class="n">isTaskRoot</span><span class="o">())</span> <span class="o">{</span>
+	    <span class="c1">// Android launched another instance of the root activity into an existing task
+</span><span class="c1"></span>	    <span class="c1">//  so just quietly finish and go away, dropping the user back into the activity
+</span><span class="c1"></span>	    <span class="c1">//  at the top of the stack (ie: the last state of this task)
+</span><span class="c1"></span>	    <span class="c1">// Don&#39;t need to finish it again since it&#39;s finished in super.onCreate .
+</span><span class="c1"></span>	    <span class="k">return</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="c1">// DO OTHER INITIALIZATION BELOW
+</span><span class="c1"></span>	<span class="n">org</span><span class="o">.</span><span class="na">fmod</span><span class="o">.</span><span class="na">FMOD</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onDestroy</span><span class="o">()</span> <span class="o">{</span>
+	<span class="n">org</span><span class="o">.</span><span class="na">fmod</span><span class="o">.</span><span class="na">FMOD</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+	<span class="kd">super</span><span class="o">.</span><span class="na">onDestroy</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">static</span>
+    <span class="o">{</span>
+	<span class="n">System</span><span class="o">.</span><span class="na">loadLibrary</span><span class="o">(</span><span class="s">&#34;fmod&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+<h4 id="添加lua导出文件到android-dot-mk文件">添加lua导出文件到android.mk文件</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="err">⁨</span><span class="n">frameworks</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos2d</span><span class="o">-</span><span class="n">x</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">scripting</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">lua</span><span class="o">-</span><span class="n">bindings</span><span class="err">⁩</span> <span class="err">▸</span> <span class="n">android</span><span class="o">.</span><span class="na">mk</span>
+
+<span class="err">#</span><span class="n">fmod</span>
+<span class="n">LOCAL_SRC_FILES</span> <span class="o">+=</span> <span class="o">../</span><span class="n">auto</span><span class="o">/</span><span class="n">lua_fmod_auto</span><span class="o">.</span><span class="na">cpp</span> <span class="err">\</span></code></pre></div>
+<h4 id="添加fmod模块到cocos的android-dot-mk文件">添加fmod模块到cocos的android.mk文件</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">frameworks</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos2d</span><span class="o">-</span><span class="n">x</span><span class="err">⁩</span> <span class="err">▸</span> <span class="err">⁨</span><span class="n">cocos</span><span class="err">⁩</span> <span class="err">▸</span>  <span class="n">android</span><span class="o">.</span><span class="na">mk</span>
+<span class="n">1</span><span class="o">.</span>
+<span class="n">LOCAL_STATIC_LIBRARIES</span> <span class="o">+=</span> <span class="n">fmod_static</span>
+
+<span class="n">2</span><span class="o">.</span>
+<span class="nf">$</span><span class="o">(</span><span class="n">call</span> <span class="n">import</span><span class="o">-</span><span class="n">module</span><span class="o">,</span><span class="n">fmod</span><span class="o">/</span><span class="n">prebuilt</span><span class="o">/</span><span class="n">android</span><span class="o">)</span></code></pre></div>
+<h4 id="fmod模块的android-dot-mk文件的内容">fmod模块的android.mk文件的内容</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">LOCAL_PATH</span> <span class="o">:=</span> <span class="n">$</span><span class="o">(</span><span class="n">call</span> <span class="n">my</span><span class="o">-</span><span class="n">dir</span><span class="o">)</span>
+
+<span class="err">#</span>
+<span class="err">#</span> <span class="n">FMOD</span> <span class="n">Shared</span> <span class="n">Library</span>
+<span class="err">#</span>
+<span class="n">include</span> <span class="nf">$</span><span class="o">(</span><span class="n">CLEAR_VARS</span><span class="o">)</span>
+
+<span class="n">LOCAL_MODULE</span>            <span class="o">:=</span> <span class="n">fmod</span>
+<span class="n">LOCAL_SRC_FILES</span>         <span class="o">:=</span> <span class="n">$</span><span class="o">(</span><span class="n">TARGET_ARCH_ABI</span><span class="o">)/</span><span class="n">libfmodL</span><span class="o">.</span><span class="na">so</span>
+<span class="n">LOCAL_EXPORT_C_INCLUDES</span> <span class="o">:=</span> <span class="n">$</span><span class="o">(</span><span class="n">LOCAL_PATH</span><span class="o">)/../../</span><span class="n">include</span><span class="o">/</span><span class="n">android</span>
+
+<span class="n">include</span> <span class="nf">$</span><span class="o">(</span><span class="n">PREBUILT_SHARED_LIBRARY</span><span class="o">)</span>
+
+<span class="n">include</span> <span class="nf">$</span><span class="o">(</span><span class="n">CLEAR_VARS</span><span class="o">)</span>
+
+<span class="n">LOCAL_MODULE</span>            <span class="o">:=</span> <span class="n">fmod_static</span>
+<span class="n">LOCAL_SRC_FILES</span>         <span class="o">:=</span> <span class="o">../../</span><span class="n">FMODAudioEngine</span><span class="o">.</span><span class="na">cpp</span>
+
+<span class="n">LOCAL_C_INCLUDES</span> <span class="o">:=</span> <span class="n">$</span><span class="o">(</span><span class="n">LOCAL_PATH</span><span class="o">)</span> <span class="err">\</span>
+		    <span class="n">$</span><span class="o">(</span><span class="n">LOCAL_PATH</span><span class="o">)/../../..</span> <span class="err">\</span>
+		    <span class="n">$</span><span class="o">(</span><span class="n">LOCAL_PATH</span><span class="o">)/../../../../</span><span class="n">cocos</span>
+
+<span class="n">LOCAL_SHARED_LIBRARIES</span>  <span class="o">:=</span> <span class="n">fmod</span>
+
+<span class="n">include</span> <span class="nf">$</span><span class="o">(</span><span class="n">BUILD_STATIC_LIBRARY</span><span class="o">)</span></code></pre></div>
+<h2 id="lua中使用">lua中使用</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">engine</span> <span class="o">=</span> <span class="n">fmod.FMODAudioengine</span><span class="p">:</span><span class="n">getInstance</span><span class="p">()</span>
+
+<span class="c1">-- preload</span>
+<span class="n">engine</span><span class="p">:</span><span class="n">reload</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="c1">-- play</span>
+<span class="n">nSoundID</span> <span class="o">=</span> <span class="n">engine</span><span class="p">:</span><span class="n">playSound</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+<span class="c1">-- pause</span>
+<span class="n">engine</span><span class="p">:</span><span class="n">pauseSound</span><span class="p">(</span><span class="n">nSoundID</span><span class="p">)</span>
+
+<span class="c1">-- stop</span>
+<span class="n">engine</span><span class="p">:</span><span class="n">stopSound</span><span class="p">(</span><span class="n">nSoundID</span><span class="p">)</span>
+
+<span class="c1">-- resume</span>
+<span class="n">engine</span><span class="p">:</span><span class="n">resumeSound</span><span class="p">(</span><span class="n">nSoundID</span><span class="p">)</span>
+
+<span class="c1">-- release</span>
+<span class="n">engine</span><span class="p">:</span><span class="n">releaseSound</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code></pre></div>
+<h2 id="备注">备注</h2>
+
+<h3 id="在fmodaudioengine类中记得添加cc-dll-动态库导出标记">在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）</h3>
 </div>
 
   <footer class="article-footer">
