@@ -4,7 +4,7 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: cocos2dx 
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: blog
+#+HUGO_SECTION: post
 #+HUGO_DRAFT: false
 
 今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
