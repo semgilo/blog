@@ -87,6 +87,31 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-15T11:05:18JST">Nov 15, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/about-dir-local/">关于.dir-local文件</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="关于-dot-dir-local文件">关于.dir-local文件</h2>
+<div class="highlight"><pre class="chroma"><code class="language-nil" data-lang="nil">Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory&#39;s files in directory variables, and then define file local variables in a few files which need the general settings overridden.</code></pre></div>
+<p>大概说的意思是我们能在指定目录设置特别变量，文件局部变量会优先目录局部变量。</p>
+<div class="highlight"><pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">indent-tabs-mode</span> <span class="o">.</span> <span class="no">t</span><span class="p">)</span>         <span class="c1">;; 设置所有模式下的缩进</span>
+         <span class="p">(</span><span class="nv">fill-column</span> <span class="o">.</span> <span class="mi">80</span><span class="p">)))</span>
+ <span class="p">(</span><span class="nv">c-mode</span> <span class="o">.</span> <span class="p">((</span><span class="nv">c-file-style</span> <span class="o">.</span> <span class="s">&#34;BSD&#34;</span><span class="p">)</span>      <span class="c1">;; 指定c-mode下的file style</span>
+            <span class="p">(</span><span class="nv">subdirs</span> <span class="o">.</span> <span class="no">nil</span><span class="p">)))</span>
+ <span class="p">(</span><span class="s">&#34;src/imported&#34;</span><span class="o">.</span> <span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">change-log-default-name</span> <span class="o">.</span> <span class="s">&#34;ChangeLog.local&#34;</span><span class="p">))))))</span>  <span class="c1">;; 指定目录下的特殊设置</span></code></pre></div>
+<h2 id="如何重新应用dir-locals-当你选择过以后">如何重新应用dir-locals,当你选择过以后</h2></div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-29T16:08:42JST">Jan 29, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -313,30 +338,6 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:44:53JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/android-apk-download-cant-open/">android apk 下载无法识别</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="描述">描述</h2>
-
-<p>因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
-我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/android-apk-download-cant-open/" title="android apk 下载无法识别">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -367,6 +368,10 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/content/posts/about-custom-file/" class="list-group-item">关于custom.el文件</a>
+      
+      <a href="http://www.lanhuzi.com/post/about-dir-local/" class="list-group-item">关于.dir-local文件</a>
+      
       <a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
       
       <a href="http://www.lanhuzi.com/posts/android-studio-build-framework/" class="list-group-item">Android Studio Build Framework</a>
@@ -382,10 +387,6 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
       <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
       
       <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
-      
-      <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
-      
-      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
     </div>
   </section>
@@ -420,6 +421,8 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
+      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
+      
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
@@ -433,8 +436,6 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
       <a href="http://www.lanhuzi.com/tags/cosos2dx" class="list-group-item">cosos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
-      
-      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
       
     </div>
   </section>

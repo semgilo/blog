@@ -87,62 +87,16 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:44JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="0001-01-01T00:00:00JST">Jan 1, 0001</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/">cocos2dx 重新创建机制</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/about-custom-file/">关于custom.el文件</a></h2>
   </header>
 
   
-  <div class="summary"><h2 id="描述">描述</h2>
-
-<p>SDK在游戏里面切换activity的时候花屏</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/" title="cocos2dx 重新创建机制">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:47:18JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/lua-utf8-string-length/">如何在lua正确识别字符串长度</a></h2>
-  </header>
-
-  
-  <div class="summary">function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &#34;[%z\1-\127\194-\244][\128-\191]*&#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:47:07JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/lua-coroutine/">巧妙的使用coroutine分散计算量</a></h2>
-  </header>
-
-  
-  <div class="summary">背景 最近一直在优化android相关的内容
-问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡
-解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果
-多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。
-协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一
-for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二
-local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低
-注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来</div>
+  <div class="summary">Saving Customizations - GNU Emacs Manual 官方详细说明
+在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件.</div>
 
   
 </article>
@@ -178,6 +132,10 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/content/posts/about-custom-file/" class="list-group-item">关于custom.el文件</a>
+      
+      <a href="http://www.lanhuzi.com/post/about-dir-local/" class="list-group-item">关于.dir-local文件</a>
+      
       <a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
       
       <a href="http://www.lanhuzi.com/posts/android-studio-build-framework/" class="list-group-item">Android Studio Build Framework</a>
@@ -188,15 +146,11 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       
       <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
-      <a href="http://www.lanhuzi.com/post/game4/" class="list-group-item">LuckyChicken2</a>
-      
-      <a href="http://www.lanhuzi.com/post/game3/" class="list-group-item">快刀忍者</a>
-      
-      <a href="http://www.lanhuzi.com/post/game2/" class="list-group-item">Expressionism os ninja</a>
-      
-      <a href="http://www.lanhuzi.com/post/game1/" class="list-group-item">百层更男人</a>
-      
       <a href="http://www.lanhuzi.com/post/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
+      
+      <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
     </div>
   </section>
@@ -211,10 +165,6 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
-      
-      <a href="http://www.lanhuzi.com/categories/game" class="list-group-item">game</a>
-      
-      <a href="http://www.lanhuzi.com/categories/product" class="list-group-item">product</a>
       
       <a href="http://www.lanhuzi.com/categories/share" class="list-group-item">share</a>
       
@@ -235,7 +185,7 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
-      <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
+      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
       
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
