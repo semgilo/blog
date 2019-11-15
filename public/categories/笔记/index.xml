@@ -30,8 +30,7 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
-对应资源，如果资源格式被破坏后，就没办法取到fullpath.
-   &lt;/p&gt;</description>
+对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,8 +53,7 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
       <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接XXSDK的时候java 加载so的时候闪退
-   &lt;/p&gt;</description>
+&lt;p&gt;接XXSDK的时候java 加载so的时候闪退&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,8 +64,7 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
       <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
-&lt;/p&gt;</description>
+&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,8 +76,7 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
-我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因
-&lt;/p&gt;</description>
+我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -91,8 +87,7 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
       <guid>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
-&lt;/p&gt;</description>
+&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -150,8 +145,7 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;SDK在游戏里面切换activity的时候花屏
-&lt;/p&gt;</description>
+&lt;p&gt;SDK在游戏里面切换activity的时候花屏&lt;/p&gt;</description>
     </item>
     
     <item>

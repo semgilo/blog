@@ -5,125 +5,71 @@
     <link>http://www.lanhuzi.com/tags/</link>
     <description>Recent content in Tags on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 22:22:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Android</title>
-      <link>http://www.lanhuzi.com/tags/android/</link>
-      <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Audioengine</title>
-      <link>http://www.lanhuzi.com/tags/audioengine/</link>
-      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/audioengine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blackhole</title>
-      <link>http://www.lanhuzi.com/tags/blackhole/</link>
-      <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/blackhole/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cocos2dx</title>
+      <title>cocos2dx</title>
       <link>http://www.lanhuzi.com/tags/cocos2dx/</link>
-      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
+      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/tags/cocos2dx/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Etc1</title>
-      <link>http://www.lanhuzi.com/tags/etc1/</link>
-      <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
+      <title>creator</title>
+      <link>http://www.lanhuzi.com/tags/creator/</link>
+      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/etc1/</guid>
+      <guid>http://www.lanhuzi.com/tags/creator/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Eventdispatcher</title>
-      <link>http://www.lanhuzi.com/tags/eventdispatcher/</link>
-      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
+      <title>js</title>
+      <link>http://www.lanhuzi.com/tags/js/</link>
+      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/eventdispatcher/</guid>
+      <guid>http://www.lanhuzi.com/tags/js/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Fileutils</title>
-      <link>http://www.lanhuzi.com/tags/fileutils/</link>
-      <pubDate>Fri, 12 May 2017 15:36:00 +0800</pubDate>
+      <title>android</title>
+      <link>http://www.lanhuzi.com/tags/android/</link>
+      <pubDate>Fri, 24 May 2019 20:35:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/fileutils/</guid>
+      <guid>http://www.lanhuzi.com/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Fmod</title>
-      <link>http://www.lanhuzi.com/tags/fmod/</link>
-      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      <title>as</title>
+      <link>http://www.lanhuzi.com/tags/as/</link>
+      <pubDate>Fri, 24 May 2019 20:35:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/fmod/</guid>
+      <guid>http://www.lanhuzi.com/tags/as/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Game</title>
-      <link>http://www.lanhuzi.com/tags/game/</link>
-      <pubDate>Sat, 15 Dec 2018 22:47:00 +0800</pubDate>
+      <title>Cosos2dx</title>
+      <link>http://www.lanhuzi.com/tags/cosos2dx/</link>
+      <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/game/</guid>
+      <guid>http://www.lanhuzi.com/tags/cosos2dx/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ios</title>
-      <link>http://www.lanhuzi.com/tags/ios/</link>
-      <pubDate>Wed, 12 Dec 2018 12:05:00 +0800</pubDate>
+      <title>RenderTexture</title>
+      <link>http://www.lanhuzi.com/tags/rendertexture/</link>
+      <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/tags/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lua</title>
-      <link>http://www.lanhuzi.com/tags/lua/</link>
-      <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/lua/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regex</title>
-      <link>http://www.lanhuzi.com/tags/regex/</link>
-      <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/regex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Svn</title>
-      <link>http://www.lanhuzi.com/tags/svn/</link>
-      <pubDate>Fri, 16 Nov 2018 14:33:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/tags/svn/</guid>
+      <guid>http://www.lanhuzi.com/tags/rendertexture/</guid>
       <description></description>
     </item>
     
@@ -142,6 +88,105 @@
       <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regex</title>
+      <link>http://www.lanhuzi.com/tags/regex/</link>
+      <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/regex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios</title>
+      <link>http://www.lanhuzi.com/tags/ios/</link>
+      <pubDate>Wed, 12 Dec 2018 12:05:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blackhole</title>
+      <link>http://www.lanhuzi.com/tags/blackhole/</link>
+      <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/blackhole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audioengine</title>
+      <link>http://www.lanhuzi.com/tags/audioengine/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/audioengine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fmod</title>
+      <link>http://www.lanhuzi.com/tags/fmod/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/fmod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SVN</title>
+      <link>http://www.lanhuzi.com/tags/svn/</link>
+      <pubDate>Fri, 16 Nov 2018 14:33:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/svn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>http://www.lanhuzi.com/tags/game/</link>
+      <pubDate>Wed, 18 Apr 2018 19:43:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>etc1</title>
+      <link>http://www.lanhuzi.com/tags/etc1/</link>
+      <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/etc1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FileUtils</title>
+      <link>http://www.lanhuzi.com/tags/fileutils/</link>
+      <pubDate>Fri, 12 May 2017 15:36:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/fileutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EventDispatcher</title>
+      <link>http://www.lanhuzi.com/tags/eventdispatcher/</link>
+      <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/eventdispatcher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lua</title>
+      <link>http://www.lanhuzi.com/tags/lua/</link>
+      <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/lua/</guid>
       <description></description>
     </item>
     

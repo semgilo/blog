@@ -1,54 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Game on 蓝胡子</title>
+    <title>game on 蓝胡子</title>
     <link>http://www.lanhuzi.com/tags/game/</link>
-    <description>Recent content in Game on 蓝胡子</description>
+    <description>Recent content in game on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 15 Dec 2018 22:47:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Apr 2018 19:43:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>LuckyChicken2</title>
-      <link>http://www.lanhuzi.com/post/game4/</link>
-      <pubDate>Sat, 15 Dec 2018 22:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game4/</guid>
-      <description> game introduction A small chicken fly to a high building,and now it want to go down,it go down by step and step, but building is too high to get floor,can you help it,done it please. You will get a lot of fun and surprise, you can do it on your boring time.
-game shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>快刀忍者</title>
-      <link>http://www.lanhuzi.com/post/game3/</link>
-      <pubDate>Sat, 15 Dec 2018 21:48:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game3/</guid>
-      <description> 游戏介绍 一款强度适中，不伤肝的休闲益智小游戏，简单而不简单，打击感十足，画面精美，持久耐看，中小年值得拥有。发扬小忍者在保卫森林的精神。陪伴您度过快乐的每个时刻。
-游戏截图 联系方式 athor: semgilo email: semgilo@gmail.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>Expressionism os ninja</title>
-      <link>http://www.lanhuzi.com/post/game2/</link>
-      <pubDate>Thu, 13 Dec 2018 15:21:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game2/</guid>
-      <description> introduction a funny mini game which you can play a day and a day, and you never want to remove it.
-shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>百层更男人</title>
-      <link>http://www.lanhuzi.com/post/game1/</link>
-      <pubDate>Thu, 13 Dec 2018 14:36:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game1/</guid>
-      <description> 游戏介绍 经过精心几个月的设计，画风简朴，持久耐玩，卸载算我输。
-游戏截图 联系方式 athor: semgilo email: semgilo@gmail.com phone: +8618150133345</description>
-    </item>
     
     <item>
       <title>游戏里面的技能该如何定义？</title>
@@ -91,8 +51,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
 &lt;p&gt;英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。&lt;/p&gt;
 
 &lt;p&gt;火球和灼烧效果是属于这个技能的吗？
-有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
-&lt;/p&gt;</description>
+有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。&lt;/p&gt;</description>
     </item>
     
   </channel>

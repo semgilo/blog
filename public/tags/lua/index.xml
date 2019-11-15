@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lua on 蓝胡子</title>
+    <title>lua on 蓝胡子</title>
     <link>http://www.lanhuzi.com/tags/lua/</link>
-    <description>Recent content in Lua on 蓝胡子</description>
+    <description>Recent content in lua on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 28 Apr 2017 15:06:00 +0800</lastBuildDate>
     

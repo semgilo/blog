@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/index.xml">
 
@@ -83,6 +83,25 @@ if (!doNotTrack) {
     
 
     <ul class="p-articles">
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-29T16:08:42JST">Jan 29, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-rendertexture1/">Cocos2dx优化之RenderTexture</a></h2>
+  </header>
+
+  
+  <div class="summary"> 为什么要用 游戏有一个指标是GPU渲染，做过优化的人应该对Opengl的drawcall应该都很熟悉，cocos2dx里面还有个batchnode就是批渲染 这个可以减少drawcall，但这个其实就是减少渲染流程，要达到一定的量级才会体现效果，平时那个几十个是基本影响不大。我自己测试 都是上千个数量级会效果。而且有很大的局限性，因为它要求材质必需是同一个，而这个材质包括Texture,BlendFunc,shader，只要 一个是不同的便不行，这种痛你们自己感受才明白。接下来我提的另外一种更有效的方案，那就是RenderTexture,它要做的主要事情就 是把一些碎小的元素绘制出来，然后把它们截取出来，利用的是Opengl FBO技术，如果把它们融合在一张再去绘制，那就可以大大降低 GPU的绘制时间，可以降低耗电量。 但这个是有代价的，你必要多一张绘制后大小的尺寸的占用内存，还有读取FBO消耗的性能。
+什么时候用 了解完RenderTexture优点缺点后，我们要分析什么时候用它，一般我们会用它在列表上面，特别是一些不常变动的列表上面，如果列表项 越复杂，那它的效果就越明显，比如一个列表上是十个drawcall,那显示20，那就是200个drawcall， 这个量级应该是比较难接受的， 如果使用RenderTexture那就是20个，10倍的差距了解一下。
+怎么用 </div>
+
+  
+</article>
+</li>
       
       <li><article class="li">
   <header>
@@ -175,8 +194,7 @@ fmod官方文档
 <p>英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。</p>
 
 <p>火球和灼烧效果是属于这个技能的吗？
-有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
-</p></div>
+有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。</p></div>
 
   
   <footer>
@@ -202,17 +220,15 @@ fmod官方文档
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
+      
+      <a href="http://www.lanhuzi.com/posts/android-studio-build-framework/" class="list-group-item">Android Studio Build Framework</a>
+      
+      <a href="http://www.lanhuzi.com/post/cocos2dx-rendertexture1/" class="list-group-item">Cocos2dx优化之RenderTexture</a>
+      
       <a href="http://www.lanhuzi.com/post/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
       
       <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
-      
-      <a href="http://www.lanhuzi.com/post/game4/" class="list-group-item">LuckyChicken2</a>
-      
-      <a href="http://www.lanhuzi.com/post/game3/" class="list-group-item">快刀忍者</a>
-      
-      <a href="http://www.lanhuzi.com/post/game2/" class="list-group-item">Expressionism os ninja</a>
-      
-      <a href="http://www.lanhuzi.com/post/game1/" class="list-group-item">百层更男人</a>
       
       <a href="http://www.lanhuzi.com/post/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
       
@@ -221,6 +237,8 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
       <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
+      
+      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
     </div>
   </section>
@@ -234,11 +252,9 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
       
-      <a href="http://www.lanhuzi.com/categories/game" class="list-group-item">game</a>
-      
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
-      <a href="http://www.lanhuzi.com/categories/product" class="list-group-item">product</a>
+      <a href="http://www.lanhuzi.com/categories/share" class="list-group-item">share</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
@@ -257,21 +273,21 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
-      <a href="http://www.lanhuzi.com/tags/game" class="list-group-item">game</a>
-      
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/as" class="list-group-item">as</a>
       
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
       <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
       
+      <a href="http://www.lanhuzi.com/tags/cosos2dx" class="list-group-item">cosos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
+      
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
-      
-      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
-      
-      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
       
     </div>
   </section>

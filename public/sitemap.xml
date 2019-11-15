@@ -3,8 +3,143 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.lanhuzi.com/blog/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/creator/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/js/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/share/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/blog/build-cocos-js-framework/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/</loc>
+    <lastmod>2019-11-14T22:30:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/posts/android-studio-build-framework/</loc>
+    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/posts/</loc>
+    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/android/</loc>
+    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/as/</loc>
+    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/cosos2dx/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/post/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/rendertexture/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/lucky-confuser/</loc>
     <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/regex/</loc>
+    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,23 +148,9 @@
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/game4/</loc>
-    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/game3/</loc>
-    <lastmod>2018-12-15T22:47:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/game2/</loc>
-    <lastmod>2018-12-13T15:29:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/game1/</loc>
-    <lastmod>2018-12-15T21:35:08+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/tags/ios/</loc>
+    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -43,6 +164,18 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
+    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</loc>
     <lastmod>2018-12-03T22:12:51+08:00</lastmod>
   </url>
@@ -53,6 +186,24 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/audioengine/</loc>
+    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/fmod/</loc>
+    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/svn/</loc>
+    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/svn-common-operation/</loc>
     <lastmod>2018-11-23T09:59:31+08:00</lastmod>
   </url>
@@ -60,6 +211,12 @@
   <url>
     <loc>http://www.lanhuzi.com/post/android-so-path-lock/</loc>
     <lastmod>2018-11-16T09:45:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/game/</loc>
+    <lastmod>2018-11-16T09:56:59+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -98,6 +255,18 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/etc1/</loc>
+    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/fileutils/</loc>
+    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</loc>
     <lastmod>2018-11-16T09:46:24+08:00</lastmod>
   </url>
@@ -108,8 +277,20 @@
   </url>
   
   <url>
+    <loc>http://www.lanhuzi.com/tags/eventdispatcher/</loc>
+    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</loc>
     <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/lua/</loc>
+    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -125,161 +306,6 @@
   <url>
     <loc>http://www.lanhuzi.com/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/android/</loc>
-    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/audioengine/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
-    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/blog/</loc>
-    <lastmod>2018-12-03T22:12:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2018-12-03T22:12:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/etc1/</loc>
-    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/eventdispatcher/</loc>
-    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/fileutils/</loc>
-    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/fmod/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/game/</loc>
-    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/game/</loc>
-    <lastmod>2018-12-15T22:54:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/ios/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/lua/</loc>
-    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/product/</loc>
-    <lastmod>2018-12-15T21:35:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/regex/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/svn/</loc>
-    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/</loc>
-    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

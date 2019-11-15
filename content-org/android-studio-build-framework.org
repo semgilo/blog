@@ -1,0 +1,16 @@
+#+HUGO_BASE_DIR: ../
+#+TITLE: Android Studio Build Framework
+#+DATE: <2019-05-24 Friday 20:35:07>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx as android
+#+HUGO_CATEGORIES: 
+#+HUGO_SECTION: posts
+#+HUGO_DRAFT: false
+
+* 框架主要实现功能
+** 动态加载渠道想着配置
+** 动态引用ICON
+** 动态使用启动图
+** 批量打包功能
+** 动态包名生成
+

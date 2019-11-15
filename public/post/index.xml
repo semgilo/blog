@@ -5,10 +5,21 @@
     <link>http://www.lanhuzi.com/post/</link>
     <description>Recent content in Posts on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Jan 2019 22:51:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jan 2019 18:21:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cocos2dx优化之RenderTexture</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</link>
+      <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</guid>
+      <description> 为什么要用 游戏有一个指标是GPU渲染，做过优化的人应该对Opengl的drawcall应该都很熟悉，cocos2dx里面还有个batchnode就是批渲染 这个可以减少drawcall，但这个其实就是减少渲染流程，要达到一定的量级才会体现效果，平时那个几十个是基本影响不大。我自己测试 都是上千个数量级会效果。而且有很大的局限性，因为它要求材质必需是同一个，而这个材质包括Texture,BlendFunc,shader，只要 一个是不同的便不行，这种痛你们自己感受才明白。接下来我提的另外一种更有效的方案，那就是RenderTexture,它要做的主要事情就 是把一些碎小的元素绘制出来，然后把它们截取出来，利用的是Opengl FBO技术，如果把它们融合在一张再去绘制，那就可以大大降低 GPU的绘制时间，可以降低耗电量。 但这个是有代价的，你必要多一张绘制后大小的尺寸的占用内存，还有读取FBO消耗的性能。
+什么时候用 了解完RenderTexture优点缺点后，我们要分析什么时候用它，一般我们会用它在列表上面，特别是一些不常变动的列表上面，如果列表项 越复杂，那它的效果就越明显，比如一个列表上是十个drawcall,那显示20，那就是200个drawcall， 这个量级应该是比较难接受的， 如果使用RenderTexture那就是20个，10倍的差距了解一下。
+怎么用 </description>
+    </item>
     
     <item>
       <title>模拟人工的混淆器</title>
@@ -36,46 +47,6 @@ pip install regexVAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w
     </item>
     
     <item>
-      <title>LuckyChicken2</title>
-      <link>http://www.lanhuzi.com/post/game4/</link>
-      <pubDate>Sat, 15 Dec 2018 22:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game4/</guid>
-      <description> game introduction A small chicken fly to a high building,and now it want to go down,it go down by step and step, but building is too high to get floor,can you help it,done it please. You will get a lot of fun and surprise, you can do it on your boring time.
-game shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>快刀忍者</title>
-      <link>http://www.lanhuzi.com/post/game3/</link>
-      <pubDate>Sat, 15 Dec 2018 21:48:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game3/</guid>
-      <description> 游戏介绍 一款强度适中，不伤肝的休闲益智小游戏，简单而不简单，打击感十足，画面精美，持久耐看，中小年值得拥有。发扬小忍者在保卫森林的精神。陪伴您度过快乐的每个时刻。
-游戏截图 联系方式 athor: semgilo email: semgilo@gmail.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>Expressionism os ninja</title>
-      <link>http://www.lanhuzi.com/post/game2/</link>
-      <pubDate>Thu, 13 Dec 2018 15:21:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game2/</guid>
-      <description> introduction a funny mini game which you can play a day and a day, and you never want to remove it.
-shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
-      <title>百层更男人</title>
-      <link>http://www.lanhuzi.com/post/game1/</link>
-      <pubDate>Thu, 13 Dec 2018 14:36:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/game1/</guid>
-      <description> 游戏介绍 经过精心几个月的设计，画风简朴，持久耐玩，卸载算我输。
-游戏截图 联系方式 athor: semgilo email: semgilo@gmail.com phone: +8618150133345</description>
-    </item>
-    
-    <item>
       <title>ios 获取全路径问题</title>
       <link>http://www.lanhuzi.com/post/ios-full-path-issue/</link>
       <pubDate>Wed, 12 Dec 2018 12:05:00 +0800</pubDate>
@@ -84,8 +55,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
-对应资源，如果资源格式被破坏后，就没办法取到fullpath.
-   &lt;/p&gt;</description>
+对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,7 +66,8 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <guid>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</guid>
       <description>Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
 下载 点击下载
-配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 添加Url Types    Figure 1: 示意图   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].</description>
+配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt; Other Link Flag -ObjC 添加Url Types   Figure 1: 示意图
+  代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].</description>
     </item>
     
     <item>
@@ -118,8 +89,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接XXSDK的时候java 加载so的时候闪退
-   &lt;/p&gt;</description>
+&lt;p&gt;接XXSDK的时候java 加载so的时候闪退&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,8 +133,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
 &lt;p&gt;英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。&lt;/p&gt;
 
 &lt;p&gt;火球和灼烧效果是属于这个技能的吗？
-有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。
-&lt;/p&gt;</description>
+有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -175,8 +144,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
-&lt;/p&gt;</description>
+&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -188,8 +156,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
-我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因
-&lt;/p&gt;</description>
+我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -200,8 +167,7 @@ shotscreen contact athor: semgilo email: 9737935@qq.com phone: +8618150133345</d
       <guid>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
-&lt;/p&gt;</description>
+&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -272,8 +238,7 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;SDK在游戏里面切换activity的时候花屏
-&lt;/p&gt;</description>
+&lt;p&gt;SDK在游戏里面切换activity的时候花屏&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ios on 蓝胡子</title>
+    <title>ios on 蓝胡子</title>
     <link>http://www.lanhuzi.com/tags/ios/</link>
-    <description>Recent content in Ios on 蓝胡子</description>
+    <description>Recent content in ios on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 12 Dec 2018 12:05:00 +0800</lastBuildDate>
     
@@ -19,8 +19,7 @@
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
-对应资源，如果资源格式被破坏后，就没办法取到fullpath.
-   &lt;/p&gt;</description>
+对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
     </item>
     
     <item>

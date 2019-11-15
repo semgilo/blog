@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on 蓝胡子</title>
+    <title>android on 蓝胡子</title>
     <link>http://www.lanhuzi.com/tags/android/</link>
-    <description>Recent content in Android on 蓝胡子</description>
+    <description>Recent content in android on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2019 20:35:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android Studio Build Framework</title>
+      <link>http://www.lanhuzi.com/posts/android-studio-build-framework/</link>
+      <pubDate>Fri, 24 May 2019 20:35:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/posts/android-studio-build-framework/</guid>
+      <description> 框架主要实现功能 动态加载渠道想着配置 动态引用ICON 动态使用启动图 批量打包功能 动态包名生成 </description>
+    </item>
     
     <item>
       <title>android so path 被锁定</title>
@@ -18,8 +27,7 @@
       <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接XXSDK的时候java 加载so的时候闪退
-   &lt;/p&gt;</description>
+&lt;p&gt;接XXSDK的时候java 加载so的时候闪退&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +38,7 @@
       <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃
-&lt;/p&gt;</description>
+&lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,8 +50,7 @@
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
-我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因
-&lt;/p&gt;</description>
+我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,8 +61,7 @@
       <guid>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
-&lt;/p&gt;</description>
+&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,8 +112,7 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
-&lt;p&gt;SDK在游戏里面切换activity的时候花屏
-&lt;/p&gt;</description>
+&lt;p&gt;SDK在游戏里面切换activity的时候花屏&lt;/p&gt;</description>
     </item>
     
   </channel>
