@@ -83,130 +83,6 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-08T12:24:18JST">Jan 8, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/">Cosos2dx fmod 声音引擎集成</a></h2>
-  </header>
-
-  
-  <div class="summary">Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
-环境 Cocos2d-x: 3.17
-fmod官方文档
-教程文件
-配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
-// 1.添加引用 #include &#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34; // 2.添加导入 bool LuaStack::init(void) { .</div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" title="Cosos2dx fmod 声音引擎集成">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-23T09:59:31JST">Nov 23, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/svn-common-operation/">mac下svn常用操作命令</a></h2>
-  </header>
-
-  
-  <div class="summary"> svn配置BeyondCompare对比工具 Beyond Compare 官方说明
-常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
-进阶操作 删除所有不存在的文件和文件夹 svn st|awk &#39;{if($1==&#34;!&#34;){print $2}}&#39;|xargs svn rm 增加？号文件 svn st|awk &#39;{if($1==&#34;?&#34;){print $2}}&#39;|xargs svn add 提交m文件文件 svn st|awk &#39;{if($1==&#34;m&#34;){print $2}}&#39;|xargs svn ci -m &#34;comments&#34;</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:43JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/android-so-path-lock/">android so path 被锁定</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="描述">描述</h2>
-
-<p>接XXSDK的时候java 加载so的时候闪退</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/android-so-path-lock/" title="android so path 被锁定">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:56:59JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/what-is-skill/">游戏里面的技能该如何定义？</a></h2>
-  </header>
-
-  
-  <div class="summary"><div class="ox-hugo-toc toc">
-<div></div>
-
-<div class="heading">Table of Contents</div>
-
-<ul>
-<li><a href="#导火索">导火索</a></li>
-<li><a href="#什么是技能">什么是技能？</a>
-
-<ul>
-<li><a href="#百度的技能">百度的技能</a></li>
-<li><a href="#我的翻译">我的翻译</a></li>
-</ul></li>
-<li><a href="#为什么要去深究这个问题">为什么要去深究这个问题？</a>
-
-<ul>
-<li><a href="#不同的拆解会有不同的结构">不同的拆解会有不同的结构</a></li>
-<li><a href="#合理的定义会让结构更清晰">合理的定义会让结构更清晰</a></li>
-</ul></li>
-<li><a href="#我的做法">我的做法</a>
-
-<ul>
-<li><a href="#通道">通道</a></li>
-<li><a href="#全部指向通道">全部指向通道</a></li>
-</ul></li>
-</ul>
-
-<p></div>
-<!--endtoc--></p>
-
-<h2 id="导火索">导火索</h2>
-
-<p>英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。</p>
-
-<p>火球和灼烧效果是属于这个技能的吗？
-有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/what-is-skill/" title="游戏里面的技能该如何定义？">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:09JST">Nov 16, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -335,6 +211,89 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:24JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/">cocos2dx FileUtils 缓存机制</a></h2>
+  </header>
+
+  
+  <div class="summary">背景 处理热lua更新功能
+问题 有些文件没有没有获取最新下载的资源，依然是使用旧的
+思路及解决 首先查看搜索路径 dump(cc.FileUtils:getInstance():getSearchPaths()) -- 结果是没有问题的 路径缓存起来 std::string FileUtils::fullPathForFilename(const std::string &amp;filename) const { if (filename.empty()) { return &#34;&#34;; } if (isAbsolutePath(filename)) { return filename; } // Already Cached ?  auto cacheIter = _fullPathCache.find(filename); if(cacheIter != _fullPathCache.end()) { return cacheIter-&gt;second; } // Get the new file name.  const std::string newFilename( getNewFilename(filename) ); std::string fullpath; for (const auto&amp; searchIt : _searchPathArray) { for (const auto&amp; resolutionIt : _searchResolutionsOrderArray) { fullpath = this-&gt;getPathForFilename(newFilename, resolutionIt, searchIt); if (!</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/" title="cocos2dx FileUtils 缓存机制">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:54JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/">android etc1 黑块问题</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 接android SDK
+问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
+function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end 查找为什么会出现黑块 结果 完美解决黑块问题</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:44JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/">cocos2dx 重新创建机制</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="描述">描述</h2>
+
+<p>SDK在游戏里面切换activity的时候花屏</p></div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/" title="cocos2dx 重新创建机制">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:47:18JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/lua-utf8-string-length/">如何在lua正确识别字符串长度</a></h2>
+  </header>
+
+  
+  <div class="summary">function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &#34;[%z\1-\127\194-\244][\128-\191]*&#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end</div>
+
+  
+</article>
+</li>
+      
     </ul>
 
     
@@ -365,13 +324,9 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     </div>
     <div class="list-group">
       
-      <a href="http://www.lanhuzi.com/content/posts/about-custom-file/" class="list-group-item">关于custom.el文件</a>
-      
       <a href="http://www.lanhuzi.com/post/about-dir-local/" class="list-group-item">关于.dir-local文件</a>
       
-      <a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
-      
-      <a href="http://www.lanhuzi.com/posts/android-studio-build-framework/" class="list-group-item">Android Studio Build Framework</a>
+      <a href="http://www.lanhuzi.com/post/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
       
       <a href="http://www.lanhuzi.com/post/cocos2dx-rendertexture1/" class="list-group-item">Cocos2dx优化之RenderTexture</a>
       
@@ -383,7 +338,11 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
       
-      <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+      <a href="http://www.lanhuzi.com/post/what-is-skill/" class="list-group-item">游戏里面的技能该如何定义？</a>
       
     </div>
   </section>
@@ -418,21 +377,21 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
-      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
-      
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
-      
-      <a href="http://www.lanhuzi.com/tags/as" class="list-group-item">as</a>
-      
-      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
       <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
       
       <a href="http://www.lanhuzi.com/tags/cosos2dx" class="list-group-item">cosos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
+      
+      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
     </div>
   </section>
@@ -452,7 +411,7 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
         <p><span class="h-logo">&copy; 蓝胡子</span></p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
         </aside>
       </div>
     </footer>

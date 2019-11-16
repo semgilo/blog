@@ -87,80 +87,17 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-15T10:46:22JST">Nov 15, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-15T15:38:57JST">Nov 15, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/">构建一个cocos js的框架</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/build-cocos-js-framework/">构建一个cocos js的框架</a></h2>
   </header>
 
   
   <div class="summary">什么是框架？ 框架这个东西
 如何构建？ *</div>
 
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-05-27T10:53:21JST">May 27, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/posts/">posts</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/posts/android-studio-build-framework/">Android Studio Build Framework</a></h2>
-  </header>
-
-  
-  <div class="summary"> 框架主要实现功能 动态加载渠道想着配置 动态引用ICON 动态使用启动图 批量打包功能 动态包名生成 </div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-03T22:12:51JST">Dec 3, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/">cocos2dx 2.2.6 file not found</a></h2>
-  </header>
-
-  
-  <div class="summary">今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
-&lt;string&gt; file not found &lt;cctype&gt; file not found  各种google.
-解决方法：
-1.cocos2dx.xcodeproj ==&gt; BuildSetting ==&gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c++ Standard Library 修改为 Compiler Default </div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-08T12:24:18JST">Jan 8, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/blog/">blog</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/">Cosos2dx fmod 声音引擎集成</a></h2>
-  </header>
-
-  
-  <div class="summary">Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
-环境 Cocos2d-x: 3.17
-fmod官方文档
-教程文件
-配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
-// 1.添加引用 #include &#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34; // 2.添加导入 bool LuaStack::init(void) { .</div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/" title="Cosos2dx fmod 声音引擎集成">Read More…</a>
-  </footer>
   
 </article>
 </li>
@@ -301,23 +238,52 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:54JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/">android etc1 黑块问题</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 接android SDK
+问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
+function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end 查找为什么会出现黑块 结果 完美解决黑块问题</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:44JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/">cocos2dx 重新创建机制</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="描述">描述</h2>
+
+<p>SDK在游戏里面切换activity的时候花屏</p></div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/" title="cocos2dx 重新创建机制">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
     </ul>
 
     
-<nav>
-  <ul class="pager">
-
-    
-    <li class="disabled"><a href="#">Previous</a></li>
-    
-
-    
-    <li><a href="/tags/cocos2dx/page/2/">Next</a></li>
-    
-
-  </ul>
-</nav>
-
 
 
   </div>
@@ -331,13 +297,9 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     </div>
     <div class="list-group">
       
-      <a href="http://www.lanhuzi.com/content/posts/about-custom-file/" class="list-group-item">关于custom.el文件</a>
-      
       <a href="http://www.lanhuzi.com/post/about-dir-local/" class="list-group-item">关于.dir-local文件</a>
       
-      <a href="http://www.lanhuzi.com/blog/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
-      
-      <a href="http://www.lanhuzi.com/posts/android-studio-build-framework/" class="list-group-item">Android Studio Build Framework</a>
+      <a href="http://www.lanhuzi.com/post/build-cocos-js-framework/" class="list-group-item">构建一个cocos js的框架</a>
       
       <a href="http://www.lanhuzi.com/post/cocos2dx-rendertexture1/" class="list-group-item">Cocos2dx优化之RenderTexture</a>
       
@@ -349,7 +311,11 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
       
-      <a href="http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
+      
+      <a href="http://www.lanhuzi.com/post/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+      <a href="http://www.lanhuzi.com/post/what-is-skill/" class="list-group-item">游戏里面的技能该如何定义？</a>
       
     </div>
   </section>
@@ -384,21 +350,21 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
-      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
-      
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
-      
-      <a href="http://www.lanhuzi.com/tags/as" class="list-group-item">as</a>
-      
-      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
       <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
       
       <a href="http://www.lanhuzi.com/tags/cosos2dx" class="list-group-item">cosos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
+      
+      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
     </div>
   </section>
@@ -418,7 +384,7 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
         <p><span class="h-logo">&copy; 蓝胡子</span></p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
         </aside>
       </div>
     </footer>

@@ -5,20 +5,10 @@
     <link>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</link>
     <description>Recent content in 分享 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Nov 2019 15:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jan 2019 18:21:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>关于custom.el文件</title>
-      <link>http://www.lanhuzi.com/content/posts/about-custom-file/</link>
-      <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/content/posts/about-custom-file/</guid>
-      <description>Saving Customizations - GNU Emacs Manual 官方详细说明
-在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件.</description>
-    </item>
     
     <item>
       <title>Cocos2dx优化之RenderTexture</title>
@@ -29,20 +19,6 @@
       <description> 为什么要用 游戏有一个指标是GPU渲染，做过优化的人应该对Opengl的drawcall应该都很熟悉，cocos2dx里面还有个batchnode就是批渲染 这个可以减少drawcall，但这个其实就是减少渲染流程，要达到一定的量级才会体现效果，平时那个几十个是基本影响不大。我自己测试 都是上千个数量级会效果。而且有很大的局限性，因为它要求材质必需是同一个，而这个材质包括Texture,BlendFunc,shader，只要 一个是不同的便不行，这种痛你们自己感受才明白。接下来我提的另外一种更有效的方案，那就是RenderTexture,它要做的主要事情就 是把一些碎小的元素绘制出来，然后把它们截取出来，利用的是Opengl FBO技术，如果把它们融合在一张再去绘制，那就可以大大降低 GPU的绘制时间，可以降低耗电量。 但这个是有代价的，你必要多一张绘制后大小的尺寸的占用内存，还有读取FBO消耗的性能。
 什么时候用 了解完RenderTexture优点缺点后，我们要分析什么时候用它，一般我们会用它在列表上面，特别是一些不常变动的列表上面，如果列表项 越复杂，那它的效果就越明显，比如一个列表上是十个drawcall,那显示20，那就是200个drawcall， 这个量级应该是比较难接受的， 如果使用RenderTexture那就是20个，10倍的差距了解一下。
 怎么用 </description>
-    </item>
-    
-    <item>
-      <title>Cosos2dx fmod 声音引擎集成</title>
-      <link>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</link>
-      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
-      <description>Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
-环境 Cocos2d-x: 3.17
-fmod官方文档
-教程文件
-配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
-// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .</description>
     </item>
     
     <item>

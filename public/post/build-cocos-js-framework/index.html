@@ -6,16 +6,70 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.55.6" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/tags/fileutils/index.xml">
 
-<link rel="canonical" href="http://www.lanhuzi.com/tags/fileutils/">
+
+<link rel="canonical" href="http://www.lanhuzi.com/post/build-cocos-js-framework/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>FileUtils - 蓝胡子</title>
+    <title>构建一个cocos js的框架 - 蓝胡子</title>
     
+<meta name="description" content="什么是框架？ 框架这个东西如何构建？ *">
+
+<meta property="og:title" content="构建一个cocos js的框架 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/post/build-cocos-js-framework/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="什么是框架？ 框架这个东西如何构建？ *">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/post/build-cocos-js-framework/">
+<meta name="twitter:title" content="构建一个cocos js的框架 - 蓝胡子">
+<meta name="twitter:description" content="什么是框架？ 框架这个东西如何构建？ *">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "构建一个cocos js的框架 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2019-11-14T22:22:00JST",
+    "dateModified": "2019-11-15T15:38:57JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "什么是框架？ 框架这个东西\n如何构建？ *"
+  }
+</script>
+
+
     <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
     
 
@@ -76,43 +130,104 @@ if (!doNotTrack) {
 <div class="row">
   <div class="col-md-8">
 
-    
-    <header class="page-header">
-      <h1>FileUtils</h1>
-    </header>
-    
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://www.lanhuzi.com/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">构建一个cocos js的框架</li>
+      </ol>
+    </nav>
 
-    <ul class="p-articles">
-      
-      <li><article class="li">
+    <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:24JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-15T15:38:57JST">Nov 15, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/">cocos2dx FileUtils 缓存机制</a></h2>
+
+    <h1 class="title">构建一个cocos js的框架</h1>
   </header>
 
   
-  <div class="summary">背景 处理热lua更新功能
-问题 有些文件没有没有获取最新下载的资源，依然是使用旧的
-思路及解决 首先查看搜索路径 dump(cc.FileUtils:getInstance():getSearchPaths()) -- 结果是没有问题的 路径缓存起来 std::string FileUtils::fullPathForFilename(const std::string &amp;filename) const { if (filename.empty()) { return &#34;&#34;; } if (isAbsolutePath(filename)) { return filename; } // Already Cached ?  auto cacheIter = _fullPathCache.find(filename); if(cacheIter != _fullPathCache.end()) { return cacheIter-&gt;second; } // Get the new file name.  const std::string newFilename( getNewFilename(filename) ); std::string fullpath; for (const auto&amp; searchIt : _searchPathArray) { for (const auto&amp; resolutionIt : _searchResolutionsOrderArray) { fullpath = this-&gt;getPathForFilename(newFilename, resolutionIt, searchIt); if (!</div>
 
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/" title="cocos2dx FileUtils 缓存机制">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-    </ul>
+  <div class="article-body">
 
+<h2 id="什么是框架">什么是框架？</h2>
+
+<p>框架这个东西</p>
+
+<h2 id="如何构建">如何构建？</h2>
+
+<p>*</p>
+</div>
+
+  <footer class="article-footer">
     
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/share/">share</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/creator/">creator</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/js/">js</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
 
 
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
+
   <div class="col-md-4">
     
 <aside class="l-sidebar">

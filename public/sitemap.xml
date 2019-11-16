@@ -4,47 +4,24 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/content/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/emacs/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/content/posts/about-custom-file/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2019-11-15T15:16:49+08:00</lastmod>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/</loc>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/emacs/</loc>
     <lastmod>2019-11-15T11:05:18+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -57,7 +34,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/share/</loc>
-    <lastmod>2019-11-15T11:05:18+08:00</lastmod>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,55 +44,32 @@
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/blog/</loc>
-    <lastmod>2019-11-15T10:46:22+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/</loc>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2019-11-15T10:46:22+08:00</lastmod>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/creator/</loc>
-    <lastmod>2019-11-15T10:46:22+08:00</lastmod>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/js/</loc>
-    <lastmod>2019-11-15T10:46:22+08:00</lastmod>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/blog/build-cocos-js-framework/</loc>
-    <lastmod>2019-11-15T10:46:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/posts/android-studio-build-framework/</loc>
-    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/posts/</loc>
-    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/android/</loc>
-    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/as/</loc>
-    <lastmod>2019-05-27T10:53:21+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://www.lanhuzi.com/post/build-cocos-js-framework/</loc>
+    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
   </url>
   
   <url>
@@ -131,6 +85,12 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/rendertexture/</loc>
+    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2019-01-29T16:08:42+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -204,28 +164,6 @@
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</loc>
-    <lastmod>2018-12-03T22:12:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/audioengine/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/fmod/</loc>
-    <lastmod>2019-01-08T12:24:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.lanhuzi.com/tags/svn/</loc>
     <lastmod>2018-11-23T09:59:31+08:00</lastmod>
     <priority>0</priority>
@@ -234,6 +172,12 @@
   <url>
     <loc>http://www.lanhuzi.com/post/svn-common-operation/</loc>
     <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/android/</loc>
+    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -334,10 +278,6 @@
   <url>
     <loc>http://www.lanhuzi.com/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/about-custom-file/</loc>
   </url>
   
 </urlset>

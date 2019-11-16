@@ -12,47 +12,12 @@
     
     <item>
       <title>构建一个cocos js的框架</title>
-      <link>http://www.lanhuzi.com/blog/build-cocos-js-framework/</link>
+      <link>http://www.lanhuzi.com/post/build-cocos-js-framework/</link>
       <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/blog/build-cocos-js-framework/</guid>
+      <guid>http://www.lanhuzi.com/post/build-cocos-js-framework/</guid>
       <description>什么是框架？ 框架这个东西
 如何构建？ *</description>
-    </item>
-    
-    <item>
-      <title>Android Studio Build Framework</title>
-      <link>http://www.lanhuzi.com/posts/android-studio-build-framework/</link>
-      <pubDate>Fri, 24 May 2019 20:35:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/posts/android-studio-build-framework/</guid>
-      <description> 框架主要实现功能 动态加载渠道想着配置 动态引用ICON 动态使用启动图 批量打包功能 动态包名生成 </description>
-    </item>
-    
-    <item>
-      <title>cocos2dx 2.2.6 file not found</title>
-      <link>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</link>
-      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/cocos2dx-file-not-found-2.2.6/</guid>
-      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
-&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found  各种google.
-解决方法：
-1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO 3.c++ Standard Library 修改为 Compiler Default </description>
-    </item>
-    
-    <item>
-      <title>Cosos2dx fmod 声音引擎集成</title>
-      <link>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</link>
-      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/cocos2dx-fmod-integrating/</guid>
-      <description>Table of Contents  环境 配置  文件 win32 ios android  lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    
-环境 Cocos2d-x: 3.17
-fmod官方文档
-教程文件
-配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external  拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto  修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
-// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { .</description>
     </item>
     
     <item>

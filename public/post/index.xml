@@ -28,6 +28,16 @@
     </item>
     
     <item>
+      <title>构建一个cocos js的框架</title>
+      <link>http://www.lanhuzi.com/post/build-cocos-js-framework/</link>
+      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/build-cocos-js-framework/</guid>
+      <description>什么是框架？ 框架这个东西
+如何构建？ *</description>
+    </item>
+    
+    <item>
       <title>Cocos2dx优化之RenderTexture</title>
       <link>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</link>
       <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
@@ -281,16 +291,6 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
 for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二
 local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &amp;gt; 16 then coroutine.yield() end end 结果 结局还是挺满意的，到少在运算上的压力已经降到非常低
 注意事项 一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来</description>
-    </item>
-    
-    <item>
-      <title>关于custom.el文件</title>
-      <link>http://www.lanhuzi.com/post/about-custom-file/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/about-custom-file/</guid>
-      <description>Saving Customizations - GNU Emacs Manual 官方详细说明
-在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件.</description>
     </item>
     
   </channel>
