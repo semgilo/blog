@@ -44,6 +44,7 @@ bool LuaStack::init(void)
 ** win32
 *** 添加代码到工程
 [[/images/fmod/win/add_engine.png]]
+
 *** 配置libs
 [[/images/fmod/win/add_lib_search_path.png]]
 [[/images/fmod/win/add_libs.png]]
