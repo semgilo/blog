@@ -83,6 +83,46 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-21T17:23:54JST">Nov 21, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/share/">share</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/share/python-cmdline-framework/">python 命令行工具的框架</a></h2>
+  </header>
+
+  
+  <div class="summary"><div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+<ul>
+<li><a href="#框架的结构">框架的结构</a>
+
+<ul>
+<li><a href="#1-dot-常用的工具-utils">1.常用的工具 &ndash; utils</a></li>
+<li><a href="#2-dot-命令行的操作解析-operation-manager">2.命令行的操作解析 &ndash; operation manager</a></li>
+<li><a href="#3-dot-功能插件模块-plugin-manager">3.功能插件模块 &ndash; plugin manager</a></li>
+</ul></li>
+<li><a href="#github-代码开源">github 代码开源</a></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
+<p>在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。那么正常我们怎么开始写一个命令行工具呢？</p></div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/share/python-cmdline-framework/" title="python 命令行工具的框架">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-20T14:41:27JST">Nov 20, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/commaries/">commaries</a></li>
       
@@ -285,30 +325,6 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-13T15:01:27JST">Dec 13, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/">BlackHole 使用说明</a></h2>
-  </header>
-
-  
-  <div class="summary">Table of Contents  下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types  代码使用  初始化 启动判断 生命周期处理  测试需求  7天前 45天前 45天后    
-下载 点击下载
-配置工程 添加framework WebKit.framework 网络使用权限 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt; &lt;plist version=&#34;1.0&#34;&gt; &lt;dict&gt; &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt; &lt;true/&gt; &lt;/dict&gt; &lt;/plist&gt; Other Link Flag -ObjC 添加Url Types   Figure 1: 示意图
-  代码使用 初始化 [[BlackHole sharedInstance] onStart:@&#34;20190121230000&#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].</div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" title="BlackHole 使用说明">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -339,6 +355,8 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/share/python-cmdline-framework/" class="list-group-item">python 命令行工具的框架</a>
+      
       <a href="http://www.lanhuzi.com/commaries/about-freetype-label/" class="list-group-item">关于freetype</a>
       
       <a href="http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
@@ -356,8 +374,6 @@ pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b
       <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
       <a href="http://www.lanhuzi.com/post/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
-      
-      <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
       
     </div>
   </section>

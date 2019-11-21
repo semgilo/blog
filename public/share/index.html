@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.55.6" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/categories/note/index.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/share/index.xml">
 
-<link rel="canonical" href="http://www.lanhuzi.com/categories/note/">
+<link rel="canonical" href="http://www.lanhuzi.com/share/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Note - 蓝胡子</title>
+    <title>Shares - 蓝胡子</title>
     
     <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
     
@@ -78,7 +78,7 @@ if (!doNotTrack) {
 
     
     <header class="page-header">
-      <h1>Note</h1>
+      <h1>Shares</h1>
     </header>
     
 
@@ -87,21 +87,38 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-19T21:00:18JST">Nov 19, 2019</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/notes/">notes</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-11-21T17:23:54JST">Nov 21, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/share/">share</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/">在IOS13.2里面播放视频后调用glReadPixels问题</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/share/python-cmdline-framework/">python 命令行工具的框架</a></h2>
   </header>
 
   
-  <div class="summary"><h2 id="问题详情">问题详情</h2>
+  <div class="summary"><div class="ox-hugo-toc toc">
+<div></div>
 
-<p>最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。</p></div>
+<div class="heading">Table of Contents</div>
+
+<ul>
+<li><a href="#框架的结构">框架的结构</a>
+
+<ul>
+<li><a href="#1-dot-常用的工具-utils">1.常用的工具 &ndash; utils</a></li>
+<li><a href="#2-dot-命令行的操作解析-operation-manager">2.命令行的操作解析 &ndash; operation manager</a></li>
+<li><a href="#3-dot-功能插件模块-plugin-manager">3.功能插件模块 &ndash; plugin manager</a></li>
+</ul></li>
+<li><a href="#github-代码开源">github 代码开源</a></li>
+</ul>
+
+<p></div>
+<!--endtoc--></p>
+
+<p>在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。那么正常我们怎么开始写一个命令行工具呢？</p></div>
 
   
   <footer>
-    <a href="http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/" title="在IOS13.2里面播放视频后调用glReadPixels问题">Read More…</a>
+    <a href="http://www.lanhuzi.com/share/python-cmdline-framework/" title="python 命令行工具的框架">Read More…</a>
   </footer>
   
 </article>

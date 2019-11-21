@@ -5,10 +5,38 @@
     <link>http://www.lanhuzi.com/</link>
     <description>Recent content on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Nov 2019 12:27:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2019 16:22:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python 命令行工具的框架</title>
+      <link>http://www.lanhuzi.com/share/python-cmdline-framework/</link>
+      <pubDate>Thu, 21 Nov 2019 16:22:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/share/python-cmdline-framework/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#框架的结构&#34;&gt;框架的结构&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-dot-常用的工具-utils&#34;&gt;1.常用的工具 &amp;ndash; utils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-dot-命令行的操作解析-operation-manager&#34;&gt;2.命令行的操作解析 &amp;ndash; operation manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-dot-功能插件模块-plugin-manager&#34;&gt;3.功能插件模块 &amp;ndash; plugin manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#github-代码开源&#34;&gt;github 代码开源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;!--endtoc--&gt;&lt;/p&gt;
+
+&lt;p&gt;在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。那么正常我们怎么开始写一个命令行工具呢？&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>关于freetype</title>
