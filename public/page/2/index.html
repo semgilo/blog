@@ -83,6 +83,48 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-23T09:59:31JST">Nov 23, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/svn-common-operation/">mac下svn常用操作命令</a></h2>
+  </header>
+
+  
+  <div class="summary"> svn配置BeyondCompare对比工具 Beyond Compare 官方说明
+常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
+进阶操作 删除所有不存在的文件和文件夹 svn st|awk &#39;{if($1==&#34;!&#34;){print $2}}&#39;|xargs svn rm 增加？号文件 svn st|awk &#39;{if($1==&#34;?&#34;){print $2}}&#39;|xargs svn add 提交m文件文件 svn st|awk &#39;{if($1==&#34;m&#34;){print $2}}&#39;|xargs svn ci -m &#34;comments&#34;</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:43JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/android-so-path-lock/">android so path 被锁定</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="描述">描述</h2>
+
+<p>接XXSDK的时候java 加载so的时候闪退</p></div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/post/android-so-path-lock/" title="android so path 被锁定">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:56:59JST">Nov 16, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -290,49 +332,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:45:54JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-black-block/">android etc1 黑块问题</a></h2>
-  </header>
-
-  
-  <div class="summary">环境 接android SDK
-问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
-解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
-function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end 查找为什么会出现黑块 结果 完美解决黑块问题</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:44JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/">cocos2dx 重新创建机制</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="描述">描述</h2>
-
-<p>SDK在游戏里面切换activity的时候花屏</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/post/cocos2dx-recreate-event/" title="cocos2dx 重新创建机制">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -363,7 +362,11 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/commaries/about-freetype-label/" class="list-group-item">关于freetype</a>
+      
       <a href="http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/post/about-custom-file/" class="list-group-item">关于custom.el文件</a>
       
       <a href="http://www.lanhuzi.com/post/about-dir-local/" class="list-group-item">关于.dir-local文件</a>
       
@@ -378,10 +381,6 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <a href="http://www.lanhuzi.com/post/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
       
       <a href="http://www.lanhuzi.com/post/blackhole-sdk-introduction/" class="list-group-item">BlackHole 使用说明</a>
-      
-      <a href="http://www.lanhuzi.com/post/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
-      
-      <a href="http://www.lanhuzi.com/post/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
       
     </div>
   </section>
@@ -398,6 +397,8 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
       <a href="http://www.lanhuzi.com/categories/share" class="list-group-item">share</a>
+      
+      <a href="http://www.lanhuzi.com/categories/commary" class="list-group-item">commary</a>
       
       <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
@@ -418,6 +419,8 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
+      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
+      
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
@@ -427,8 +430,6 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
       <a href="http://www.lanhuzi.com/tags/cosos2dx" class="list-group-item">cosos2dx</a>
       
       <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
-      
-      <a href="http://www.lanhuzi.com/tags/emacs" class="list-group-item">emacs</a>
       
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
       

@@ -5,10 +5,20 @@
     <link>http://www.lanhuzi.com/post/</link>
     <description>Recent content in Posts on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Nov 2019 09:51:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 15:10:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于custom.el文件</title>
+      <link>http://www.lanhuzi.com/post/about-custom-file/</link>
+      <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/about-custom-file/</guid>
+      <description>Saving Customizations - GNU Emacs Manual 官方详细说明
+在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件. </description>
+    </item>
     
     <item>
       <title>关于.dir-local文件</title>

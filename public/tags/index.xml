@@ -5,7 +5,7 @@
     <link>http://www.lanhuzi.com/tags/</link>
     <description>Recent content in Tags on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Nov 2019 17:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 12:27:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,16 +13,25 @@
     <item>
       <title>cocos2dx</title>
       <link>http://www.lanhuzi.com/tags/cocos2dx/</link>
-      <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
+      <pubDate>Wed, 20 Nov 2019 12:27:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/tags/cocos2dx/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>freetype</title>
+      <link>http://www.lanhuzi.com/tags/freetype/</link>
+      <pubDate>Wed, 20 Nov 2019 12:27:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/freetype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>emacs</title>
       <link>http://www.lanhuzi.com/tags/emacs/</link>
-      <pubDate>Fri, 15 Nov 2019 09:51:00 +0800</pubDate>
+      <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/tags/emacs/</guid>
       <description></description>

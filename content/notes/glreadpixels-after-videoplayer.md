@@ -2,7 +2,7 @@
 title = "在IOS13.2里面播放视频后调用glReadPixels问题"
 author = ["semgilo"]
 date = 2019-11-19T17:10:00+08:00
-lastmod = 2019-11-19T17:44:08+08:00
+lastmod = 2019-11-19T21:00:18+08:00
 tags = ["cocos2dx"]
 categories = ["Note"]
 draft = false
@@ -18,4 +18,4 @@ draft = false
 
 [glReadPixels crash after VideoPlayer:stop ios 13 · Issue #20270 · cocos2d/cocos2d-x](https://github.com/cocos2d/cocos2d-x/issues/20270)
 经过一翻折腾后，只需要把XCode的启动设置修改一下即可
-![](/images/glreadpixels-after-videoplayer1.jpg)
+![](/images/glreadpixels-after-videoplayer/file.png)
