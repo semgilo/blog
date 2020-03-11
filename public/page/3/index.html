@@ -83,6 +83,27 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:12JST">Nov 16, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-etc1-crash/">cocos2dx etc 闪退问题</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 稳定性测试期
+问题 部分机型和部分模拟器会因为ETC1资源导致闪退
+07-13 21:59:43.727 E/szipinf (21935): Error reading asset data 07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1 思路及解决 问题分析 经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律， 然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩 的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
+解决方案 我尝试在整张图片周围画一个距形的红框，目的让资源四周都有像素，果然闪退解决
+结果 做图工具升级，完美解决</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:24JST">Nov 16, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -240,6 +261,8 @@ Mail:semgilo@gmail.com</div>
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/learning/learn-llvm-setup/" class="list-group-item">LLVM学习之一搭建</a>
+      
       <a href="http://www.lanhuzi.com/share/python-cmdline-framework/" class="list-group-item">python 命令行工具的框架</a>
       
       <a href="http://www.lanhuzi.com/commaries/about-freetype-label/" class="list-group-item">关于freetype</a>
@@ -257,8 +280,6 @@ Mail:semgilo@gmail.com</div>
       <a href="http://www.lanhuzi.com/post/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
       
       <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
-      
-      <a href="http://www.lanhuzi.com/post/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
       
     </div>
   </section>
@@ -279,6 +300,8 @@ Mail:semgilo@gmail.com</div>
       <a href="http://www.lanhuzi.com/categories/commary" class="list-group-item">commary</a>
       
       <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0" class="list-group-item">学习</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
@@ -331,7 +354,7 @@ Mail:semgilo@gmail.com</div>
         <p><span class="h-logo">&copy; 蓝胡子</span></p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+          <p>备案号：<a href="http://beian.miit.gov.cn">闽ICP备15021519号-1</a>.</p>
         </aside>
       </div>
     </footer>

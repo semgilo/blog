@@ -4,18 +4,47 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/share/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/learning/learn-llvm-setup/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/learning/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/llvm/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/</loc>
+    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/share/</loc>
     <lastmod>2019-11-21T17:23:54+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -33,13 +62,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/share/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,7 +74,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2019-11-20T14:41:27+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -91,7 +114,7 @@
   
   <url>
     <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2019-11-20T12:10:19+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,19 +148,19 @@
   
   <url>
     <loc>http://www.lanhuzi.com/tags/creator/</loc>
-    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/js/</loc>
-    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/build-cocos-js-framework/</loc>
-    <lastmod>2019-11-15T15:38:57+08:00</lastmod>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
   </url>
   
   <url>
