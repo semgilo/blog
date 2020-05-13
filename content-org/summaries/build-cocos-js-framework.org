@@ -5,7 +5,7 @@
 #+HUGO_TAGS: cocos2dx creator js
 #+HUGO_CATEGORIES: share
 #+HUGO_SECTION: post
-#+HUGO_DRAFT: false
+#+HUGO_DRAFT: true
 
 早在几年前有个面试官问我，一个游戏框架应该包括哪些内容，那时候还是处理“只可意会不可言传”随便回答了一些片面内容，
 随着大型项目不断的增多，大部分的框架内容都是我负责搭建的，从搭建->完善->验证->(修补->再验证)*n->总结后才会有

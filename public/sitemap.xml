@@ -96,35 +96,6 @@
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/commaries/</loc>
-    <lastmod>2019-11-20T14:41:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/commary/</loc>
-    <lastmod>2019-11-20T14:41:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/freetype/</loc>
-    <lastmod>2019-11-20T14:41:27+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/commaries/about-freetype-label/</loc>
-    <lastmod>2019-11-20T14:41:27+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.lanhuzi.com/categories/note/</loc>
     <lastmod>2019-11-19T21:00:18+08:00</lastmod>
     <priority>0</priority>
@@ -133,6 +104,12 @@
   <url>
     <loc>http://www.lanhuzi.com/notes/</loc>
     <lastmod>2019-11-19T21:00:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
+    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   

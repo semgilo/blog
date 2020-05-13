@@ -5,7 +5,7 @@
 #+HUGO_TAGS: cocos2dx freetype
 #+HUGO_CATEGORIES: commary
 #+HUGO_SECTION: commaries
-#+HUGO_DRAFT: false
+#+HUGO_DRAFT: true:
 #+OPTIONS: toc:2
 
 * 大概了解Freetype
