@@ -83,6 +83,25 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-01-05T18:08:04JST">Jan 5, 2019</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/">经典正则表达式语句</a></h2>
+  </header>
+
+  
+  <div class="summary"> 推荐学习地方 http://www.zjmainstay.cn/
+会持续更新中 python 需要
+pip install regexVAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&#39; 双引号里面的内容 r&#39;\&#34;(?:[^&#34;\\]|\\.)*\&#34;&#39; 注释 (***) r&#39;/[*][\s\S]+?[*]/&#39; 选取方法块(objc) r&#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&lt;rec&gt;\{(?:[^{}]+|(?&amp;rec))*\})&#39; % VAR_TYPE</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-12-12T12:15:05JST">Dec 12, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
       
@@ -313,29 +332,6 @@ if (!doNotTrack) {
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-11-16T09:46:02JST">Nov 16, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/post/cocos2dx-android-threads/">cocos2dx android ui and gl threads</a></h2>
-  </header>
-
-  
-  <div class="summary">环境 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互
-问题 java 跟 lua 交互有概率性的会出现闪退
-思路及解决 思路 这种概率性的闪退，一般都是线程不安全导致的，于是我就去找，看到cocos2dx 里面有很多用到
-mActivity:runOnUiThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 然后我就认为这个是cocos2dx的主线程，然后就拼命的用它去调用lua,结果就是闪退不断， 这个时候我觉得是不对的，如果这个是主线程是不可能有这个问题，于是我再去找，发现一个方法长得跟它很像的
-mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) 这时候我才清楚，原来这个GL线程才是我们游戏线程，UI线程是UI框架的，如果调用高级UI或者SDK就需要用UI线程。
-解决方案 cocos2dx的东西使用 GL线程 android高线UI使用 UI线程
-结果 不闪退</div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -366,6 +362,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/post/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      
       <a href="http://www.lanhuzi.com/learning/learn-llvm-setup/" class="list-group-item">LLVM学习之一搭建</a>
       
       <a href="http://www.lanhuzi.com/share/python-cmdline-framework/" class="list-group-item">python 命令行工具的框架</a>
@@ -384,8 +382,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/post/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
       
-      <a href="http://www.lanhuzi.com/post/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
-      
     </div>
   </section>
 
@@ -402,13 +398,13 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/categories/share" class="list-group-item">share</a>
       
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      
       <a href="http://www.lanhuzi.com/categories/commary" class="list-group-item">commary</a>
       
       <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0" class="list-group-item">学习</a>
-      
-      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
       <a href="http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B" class="list-group-item">教程</a>
       
@@ -429,6 +425,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
+      <a href="http://www.lanhuzi.com/tags/llvm" class="list-group-item">llvm</a>
+      
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
       <a href="http://www.lanhuzi.com/tags/blackhole" class="list-group-item">blackhole</a>
@@ -438,8 +436,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/tags/creator" class="list-group-item">creator</a>
       
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
-      
-      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
     </div>
   </section>

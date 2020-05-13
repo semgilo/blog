@@ -5,17 +5,35 @@
     <link>http://www.lanhuzi.com/tags/</link>
     <description>Recent content in Tags on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 Nov 2019 10:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 06:41:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.lanhuzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>llvm</title>
+      <title>LLVM</title>
       <link>http://www.lanhuzi.com/tags/llvm/</link>
-      <pubDate>Tue, 26 Nov 2019 10:05:00 +0800</pubDate>
+      <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/tags/llvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obfuscate</title>
+      <link>http://www.lanhuzi.com/tags/obfuscate/</link>
+      <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/obfuscate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obfuscator</title>
+      <link>http://www.lanhuzi.com/tags/obfuscator/</link>
+      <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/tags/obfuscator/</guid>
       <description></description>
     </item>
     
