@@ -1,33 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ios on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/tags/ios/</link>
+    <link>http://localhost:1313/tags/ios/</link>
     <description>Recent content in ios on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Dec 2018 12:05:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://www.lanhuzi.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 12 Dec 2018 12:05:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ios 获取全路径问题</title>
-      <link>http://www.lanhuzi.com/post/ios-full-path-issue/</link>
+      <link>http://localhost:1313/post/ios-full-path-issue/</link>
       <pubDate>Wed, 12 Dec 2018 12:05:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/ios-full-path-issue/</guid>
+      <guid>http://localhost:1313/post/ios-full-path-issue/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
 对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>iap 产品生效时间</title>
-      <link>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</link>
+      <link>http://localhost:1313/post/iap-productid-take-effect-time/</link>
       <pubDate>Thu, 20 Jul 2017 19:13:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</guid>
+      <guid>http://localhost:1313/post/iap-productid-take-effect-time/</guid>
       <description>换了一个开发者帐号发布应该，结果内购一直提示“无效产品ID”，实际上是需要24小时后才会生效的。 官方文档 https://developer.apple.com/library/content/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_</description>
     </item>
     

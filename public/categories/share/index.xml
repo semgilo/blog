@@ -1,71 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>share on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/categories/share/</link>
+    <link>http://localhost:1313/categories/share/</link>
     <description>Recent content in share on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 Nov 2019 16:22:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://www.lanhuzi.com/categories/share/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 21 Nov 2019 16:22:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/share/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python 命令行工具的框架</title>
-      <link>http://www.lanhuzi.com/share/python-cmdline-framework/</link>
+      <link>http://localhost:1313/share/python-cmdline-framework/</link>
       <pubDate>Thu, 21 Nov 2019 16:22:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/share/python-cmdline-framework/</guid>
-      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
-&lt;div&gt;&lt;/div&gt;
-
-&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
-
+      <guid>http://localhost:1313/share/python-cmdline-framework/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#框架的结构&#34;&gt;框架的结构&lt;/a&gt;
-
+&lt;li&gt;&lt;a href=&#34;#%E6%A1%86%E6%9E%B6%E7%9A%84%E7%BB%93%E6%9E%84&#34;&gt;框架的结构&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-dot-常用的工具-utils&#34;&gt;1.常用的工具 &amp;ndash; utils&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-dot-命令行的操作解析-operation-manager&#34;&gt;2.命令行的操作解析 &amp;ndash; operation manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-dot-功能插件模块-plugin-manager&#34;&gt;3.功能插件模块 &amp;ndash; plugin manager&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#github-代码开源&#34;&gt;github 代码开源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#1-dot-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7-utils&#34;&gt;1.常用的工具 &amp;ndash; utils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-dot-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E6%93%8D%E4%BD%9C%E8%A7%A3%E6%9E%90-operation-manager&#34;&gt;2.命令行的操作解析 &amp;ndash; operation manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-dot-%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97-plugin-manager&#34;&gt;3.功能插件模块 &amp;ndash; plugin manager&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;/div&gt;
-&lt;!--endtoc--&gt;&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#github-%E4%BB%A3%E7%A0%81%E5%BC%80%E6%BA%90&#34;&gt;github 代码开源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。那么正常我们怎么开始写一个命令行工具呢？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于.dir-local文件</title>
-      <link>http://www.lanhuzi.com/post/about-dir-local/</link>
+      <link>http://localhost:1313/post/about-dir-local/</link>
       <pubDate>Fri, 15 Nov 2019 09:51:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/about-dir-local/</guid>
+      <guid>http://localhost:1313/post/about-dir-local/</guid>
       <description>&lt;h2 id=&#34;关于-dot-dir-local文件&#34;&gt;关于.dir-local文件&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory&amp;#39;s files in directory variables, and then define file local variables in a few files which need the general settings overridden.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;大概说的意思是我们能在指定目录设置特别变量，文件局部变量会优先目录局部变量。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory&#39;s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;大概说的意思是我们能在指定目录设置特别变量，文件局部变量会优先目录局部变量。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;indent-tabs-mode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;;; 设置所有模式下的缩进&lt;/span&gt;
          &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;fill-column&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;c-mode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;c-file-style&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;BSD&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;      &lt;span class=&#34;c1&#34;&gt;;; 指定c-mode下的file style&lt;/span&gt;
             &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;subdirs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
- &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;src/imported&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;change-log-default-name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ChangeLog.local&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))))&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;;; 指定目录下的特殊设置&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;如何重新应用dir-locals-当你选择过以后&#34;&gt;如何重新应用dir-locals,当你选择过以后&lt;/h2&gt;</description>
-    </item>
-    
-    <item>
-      <title>构建一个cocos js的框架</title>
-      <link>http://www.lanhuzi.com/post/build-cocos-js-framework/</link>
-      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/build-cocos-js-framework/</guid>
-      <description>早在几年前有个面试官问我，一个游戏框架应该包括哪些内容，那时候还是处理“只可意会不可言传”随便回答了一些片面内容，随着大型项目不断的增多，大部分的框架内容都是我负责搭建的，从搭建-&amp;gt;完善-&amp;gt;验证-&amp;gt;(修补-&amp;gt;再验证)*n-&amp;gt;总结后才会有一个更好的总结。
-什么是框架？ 字面意义 框架（建筑学概念）_百度百科
-框架（framework）是一个框子——指其约束性，也是一个架子——指其支撑性。是一个基本概念上的结构，用于去解决或者处理复杂的问题。 我的理解 游戏框架其实很像一个“框架房”，要建一个小洋房，那会选建一个框架起来，把必要的支柱，楼梯，楼层高度先建起来，然后至于要填充什么样的砖块、地板和家具等这些都是未知的。游戏也是一样，假如我们要做一款卡牌游戏，那么战斗、网络、引导、剧情、UI、声音、视频和本地存储这些就是基本的支柱，其实就是用程序的面向对象思维把卡牌游戏抽象出公共的部分，然后把这些部分高内聚低偶合地模块化。
-不同类型游戏框架会有所差异 不同类型的游戏需要是不一样的，如果你是单机游戏，你其实不必要为框架添加网络模块
-如何构建？ *</description>
+ &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;src/imported&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;change-log-default-name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ChangeLog.local&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))))&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;;; 指定目录下的特殊设置&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;如何重新应用dir-locals-当你选择过以后&#34;&gt;如何重新应用dir-locals,当你选择过以后&lt;/h2&gt;</description>
     </item>
     
   </channel>

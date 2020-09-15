@@ -1,30 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lua on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/tags/lua/</link>
+    <link>http://localhost:1313/tags/lua/</link>
     <description>Recent content in lua on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Apr 2017 15:06:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://www.lanhuzi.com/tags/lua/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 28 Apr 2017 15:06:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/lua/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在lua正确识别字符串长度</title>
-      <link>http://www.lanhuzi.com/post/lua-utf8-string-length/</link>
+      <link>http://localhost:1313/post/lua-utf8-string-length/</link>
       <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/lua-utf8-string-length/</guid>
-      <description>function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &amp;#34;[%z\1-\127\194-\244][\128-\191]*&amp;#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end</description>
+      <guid>http://localhost:1313/post/lua-utf8-string-length/</guid>
+      <description>function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &amp;#34;[%z\1-\127\194-\244][\128-\191]*&amp;#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end </description>
     </item>
     
     <item>
       <title>巧妙的使用coroutine分散计算量</title>
-      <link>http://www.lanhuzi.com/post/lua-coroutine/</link>
+      <link>http://localhost:1313/post/lua-coroutine/</link>
       <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/lua-coroutine/</guid>
+      <guid>http://localhost:1313/post/lua-coroutine/</guid>
       <description>背景 最近一直在优化android相关的内容
 问题 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡
 解决思路 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果

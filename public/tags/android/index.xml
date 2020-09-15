@@ -1,66 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>android on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/tags/android/</link>
+    <link>http://localhost:1313/tags/android/</link>
     <description>Recent content in android on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://www.lanhuzi.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 31 Oct 2018 01:44:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>android so path 被锁定</title>
-      <link>http://www.lanhuzi.com/post/android-so-path-lock/</link>
+      <link>http://localhost:1313/post/android-so-path-lock/</link>
       <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
+      <guid>http://localhost:1313/post/android-so-path-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;接XXSDK的时候java 加载so的时候闪退&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>android-armeabi-lib-lock</title>
-      <link>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</link>
+      <link>http://localhost:1313/post/android-armeabi-lib-lock/</link>
       <pubDate>Fri, 13 Oct 2017 15:05:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</guid>
+      <guid>http://localhost:1313/post/android-armeabi-lib-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;cocos2dxlua.so放在armeabi-v7a下 接SDK又引入 armeabi 几个so 结果会出现找不到cocos2dxlua.so 这个文件 导致崩溃&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>android apk 下载无法识别</title>
-      <link>http://www.lanhuzi.com/post/android-apk-download-cant-open/</link>
+      <link>http://localhost:1313/post/android-apk-download-cant-open/</link>
       <pubDate>Wed, 09 Aug 2017 16:15:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/android-apk-download-cant-open/</guid>
+      <guid>http://localhost:1313/post/android-apk-download-cant-open/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;因为游戏买广告的问题，发现转化率低的可怜，就开始找原因，用各种手机测试，发现了一个问题，就是用华为的手机下载完，在下载中心无法识别文件。
 我在网页下载别人的的APK的时候会弹出打开或者保存的选项，于是我就开始找原因&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Android SDK 不会自己删除服务问题</title>
-      <link>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</link>
+      <link>http://localhost:1313/post/android-sdk-service-stop-problem/</link>
       <pubDate>Wed, 26 Jul 2017 16:04:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</guid>
+      <guid>http://localhost:1313/post/android-sdk-service-stop-problem/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>cocos2dx android ui and gl threads</title>
-      <link>http://www.lanhuzi.com/post/cocos2dx-android-threads/</link>
+      <link>http://localhost:1313/post/cocos2dx-android-threads/</link>
       <pubDate>Fri, 19 May 2017 01:18:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/cocos2dx-android-threads/</guid>
+      <guid>http://localhost:1313/post/cocos2dx-android-threads/</guid>
       <description>环境 搞android SDK 的时候，因为接quickSDK没有lua版本，只好用android 原生版本，自己写 java跟lua的交互
 问题 java 跟 lua 交互有概率性的会出现闪退
 思路及解决 思路 这种概率性的闪退，一般都是线程不安全导致的，于是我就去找，看到cocos2dx 里面有很多用到
@@ -72,10 +64,10 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     
     <item>
       <title>cocos2dx etc 闪退问题</title>
-      <link>http://www.lanhuzi.com/post/cocos2dx-etc1-crash/</link>
+      <link>http://localhost:1313/post/cocos2dx-etc1-crash/</link>
       <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/cocos2dx-etc1-crash/</guid>
+      <guid>http://localhost:1313/post/cocos2dx-etc1-crash/</guid>
       <description>环境 稳定性测试期
 问题 部分机型和部分模拟器会因为ETC1资源导致闪退
 07-13 21:59:43.727 E/szipinf (21935): Error reading asset data 07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1 思路及解决 问题分析 经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律， 然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩 的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
@@ -85,10 +77,10 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     
     <item>
       <title>android etc1 黑块问题</title>
-      <link>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</link>
+      <link>http://localhost:1313/post/cocos2dx-android-black-block/</link>
       <pubDate>Wed, 03 May 2017 03:40:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</guid>
+      <guid>http://localhost:1313/post/cocos2dx-android-black-block/</guid>
       <description>环境 接android SDK
 问题 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
 解决思路 查找根源 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不预料的黑块就出现了。
@@ -97,12 +89,11 @@ function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.Call
     
     <item>
       <title>cocos2dx 重新创建机制</title>
-      <link>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</link>
+      <link>http://localhost:1313/post/cocos2dx-recreate-event/</link>
       <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</guid>
+      <guid>http://localhost:1313/post/cocos2dx-recreate-event/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
-
 &lt;p&gt;SDK在游戏里面切换activity的时候花屏&lt;/p&gt;</description>
     </item>
     

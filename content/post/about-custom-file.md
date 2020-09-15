@@ -1,8 +1,7 @@
 +++
 title = "关于custom.el文件"
-author = ["semgilo"]
 date = 2019-11-15T15:10:00+08:00
-lastmod = 2019-11-20T12:10:19+08:00
+lastmod = 2020-09-15T21:43:25+08:00
 tags = ["emacs"]
 categories = ["分享"]
 draft = false

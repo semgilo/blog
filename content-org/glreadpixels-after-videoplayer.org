@@ -3,8 +3,8 @@
 #+DATE: <2019-11-19 Tuesday 17:10:28>
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: cocos2dx
-#+HUGO_CATEGORIES: Note
-#+HUGO_SECTION: notes
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: blog
 #+HUGO_DRAFT: false
 * 问题详情
 最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，

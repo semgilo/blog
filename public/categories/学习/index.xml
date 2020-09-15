@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习 on 蓝胡子</title>
-    <link>http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 Nov 2019 10:05:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 26 Nov 2019 10:05:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLVM学习之一搭建</title>
-      <link>http://www.lanhuzi.com/learning/learn-llvm-setup/</link>
+      <link>http://localhost:1313/learning/learn-llvm-setup/</link>
       <pubDate>Tue, 26 Nov 2019 10:05:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/learning/learn-llvm-setup/</guid>
-      <description>探索 先进入官方文档看看 About — LLVM 10 documentation 介绍的话我还没看，我现在要先把环境搭起来，所以我来到了下面 The LLVM Getting Started documentation may be out of date. The Clang Getting Started page might have more accurate information. This is an example workflow and configuration to get and build the LLVM source: Checkout LLVM (including related subprojects like Clang): git clone https://github.com/llvm/llvm-project.git Or, on windows, git clone --config core.autocrlf=false https://github.com/llvm/llvm-project.git Configure and build LLVM and Clang:. cd llvm-project mkdir build cd build cmake -G &amp;lt;generator&amp;gt; [options] .</description>
+      <guid>http://localhost:1313/learning/learn-llvm-setup/</guid>
+      <description>探索 先进入官方文档看看 About — LLVM 10 documentation 介绍的话我还没看，我现在要先把环境搭起来，所以我来到了下面 The LLVM Getting Started documentation may be out of date. The Clang Getting Started page might have more accurate information.This is an example workflow and configuration to get and build the LLVM source:Checkout LLVM (including related subprojects like Clang):git clone https://github.com/llvm/llvm-project.gitOr, on windows, git clone --config core.autocrlf=false https://github.com/llvm/llvm-project.gitConfigure and build LLVM and Clang:.cd llvm-projectmkdir buildcd buildcmake -G &amp;lt;generator&amp;gt; [options] .</description>
     </item>
     
   </channel>

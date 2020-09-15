@@ -1,361 +1,339 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/llvm/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/obfuscate/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/obfuscator/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/obfuscator/</loc>
+    <loc>http://localhost:1313/tags/llvm/</loc>
     <lastmod>2020-05-13T08:43:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/</loc>
+    <loc>http://localhost:1313/tags/obfuscate/</loc>
     <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/learning/learn-llvm-setup/</loc>
+    <loc>http://localhost:1313/tags/obfuscator/</loc>
+    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-09-15T21:43:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/obfuscator/</loc>
+    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/learning/</loc>
     <lastmod>2019-11-26T10:29:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/learning/</loc>
+    <loc>http://localhost:1313/learning/learn-llvm-setup/</loc>
     <lastmod>2019-11-26T10:29:59+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-11-26T10:29:59+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/share/</loc>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/blog/python-cmdline-framework/</loc>
+    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/share/python-cmdline-framework/</loc>
     <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/python/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/share/python-cmdline-framework/</loc>
+    <loc>http://localhost:1313/categories/share/</loc>
     <lastmod>2019-11-21T17:23:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/share/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/share/</loc>
+    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/note/</loc>
-    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2020-09-15T21:45:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/notes/</loc>
-    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/cocos2dx/</loc>
+    <lastmod>2020-09-15T21:43:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</loc>
+    <loc>http://localhost:1313/categories/note/</loc>
     <lastmod>2019-11-19T21:00:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/emacs/</loc>
-    <lastmod>2019-11-20T12:10:19+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/about-custom-file/</loc>
-    <lastmod>2019-11-20T12:10:19+08:00</lastmod>
+    <loc>http://localhost:1313/blog/glreadpixels-after-videoplayer/</loc>
+    <lastmod>2020-09-15T21:42:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2019-11-20T12:10:19+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/notes/glreadpixels-after-videoplayer/</loc>
+    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/lisp/</loc>
-    <lastmod>2019-11-15T11:05:18+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-09-15T21:42:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/about-dir-local/</loc>
+    <loc>http://localhost:1313/tags/emacs/</loc>
+    <lastmod>2020-09-15T21:43:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/about-custom-file/</loc>
+    <lastmod>2020-09-15T21:43:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/lisp/</loc>
     <lastmod>2019-11-15T11:05:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/creator/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/post/about-dir-local/</loc>
+    <lastmod>2019-11-15T11:05:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/js/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/creator/</loc>
+    <lastmod>2020-09-15T21:43:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/build-cocos-js-framework/</loc>
-    <lastmod>2019-11-25T14:09:24+08:00</lastmod>
+    <loc>http://localhost:1313/tags/js/</loc>
+    <lastmod>2020-09-15T21:43:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</loc>
+    <loc>http://localhost:1313/post/build-cocos-js-framework/</loc>
+    <lastmod>2020-09-15T21:43:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/cocos2dx-rendertexture1/</loc>
     <lastmod>2019-01-29T16:08:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/cosos2dx/</loc>
+    <loc>http://localhost:1313/tags/cosos2dx/</loc>
     <lastmod>2019-01-29T16:08:42+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/rendertexture/</loc>
+    <loc>http://localhost:1313/tags/rendertexture/</loc>
     <lastmod>2019-01-29T16:08:42+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/lucky-confuser/</loc>
+    <loc>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2019-01-04T00:14:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
+    <loc>http://localhost:1313/post/lucky-confuser/</loc>
     <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/regex/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
+    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/classic-regular-expression-statement/</loc>
+    <loc>http://localhost:1313/tags/regex/</loc>
     <lastmod>2019-01-05T18:08:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/ios/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/post/classic-regular-expression-statement/</loc>
+    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/ios-full-path-issue/</loc>
+    <loc>http://localhost:1313/tags/ios/</loc>
     <lastmod>2018-12-12T12:15:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</loc>
+    <loc>http://localhost:1313/post/ios-full-path-issue/</loc>
+    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/blackhole/</loc>
     <lastmod>2018-12-13T15:01:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
+    <loc>http://localhost:1313/post/blackhole-sdk-introduction/</loc>
     <lastmod>2018-12-13T15:01:27+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2018-12-13T15:01:27+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/svn/</loc>
-    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/svn-common-operation/</loc>
+    <loc>http://localhost:1313/post/svn-common-operation/</loc>
     <lastmod>2018-11-23T09:59:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/android/</loc>
+    <loc>http://localhost:1313/tags/svn/</loc>
+    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2018-11-16T09:46:44+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/android-so-path-lock/</loc>
+    <loc>http://localhost:1313/post/android-so-path-lock/</loc>
     <lastmod>2018-11-16T09:45:43+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/game/</loc>
-    <lastmod>2018-11-16T09:56:59+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/game/</loc>
+    <lastmod>2020-09-15T21:28:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/what-is-skill/</loc>
-    <lastmod>2018-11-16T09:56:59+08:00</lastmod>
+    <loc>http://localhost:1313/post/what-is-skill/</loc>
+    <lastmod>2020-09-15T21:28:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</loc>
+    <loc>http://localhost:1313/post/android-armeabi-lib-lock/</loc>
     <lastmod>2018-11-16T09:45:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/android-apk-download-cant-open/</loc>
+    <loc>http://localhost:1313/post/android-apk-download-cant-open/</loc>
     <lastmod>2018-11-16T09:44:53+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</loc>
+    <loc>http://localhost:1313/post/android-sdk-service-stop-problem/</loc>
     <lastmod>2018-11-16T09:45:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</loc>
+    <loc>http://localhost:1313/post/iap-productid-take-effect-time/</loc>
     <lastmod>2018-11-16T09:46:55+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-android-threads/</loc>
+    <loc>http://localhost:1313/post/cocos2dx-android-threads/</loc>
     <lastmod>2018-11-16T09:46:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-etc1-crash/</loc>
+    <loc>http://localhost:1313/post/cocos2dx-etc1-crash/</loc>
     <lastmod>2018-11-16T09:46:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/etc1/</loc>
+    <loc>http://localhost:1313/tags/etc1/</loc>
     <lastmod>2018-11-16T09:46:12+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/fileutils/</loc>
-    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</loc>
+    <loc>http://localhost:1313/post/cocos2dx-fileutils-cache/</loc>
     <lastmod>2018-11-16T09:46:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</loc>
+    <loc>http://localhost:1313/tags/fileutils/</loc>
+    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/cocos2dx-android-black-block/</loc>
     <lastmod>2018-11-16T09:45:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/eventdispatcher/</loc>
-    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</loc>
+    <loc>http://localhost:1313/post/cocos2dx-recreate-event/</loc>
     <lastmod>2018-11-16T09:46:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/lua/</loc>
-    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:1313/tags/eventdispatcher/</loc>
+    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/lua-utf8-string-length/</loc>
+    <loc>http://localhost:1313/tags/lua/</loc>
     <lastmod>2018-11-16T09:47:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/lua-coroutine/</loc>
+    <loc>http://localhost:1313/post/lua-utf8-string-length/</loc>
+    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/lua-coroutine/</loc>
     <lastmod>2018-11-16T09:47:07+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
