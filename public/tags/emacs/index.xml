@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emacs on 蓝胡子</title>
-    <link>http://localhost:1313/tags/emacs/</link>
+    <link>http://www.lanhuzi.com/tags/emacs/</link>
     <description>Recent content in emacs on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Nov 2019 15:10:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Nov 2019 15:10:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于custom.el文件</title>
-      <link>http://localhost:1313/post/about-custom-file/</link>
+      <link>http://www.lanhuzi.com/post/about-custom-file/</link>
       <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/about-custom-file/</guid>
+      <guid>http://www.lanhuzi.com/post/about-custom-file/</guid>
       <description>Saving Customizations - GNU Emacs Manual 官方详细说明
 在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件. </description>
     </item>
     
     <item>
       <title>关于.dir-local文件</title>
-      <link>http://localhost:1313/post/about-dir-local/</link>
+      <link>http://www.lanhuzi.com/post/about-dir-local/</link>
       <pubDate>Fri, 15 Nov 2019 09:51:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/about-dir-local/</guid>
+      <guid>http://www.lanhuzi.com/post/about-dir-local/</guid>
       <description>&lt;h2 id=&#34;关于-dot-dir-local文件&#34;&gt;关于.dir-local文件&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory&#39;s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;大概说的意思是我们能在指定目录设置特别变量，文件局部变量会优先目录局部变量。&lt;/p&gt;

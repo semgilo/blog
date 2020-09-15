@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on 蓝胡子</title>
-    <link>http://localhost:1313/notes/</link>
+    <link>http://www.lanhuzi.com/notes/</link>
     <description>Recent content in Notes on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Nov 2019 17:10:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Nov 2019 17:10:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://localhost:1313/notes/glreadpixels-after-videoplayer/</link>
+      <link>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/notes/glreadpixels-after-videoplayer/</guid>
+      <guid>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</guid>
       <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
 &lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
     </item>

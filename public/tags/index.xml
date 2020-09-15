@@ -2,214 +2,196 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 蓝胡子</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://www.lanhuzi.com/tags/</link>
     <description>Recent content in Tags on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 May 2020 06:41:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 May 2020 06:41:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>llvm</title>
-      <link>http://localhost:1313/tags/llvm/</link>
+      <link>http://www.lanhuzi.com/tags/llvm/</link>
       <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/llvm/</guid>
+      <guid>http://www.lanhuzi.com/tags/llvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>obfuscate</title>
-      <link>http://localhost:1313/tags/obfuscate/</link>
+      <link>http://www.lanhuzi.com/tags/obfuscate/</link>
       <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/obfuscate/</guid>
+      <guid>http://www.lanhuzi.com/tags/obfuscate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>obfuscator</title>
-      <link>http://localhost:1313/tags/obfuscator/</link>
+      <link>http://www.lanhuzi.com/tags/obfuscator/</link>
       <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/obfuscator/</guid>
+      <guid>http://www.lanhuzi.com/tags/obfuscator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>http://www.lanhuzi.com/tags/python/</link>
       <pubDate>Thu, 21 Nov 2019 16:22:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>http://www.lanhuzi.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cocos2dx</title>
-      <link>http://localhost:1313/tags/cocos2dx/</link>
+      <link>http://www.lanhuzi.com/tags/cocos2dx/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/cocos2dx/</guid>
+      <guid>http://www.lanhuzi.com/tags/cocos2dx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
+      <link>http://www.lanhuzi.com/tags/emacs/</link>
       <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/emacs/</guid>
+      <guid>http://www.lanhuzi.com/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lisp</title>
-      <link>http://localhost:1313/tags/lisp/</link>
+      <link>http://www.lanhuzi.com/tags/lisp/</link>
       <pubDate>Fri, 15 Nov 2019 09:51:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/lisp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>creator</title>
-      <link>http://localhost:1313/tags/creator/</link>
-      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tags/creator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>js</title>
-      <link>http://localhost:1313/tags/js/</link>
-      <pubDate>Thu, 14 Nov 2019 22:22:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tags/js/</guid>
+      <guid>http://www.lanhuzi.com/tags/lisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cosos2dx</title>
-      <link>http://localhost:1313/tags/cosos2dx/</link>
+      <link>http://www.lanhuzi.com/tags/cosos2dx/</link>
       <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/cosos2dx/</guid>
+      <guid>http://www.lanhuzi.com/tags/cosos2dx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RenderTexture</title>
-      <link>http://localhost:1313/tags/rendertexture/</link>
+      <link>http://www.lanhuzi.com/tags/rendertexture/</link>
       <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/rendertexture/</guid>
+      <guid>http://www.lanhuzi.com/tags/rendertexture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>工具</title>
-      <link>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</link>
+      <link>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>混淆器</title>
-      <link>http://localhost:1313/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</link>
+      <link>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</link>
       <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</guid>
+      <guid>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regex</title>
-      <link>http://localhost:1313/tags/regex/</link>
+      <link>http://www.lanhuzi.com/tags/regex/</link>
       <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/regex/</guid>
+      <guid>http://www.lanhuzi.com/tags/regex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ios</title>
-      <link>http://localhost:1313/tags/ios/</link>
+      <link>http://www.lanhuzi.com/tags/ios/</link>
       <pubDate>Wed, 12 Dec 2018 12:05:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/ios/</guid>
+      <guid>http://www.lanhuzi.com/tags/ios/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blackhole</title>
-      <link>http://localhost:1313/tags/blackhole/</link>
+      <link>http://www.lanhuzi.com/tags/blackhole/</link>
       <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/blackhole/</guid>
+      <guid>http://www.lanhuzi.com/tags/blackhole/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SVN</title>
-      <link>http://localhost:1313/tags/svn/</link>
+      <link>http://www.lanhuzi.com/tags/svn/</link>
       <pubDate>Fri, 16 Nov 2018 14:33:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/svn/</guid>
+      <guid>http://www.lanhuzi.com/tags/svn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>android</title>
-      <link>http://localhost:1313/tags/android/</link>
+      <link>http://www.lanhuzi.com/tags/android/</link>
       <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/android/</guid>
+      <guid>http://www.lanhuzi.com/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>game</title>
-      <link>http://localhost:1313/tags/game/</link>
+      <link>http://www.lanhuzi.com/tags/game/</link>
       <pubDate>Wed, 18 Apr 2018 19:43:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/game/</guid>
+      <guid>http://www.lanhuzi.com/tags/game/</guid>
       <description></description>
     </item>
     
     <item>
       <title>etc1</title>
-      <link>http://localhost:1313/tags/etc1/</link>
+      <link>http://www.lanhuzi.com/tags/etc1/</link>
       <pubDate>Tue, 16 May 2017 10:19:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/etc1/</guid>
+      <guid>http://www.lanhuzi.com/tags/etc1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FileUtils</title>
-      <link>http://localhost:1313/tags/fileutils/</link>
+      <link>http://www.lanhuzi.com/tags/fileutils/</link>
       <pubDate>Fri, 12 May 2017 15:36:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/fileutils/</guid>
+      <guid>http://www.lanhuzi.com/tags/fileutils/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EventDispatcher</title>
-      <link>http://localhost:1313/tags/eventdispatcher/</link>
+      <link>http://www.lanhuzi.com/tags/eventdispatcher/</link>
       <pubDate>Sun, 30 Apr 2017 08:29:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/eventdispatcher/</guid>
+      <guid>http://www.lanhuzi.com/tags/eventdispatcher/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lua</title>
-      <link>http://localhost:1313/tags/lua/</link>
+      <link>http://www.lanhuzi.com/tags/lua/</link>
       <pubDate>Fri, 28 Apr 2017 15:06:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/lua/</guid>
+      <guid>http://www.lanhuzi.com/tags/lua/</guid>
       <description></description>
     </item>
     

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>混淆器 on 蓝胡子</title>
-    <link>http://localhost:1313/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</link>
+    <link>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</link>
     <description>Recent content in 混淆器 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Jan 2019 22:51:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jan 2019 22:51:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>模拟人工的混淆器</title>
-      <link>http://localhost:1313/post/lucky-confuser/</link>
+      <link>http://www.lanhuzi.com/post/lucky-confuser/</link>
       <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/lucky-confuser/</guid>
+      <guid>http://www.lanhuzi.com/post/lucky-confuser/</guid>
       <description>个人使用混淆器背景 简单的垃圾代码生成器 https://github.com/semgilo/gen-code
 开源编译混淆工具：obfuscator https://github.com/obfuscator-llvm/obfuscator
 升级版本混淆工具：Hikari https://github.com/HikariObfuscator/Hikari

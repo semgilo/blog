@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>教程 on 蓝胡子</title>
-    <link>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</link>
+    <link>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</link>
     <description>Recent content in 教程 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Dec 2018 23:27:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Dec 2018 23:27:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BlackHole 使用说明</title>
-      <link>http://localhost:1313/post/blackhole-sdk-introduction/</link>
+      <link>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</link>
       <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/blackhole-sdk-introduction/</guid>
+      <guid>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</guid>
       <description>下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types   代码使用  初始化 启动判断 生命周期处理   测试需求  7天前 45天前 45天后    下载 点击下载
 配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt;&amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt;&amp;lt;dict&amp;gt;&amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt;&amp;lt;true/&amp;gt;&amp;lt;/dict&amp;gt;&amp;lt;/plist&amp;gt;Other Link Flag -ObjC添加Url Types   Figure 1: 示意图
   代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].</description>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cosos2dx on 蓝胡子</title>
-    <link>http://localhost:1313/tags/cosos2dx/</link>
+    <link>http://www.lanhuzi.com/tags/cosos2dx/</link>
     <description>Recent content in Cosos2dx on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Jan 2019 18:21:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/cosos2dx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jan 2019 18:21:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/cosos2dx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cocos2dx优化之RenderTexture</title>
-      <link>http://localhost:1313/post/cocos2dx-rendertexture1/</link>
+      <link>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</link>
       <pubDate>Sun, 27 Jan 2019 18:21:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/cocos2dx-rendertexture1/</guid>
+      <guid>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</guid>
       <description>为什么要用 游戏有一个指标是GPU渲染，做过优化的人应该对Opengl的drawcall应该都很熟悉，cocos2dx里面还有个batchnode就是批渲染 这个可以减少drawcall，但这个其实就是减少渲染流程，要达到一定的量级才会体现效果，平时那个几十个是基本影响不大。我自己测试 都是上千个数量级会效果。而且有很大的局限性，因为它要求材质必需是同一个，而这个材质包括Texture,BlendFunc,shader，只要 一个是不同的便不行，这种痛你们自己感受才明白。接下来我提的另外一种更有效的方案，那就是RenderTexture,它要做的主要事情就 是把一些碎小的元素绘制出来，然后把它们截取出来，利用的是Opengl FBO技术，如果把它们融合在一张再去绘制，那就可以大大降低 GPU的绘制时间，可以降低耗电量。 但这个是有代价的，你必要多一张绘制后大小的尺寸的占用内存，还有读取FBO消耗的性能。
 什么时候用 了解完RenderTexture优点缺点后，我们要分析什么时候用它，一般我们会用它在列表上面，特别是一些不常变动的列表上面，如果列表项 越复杂，那它的效果就越明显，比如一个列表上是十个drawcall,那显示20，那就是200个drawcall， 这个量级应该是比较难接受的， 如果使用RenderTexture那就是20个，10倍的差距了解一下。
 怎么用 </description>
