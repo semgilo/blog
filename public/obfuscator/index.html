@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/obfuscator/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>模拟人工混淆器 2代 - 蓝胡子</title>
+    
+<meta name="description" content="&lt;h2 id=&#34;功能展示&#34;&gt;功能展示&lt;/h2&gt;&lt;p&gt;之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。这些并不重要，最重要的是功能升级了哪些。&lt;/p&gt;">
+
+<meta property="og:title" content="模拟人工混淆器 2代 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/obfuscator/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="&lt;h2 id=&#34;功能展示&#34;&gt;功能展示&lt;/h2&gt;&lt;p&gt;之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。这些并不重要，最重要的是功能升级了哪些。&lt;/p&gt;">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/obfuscator/">
+<meta name="twitter:title" content="模拟人工混淆器 2代 - 蓝胡子">
+<meta name="twitter:description" content="&lt;h2 id=&#34;功能展示&#34;&gt;功能展示&lt;/h2&gt;&lt;p&gt;之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。这些并不重要，最重要的是功能升级了哪些。&lt;/p&gt;">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "模拟人工混淆器 2代 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2020-05-13T06:41:00JST",
+    "dateModified": "2020-09-16T21:34:46JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "\u003ch2 id=\u0022功能展示\u0022\u003e功能展示\u003c\/h2\u003e\n\u003cp\u003e之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，\n所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。\n这些并不重要，最重要的是功能升级了哪些。\u003c\/p\u003e"
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">蓝胡子</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li class="active">模拟人工混淆器 2代</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T21:34:46JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+
+    <h1 class="title">模拟人工混淆器 2代</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="功能展示">功能展示</h2>
+<p>之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，
+所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。
+这些并不重要，最重要的是功能升级了哪些。</p>
+<h3 id="基础功能">基础功能</h3>
+<h4 id="类名">类名</h4>
+<h4 id="协议">协议</h4>
+<h4 id="结构体">结构体</h4>
+<h4 id="枚举">枚举</h4>
+<h4 id="方法名">方法名</h4>
+<h4 id="变量名">变量名</h4>
+<h4 id="相关引用">相关引用</h4>
+<h4 id="bundle资源包">bundle资源包</h4>
+<h4 id="图片">图片</h4>
+<h4 id="目录">目录</h4>
+<h4 id="字符串">字符串</h4>
+<h3 id="特色混淆">特色混淆</h3>
+<h4 id="精准混淆">精准混淆</h4>
+<h4 id="方法参数长度混淆">方法参数长度混淆</h4>
+<h4 id="方法体添加垃圾代码">方法体添加垃圾代码</h4>
+<h4 id="随机添加多态方法">随机添加多态方法</h4>
+<h4 id="自动识别系统字段">自动识别系统字段</h4>
+<h2 id="效果展示">效果展示</h2>
+<p><img src="/images/obfuscator/project.png" alt="">
+<img src="/images/obfuscator/file1.png" alt="">
+<img src="/images/obfuscator/file2.png" alt="">
+<img src="/images/obfuscator/file3.png" alt=""></p></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/">工具</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/llvm/">LLVM</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/obfuscate/">obfuscate</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/obfuscator/">obfuscator</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
+      
+      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
+      
+      <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
+      
+      <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
+      
+      <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
+      
+      <a href="http://www.lanhuzi.com/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

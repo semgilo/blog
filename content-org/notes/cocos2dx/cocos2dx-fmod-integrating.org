@@ -47,7 +47,7 @@ bool LuaStack::init(void)
 
 *** 配置libs
 [[/images/fmod/win/add_lib_search_path.png]]
-[[/images/fmod/win/add_libs.png]]
+[[/Images/fmod/win/add_libs.png]]
 
 ** ios
 *** 配置静态库

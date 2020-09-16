@@ -1,4 +1,4 @@
-#+HUGO_BASE_DIR: ../../..
+#+HUGO_BASE_DIR: ../..
 #+TITLE: 模拟人工的混淆器
 #+DATE: <2019-01-03 Thursday 22:51:57>
 #+HUGO_AUTO_SET_LASTMOD: t
