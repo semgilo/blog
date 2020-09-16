@@ -4,7 +4,7 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: SVN
 #+HUGO_CATEGORIES: 分享
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+HUGO_DRAFT: false
 * svn配置BeyondCompare对比工具
 [[https://www.scootersoftware.com/features.php?zz=kb_vcs_osx][Beyond Compare 官方说明]]

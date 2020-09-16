@@ -4,19 +4,19 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: android cocos2dx
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+HUGO_DRAFT: false
  
-* 描述
+* 问题详述
 接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。
 <!--more-->
-* 分析
+
+* 问题分析
 打开游戏后台发现游戏里面一直有一个服务存在，是SDK的浮窗服务，经过跟渠道交流后，主要有因为SDK
 如果浮窗没有初始化成功，就会主动退出游戏。
 还有一种情况是服务本身会自起动，所以如果一进游戏未初始化好，服务因为自启动会没有成功导致崩溃
-* 细节
+
+* 解决方案
 修改SDK
 在Apllication的onCreate方法里面把浮窗服务先停止并关闭自启动
-* 结果
-解决
-* 备注
+

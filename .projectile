@@ -1,4 +1,5 @@
--/content
--/themes
--/archetypes
--/static
+-content/
+-themes/
+-archetypes/
+-static/
+-public/

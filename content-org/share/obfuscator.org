@@ -1,10 +1,10 @@
-#+HUGO_BASE_DIR: ../
+#+HUGO_BASE_DIR: ../../..
 #+TITLE: 模拟人工混淆器 2代
 #+DATE: <2020-05-13 Wednesday 06:41:53>
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: LLVM obfuscate obfuscator
 #+HUGO_CATEGORIES: 工具
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+Hugo_draft: false
 
 * 功能展示

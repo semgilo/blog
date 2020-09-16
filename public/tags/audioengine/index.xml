@@ -8,10 +8,10 @@
     <lastBuildDate>Thu, 22 Nov 2018 15:17:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/audioengine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cosos2dx fmod 声音引擎集成</title>
-      <link>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</link>
+      <link>http://www.lanhuzi.com/cocos2dx-fmod-integrating/</link>
       <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</guid>
+      <guid>http://www.lanhuzi.com/cocos2dx-fmod-integrating/</guid>
       <description>环境 配置  文件 win32 ios android   lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17
 fmod官方文档
 教程文件

@@ -4,15 +4,13 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: cocos2dx FileUtils
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+HUGO_DRAFT: false
 
 
-* 背景
-处理热lua更新功能
-* 问题
-有些文件没有没有获取最新下载的资源，依然是使用旧的
-* 思路及解决
+* 问题描述
+处理热lua更新功能，有些文件没有没有获取最新下载的资源，依然是使用旧的
+* 问题分析
 ** 首先查看搜索路径
 #+BEGIN_SRC lua
 dump(cc.FileUtils:getInstance():getSearchPaths())
@@ -70,6 +68,6 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
 }
 
 #+END_SRC
-* 结果
-完美解决
+* 解决方案
+清空缓存
  

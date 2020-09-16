@@ -4,15 +4,15 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: ios
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+HUGO_DRAFT: false
 
 
-** 描述
+* 问题描述
 在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
 对应资源，如果资源格式被破坏后，就没办法取到fullpath.
    <!--more-->
-** 分析
+* 问题分析
 #+BEGIN_SRC c
 std::string CCFileUtilsIOS::getFullPathForDirectoryAndFilename(const std::string& strDirectory, const std::string& strFilename)
 {
@@ -39,7 +39,7 @@ std::string CCFileUtilsIOS::getFullPathForDirectoryAndFilename(const std::string
 
 这个是ios 获取资源全路径的方法，因为之前我有在其它项目上成功过，所以这个问题，因为通过对比取不一样的地方，应该就是问题所在。
 最后发现，只要是虚拟上目录下就可以正常获取加密的资源，真实目录会检测它对应格式数据是不是正确（我只对png做了测试）。
-** 解决
+* 解决方案
 使用虚拟目录，把资源都放虚拟目录就可以正常读取资源了，如果需要多一层目录，可以使用
 #+BEGIN_SRC c
 CCFileUtils::sharedFileUtils()->addSearchPath("res/");

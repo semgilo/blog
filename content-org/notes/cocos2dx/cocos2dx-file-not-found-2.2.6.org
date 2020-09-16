@@ -4,16 +4,17 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_TAGS: cocos2dx 
 #+HUGO_CATEGORIES: 笔记
-#+HUGO_SECTION: post
+#+HUGO_SECTION: 
 #+HUGO_DRAFT: false
 
+* 问题描述
 今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
 #+BEGIN_SRC c++
 <string> file not found
 <cctype> file not found
 #+END_SRC
-各种google.
 
+* 解决方案
 解决方法：
 #+BEGIN_SRC c++
 1.cocos2dx.xcodeproj ==> BuildSetting ==> IOS Development Target 

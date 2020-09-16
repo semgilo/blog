@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/cocos2dx-android-black-block/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>android etc1 黑块问题 - 蓝胡子</title>
+    
+<meta name="description" content="问题描述 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误问题分析 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不可预料的黑块就出现了。解决方案 function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end ">
+
+<meta property="og:title" content="android etc1 黑块问题 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/cocos2dx-android-black-block/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="问题描述 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误问题分析 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不可预料的黑块就出现了。解决方案 function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/cocos2dx-android-black-block/">
+<meta name="twitter:title" content="android etc1 黑块问题 - 蓝胡子">
+<meta name="twitter:description" content="问题描述 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误问题分析 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不可预料的黑块就出现了。解决方案 function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end ">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "android etc1 黑块问题 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-05-03T03:40:00JST",
+    "dateModified": "2020-09-16T15:02:58JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "问题描述 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误\n问题分析 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不可预料的黑块就出现了。\n解决方案 function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end "
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">蓝胡子</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li class="active">android etc1 黑块问题</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:02:58JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+
+    <h1 class="title">android etc1 黑块问题</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="问题描述">问题描述</h2>
+<p>在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误</p>
+<h2 id="问题分析">问题分析</h2>
+<p>一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。
+根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。
+所以部分重载一半或者一些不可预料的黑块就出现了。</p>
+<h2 id="解决方案">解决方案</h2>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">function</span> <span class="p">()</span>
+    <span class="n">xxx</span><span class="p">:</span><span class="n">runAction</span><span class="p">(</span><span class="n">cc.Sequence</span><span class="p">:</span><span class="n">create</span><span class="p">(</span>
+        <span class="n">cc.DelayTime</span><span class="p">:</span><span class="n">create</span><span class="p">(</span><span class="mf">0.02</span><span class="p">),</span>
+        <span class="n">cc.CallFunc</span><span class="p">:</span><span class="n">create</span><span class="p">(</span><span class="kr">function</span> <span class="p">()</span>
+            <span class="c1">-- ... do something</span>
+        <span class="kr">end</span><span class="p">)))</span>
+<span class="kr">end</span>
+</code></pre></div></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/android/">android</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
+      
+      <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
+      
+      <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
+      
+      <a href="http://www.lanhuzi.com/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
+      
+      <a href="http://www.lanhuzi.com/android-armeabi-lib-lock/" class="list-group-item">android-armeabi-lib-lock</a>
+      
+      <a href="http://www.lanhuzi.com/android-apk-download-cant-open/" class="list-group-item">android apk 下载无法识别</a>
+      
+      <a href="http://www.lanhuzi.com/android-sdk-service-stop-problem/" class="list-group-item">Android SDK 不会自己删除服务问题</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.lanhuzi.com/tags/regex" class="list-group-item">regex</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

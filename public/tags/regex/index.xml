@@ -8,10 +8,10 @@
     <lastBuildDate>Mon, 24 Dec 2018 18:10:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>经典正则表达式语句</title>
-      <link>http://www.lanhuzi.com/post/classic-regular-expression-statement/</link>
+      <link>http://www.lanhuzi.com/classic-regular-expression-statement/</link>
       <pubDate>Mon, 24 Dec 2018 18:10:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/classic-regular-expression-statement/</guid>
+      <guid>http://www.lanhuzi.com/classic-regular-expression-statement/</guid>
       <description>推荐学习地方 http://www.zjmainstay.cn/
 会持续更新中 python 需要
 pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE </description>
