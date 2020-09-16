@@ -8,23 +8,38 @@
     <lastBuildDate>Tue, 19 Nov 2019 17:10:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/cocos2dx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</link>
+      <link>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</guid>
+      <guid>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</guid>
       <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
 &lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，
 一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</link>
-      <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
+      <title>cocos2dx 2.2.6 file not found</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</link>
+      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</guid>
-      <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
-&lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
+      <guid>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</guid>
+      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found 各种google.
+解决方法：
+1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </description>
+    </item>
+    
+    <item>
+      <title>Cosos2dx fmod 声音引擎集成</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</guid>
+      <description>环境 配置  文件 win32 ios android   lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17
+fmod官方文档
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external 拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto 修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { ... register_all_cocos2dx_fmod(_state); ... return true; } win32 添加代码到工程   配置libs ios 配置静态库   配置搜索路径 1.</description>
     </item>
     
     <item>

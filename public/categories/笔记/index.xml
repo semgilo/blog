@@ -8,13 +8,23 @@
     <lastBuildDate>Tue, 19 Nov 2019 17:10:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</link>
+      <link>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</guid>
+      <guid>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</guid>
       <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
 &lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，
 一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于custom.el文件</title>
+      <link>http://www.lanhuzi.com/post/about-custom-file/</link>
+      <pubDate>Fri, 15 Nov 2019 15:10:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/about-custom-file/</guid>
+      <description>Saving Customizations - GNU Emacs Manual 官方详细说明
+在emacs里面做的一些选择会记录在这个文件里面，比如进入dir-locals.el询问后 你的选择会写入这个文件. </description>
     </item>
     
     <item>
@@ -37,6 +47,18 @@ pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 &lt;p&gt;在给游戏资源做加密的时候，发现了一个问题，加密前的对象可以正常获取fullpath,加密后就一直是nil,难道苹果会自己识别
 对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>cocos2dx 2.2.6 file not found</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</link>
+      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</guid>
+      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found 各种google.
+解决方法：
+1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </description>
     </item>
     
     <item>

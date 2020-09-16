@@ -5,17 +5,7 @@
     <link>http://www.lanhuzi.com/tags/llvm/</link>
     <description>Recent content in llvm on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 May 2020 06:41:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/llvm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>模拟人工混淆器 2代</title>
-      <link>http://www.lanhuzi.com/post/obfuscator/</link>
-      <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/obfuscator/</guid>
-      <description>&lt;h2 id=&#34;功能展示&#34;&gt;功能展示&lt;/h2&gt;
-&lt;p&gt;之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。这些并不重要，最重要的是功能升级了哪些。&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 26 Nov 2019 10:05:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/llvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLVM学习之一搭建</title>
       <link>http://www.lanhuzi.com/learning/learn-llvm-setup/</link>

@@ -1,8 +1,7 @@
 +++
 title = "android so path 被锁定"
-author = ["semgilo"]
 date = 2018-10-31T01:44:00+08:00
-lastmod = 2018-11-16T09:45:43+08:00
+lastmod = 2020-09-16T11:06:47+08:00
 tags = ["android", "cocos2dx"]
 categories = ["笔记"]
 draft = false

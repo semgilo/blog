@@ -1,8 +1,7 @@
 +++
 title = "iap 产品生效时间"
-author = ["semgilo"]
 date = 2017-07-20T19:13:00+08:00
-lastmod = 2018-11-16T09:46:55+08:00
+lastmod = 2020-09-16T11:19:54+08:00
 tags = ["ios"]
 categories = ["笔记"]
 draft = false

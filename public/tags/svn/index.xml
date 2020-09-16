@@ -14,7 +14,7 @@
       <guid>http://www.lanhuzi.com/post/svn-common-operation/</guid>
       <description>svn配置BeyondCompare对比工具 Beyond Compare 官方说明
 常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
-进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; </description>
+进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34; and index($2,&amp;#34;@&amp;#34;)==0){printf &amp;#34;%s@&amp;#34;,$2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; </description>
     </item>
     
   </channel>

@@ -1,8 +1,7 @@
 +++
 title = "ios 获取全路径问题"
-author = ["semgilo"]
 date = 2018-12-12T12:05:00+08:00
-lastmod = 2018-12-12T12:15:05+08:00
+lastmod = 2020-09-16T11:21:44+08:00
 tags = ["ios"]
 categories = ["笔记"]
 draft = false
@@ -22,20 +21,20 @@ std::string CCFileUtilsIOS::getFullPathForDirectoryAndFilename(const std::string
 {
     if (strDirectory[0] != '/')
     {
-	NSString* fullpath = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:strFilename.c_str()]
-							     ofType:nil
-							inDirectory:[NSString stringWithUTF8String:strDirectory.c_str()]];
-	if (fullpath != nil) {
-	    return [fullpath UTF8String];
-	}
+        NSString* fullpath = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:strFilename.c_str()]
+                                                             ofType:nil
+                                                        inDirectory:[NSString stringWithUTF8String:strDirectory.c_str()]];
+        if (fullpath != nil) {
+            return [fullpath UTF8String];
+        }
     }
     else
     {
-	std::string fullPath = strDirectory+strFilename;
-	// Search path is an absolute path.
-	if ([s_fileManager fileExistsAtPath:[NSString stringWithUTF8String:fullPath.c_str()]]) {
-	    return fullPath;
-	}
+        std::string fullPath = strDirectory+strFilename;
+        // Search path is an absolute path.
+        if ([s_fileManager fileExistsAtPath:[NSString stringWithUTF8String:fullPath.c_str()]]) {
+            return fullPath;
+        }
     }
     return "";
 }

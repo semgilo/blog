@@ -1,8 +1,7 @@
 +++
 title = "经典正则表达式语句"
-author = ["semgilo"]
 date = 2018-12-24T18:10:00+08:00
-lastmod = 2019-01-05T18:08:04+08:00
+lastmod = 2020-09-16T11:11:06+08:00
 tags = ["regex"]
 categories = ["笔记"]
 draft = false

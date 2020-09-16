@@ -1,9 +1,9 @@
 +++
 title = "关于custom.el文件"
 date = 2019-11-15T15:10:00+08:00
-lastmod = 2020-09-15T21:43:25+08:00
+lastmod = 2020-09-16T11:18:14+08:00
 tags = ["emacs"]
-categories = ["分享"]
+categories = ["笔记"]
 draft = false
 +++
 

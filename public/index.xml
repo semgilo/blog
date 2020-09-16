@@ -5,17 +5,7 @@
     <link>http://www.lanhuzi.com/</link>
     <description>Recent content on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 May 2020 06:41:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>模拟人工混淆器 2代</title>
-      <link>http://www.lanhuzi.com/post/obfuscator/</link>
-      <pubDate>Wed, 13 May 2020 06:41:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/obfuscator/</guid>
-      <description>&lt;h2 id=&#34;功能展示&#34;&gt;功能展示&lt;/h2&gt;
-&lt;p&gt;之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。这些并不重要，最重要的是功能升级了哪些。&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 26 Nov 2019 10:05:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLVM学习之一搭建</title>
       <link>http://www.lanhuzi.com/learning/learn-llvm-setup/</link>
@@ -26,70 +16,14 @@
     </item>
     
     <item>
-      <title>python 命令行工具的框架</title>
-      <link>http://www.lanhuzi.com/blog/python-cmdline-framework/</link>
-      <pubDate>Thu, 21 Nov 2019 16:22:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/blog/python-cmdline-framework/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E6%A1%86%E6%9E%B6%E7%9A%84%E7%BB%93%E6%9E%84&#34;&gt;框架的结构&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-dot-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7-utils&#34;&gt;1.常用的工具 &amp;ndash; utils&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-dot-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E6%93%8D%E4%BD%9C%E8%A7%A3%E6%9E%90-operation-manager&#34;&gt;2.命令行的操作解析 &amp;ndash; operation manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-dot-%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97-plugin-manager&#34;&gt;3.功能插件模块 &amp;ndash; plugin manager&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#github-%E4%BB%A3%E7%A0%81%E5%BC%80%E6%BA%90&#34;&gt;github 代码开源&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，
-比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。
-那么正常我们怎么开始写一个命令行工具呢？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>python 命令行工具的框架</title>
-      <link>http://www.lanhuzi.com/share/python-cmdline-framework/</link>
-      <pubDate>Thu, 21 Nov 2019 16:22:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/share/python-cmdline-framework/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E6%A1%86%E6%9E%B6%E7%9A%84%E7%BB%93%E6%9E%84&#34;&gt;框架的结构&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-dot-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7-utils&#34;&gt;1.常用的工具 &amp;ndash; utils&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-dot-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E6%93%8D%E4%BD%9C%E8%A7%A3%E6%9E%90-operation-manager&#34;&gt;2.命令行的操作解析 &amp;ndash; operation manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#3-dot-%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97-plugin-manager&#34;&gt;3.功能插件模块 &amp;ndash; plugin manager&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#github-%E4%BB%A3%E7%A0%81%E5%BC%80%E6%BA%90&#34;&gt;github 代码开源&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;在很早前听到过这样一句话“程序中要是反复在写同样一个东西，那就是不合理的”，我们应该尽可能地把能用的部分抽象出来，比如该有的工具，命令行的解析框架，引用到插件的框架。这些东西都是常用而且在每个项目中是独立的，不会跟其它模块有偶合。那么正常我们怎么开始写一个命令行工具呢？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</link>
+      <link>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</guid>
+      <guid>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</guid>
       <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
 &lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，
 一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
-      <link>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</link>
-      <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</guid>
-      <description>&lt;h2 id=&#34;问题详情&#34;&gt;问题详情&lt;/h2&gt;
-&lt;p&gt;最近因为IOS升级为13.2后，视频无法正常播放，跟往常一样去cocos2dx/github/issues上去找到对应的request合并，一切都很顺利，但当我使用到截图的时候（调用glReadPixels），程序就崩溃了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,15 +42,7 @@
       <pubDate>Fri, 15 Nov 2019 09:51:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/post/about-dir-local/</guid>
-      <description>&lt;h2 id=&#34;关于-dot-dir-local文件&#34;&gt;关于.dir-local文件&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Sometimes, you may wish to define the same set of local variables to all the files in a certain directory and its subdirectories, such as the directory tree of a large software project. This can be accomplished with directory-local variables. File local variables override directory local variables, so if some of the files in a directory need specialized settings, you can specify the settings for the majority of the directory&#39;s files in directory variables, and then define file local variables in a few files which need the general settings overridden.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;大概说的意思是我们能在指定目录设置特别变量，文件局部变量会优先目录局部变量。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;indent-tabs-mode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;;; 设置所有模式下的缩进&lt;/span&gt;
-         &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;fill-column&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
- &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;c-mode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;c-file-style&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;BSD&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;      &lt;span class=&#34;c1&#34;&gt;;; 指定c-mode下的file style&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;subdirs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
- &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;src/imported&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;change-log-default-name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ChangeLog.local&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))))&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;;; 指定目录下的特殊设置&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;如何重新应用dir-locals-当你选择过以后&#34;&gt;如何重新应用dir-locals,当你选择过以后&lt;/h2&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Directory-Variables.html&#34;&gt;Directory Variables - GNU Emacs Manual&lt;/a&gt; 官方说明文档&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -128,20 +54,6 @@
       <description>为什么要用 游戏有一个指标是GPU渲染，做过优化的人应该对Opengl的drawcall应该都很熟悉，cocos2dx里面还有个batchnode就是批渲染 这个可以减少drawcall，但这个其实就是减少渲染流程，要达到一定的量级才会体现效果，平时那个几十个是基本影响不大。我自己测试 都是上千个数量级会效果。而且有很大的局限性，因为它要求材质必需是同一个，而这个材质包括Texture,BlendFunc,shader，只要 一个是不同的便不行，这种痛你们自己感受才明白。接下来我提的另外一种更有效的方案，那就是RenderTexture,它要做的主要事情就 是把一些碎小的元素绘制出来，然后把它们截取出来，利用的是Opengl FBO技术，如果把它们融合在一张再去绘制，那就可以大大降低 GPU的绘制时间，可以降低耗电量。 但这个是有代价的，你必要多一张绘制后大小的尺寸的占用内存，还有读取FBO消耗的性能。
 什么时候用 了解完RenderTexture优点缺点后，我们要分析什么时候用它，一般我们会用它在列表上面，特别是一些不常变动的列表上面，如果列表项 越复杂，那它的效果就越明显，比如一个列表上是十个drawcall,那显示20，那就是200个drawcall， 这个量级应该是比较难接受的， 如果使用RenderTexture那就是20个，10倍的差距了解一下。
 怎么用 </description>
-    </item>
-    
-    <item>
-      <title>模拟人工的混淆器</title>
-      <link>http://www.lanhuzi.com/post/lucky-confuser/</link>
-      <pubDate>Thu, 03 Jan 2019 22:51:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/lucky-confuser/</guid>
-      <description>个人使用混淆器背景 简单的垃圾代码生成器 https://github.com/semgilo/gen-code
-开源编译混淆工具：obfuscator https://github.com/obfuscator-llvm/obfuscator
-升级版本混淆工具：Hikari https://github.com/HikariObfuscator/Hikari
-专业加密软件 公司购买的 几维加密 顶象加密
-其它 有一个让我有点“震惊”的混淆工具，做得非常的简陋的界面，一个月需要3K，各种全局替换。希望你们没有被坑。 我只是稍微吐槽一下。
-特色介绍 目前支持C++和ObjC两个语言 效果截图 为了演示精准程度，特别找了一个比较垃圾的旧代码过来混淆。 即将支持功能 方法添加额外参数 资源混淆 垃圾方法 垃圾变量 垃圾类 提供混淆工程服务（收费） 稳定后可能会考虑开源 如果有需要工程混淆，可以联系博主 QQ微信同号：9737935</description>
     </item>
     
     <item>
@@ -167,14 +79,28 @@ pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\
     </item>
     
     <item>
-      <title>BlackHole 使用说明</title>
-      <link>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</link>
-      <pubDate>Fri, 07 Dec 2018 23:27:00 +0800</pubDate>
+      <title>cocos2dx 2.2.6 file not found</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</link>
+      <pubDate>Mon, 03 Dec 2018 22:03:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</guid>
-      <description>下载 配置工程  添加framework 网络使用权限 Other Link Flag 添加Url Types   代码使用  初始化 启动判断 生命周期处理   测试需求  7天前 45天前 45天后    下载 点击下载
-配置工程 添加framework WebKit.framework 网络使用权限 &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt;&amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt;&amp;lt;dict&amp;gt;&amp;lt;key&amp;gt;NSAllowsArbitraryLoads&amp;lt;/key&amp;gt;&amp;lt;true/&amp;gt;&amp;lt;/dict&amp;gt;&amp;lt;/plist&amp;gt;Other Link Flag -ObjC添加Url Types   Figure 1: 示意图
-  代码使用 初始化 [[BlackHole sharedInstance] onStart:@&amp;#34;20190121230000&amp;#34;]; 启动判断 if([[BlackHole sharedInstance] checkErrors]) { NSString *error = [BlackHole sharedInstance].</description>
+      <guid>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</guid>
+      <description>今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&amp;lt;string&amp;gt; file not found &amp;lt;cctype&amp;gt; file not found 各种google.
+解决方法：
+1.cocos2dx.xcodeproj ==&amp;gt; BuildSetting ==&amp;gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </description>
+    </item>
+    
+    <item>
+      <title>Cosos2dx fmod 声音引擎集成</title>
+      <link>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</link>
+      <pubDate>Thu, 22 Nov 2018 15:17:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</guid>
+      <description>环境 配置  文件 win32 ios android   lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17
+fmod官方文档
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external 拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto 修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &amp;#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&amp;#34; // 2.添加导入 bool LuaStack::init(void) { ... register_all_cocos2dx_fmod(_state); ... return true; } win32 添加代码到工程   配置libs ios 配置静态库   配置搜索路径 1.</description>
     </item>
     
     <item>
@@ -185,7 +111,7 @@ pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\
       <guid>http://www.lanhuzi.com/post/svn-common-operation/</guid>
       <description>svn配置BeyondCompare对比工具 Beyond Compare 官方说明
 常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
-进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; </description>
+进阶操作 删除所有不存在的文件和文件夹 svn st|awk &amp;#39;{if($1==&amp;#34;!&amp;#34;){print $2}}&amp;#39;|xargs svn rm 增加？号文件 svn st|awk &amp;#39;{if($1==&amp;#34;?&amp;#34;){print $2}}&amp;#39;|xargs svn add 提交m文件文件 svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34;){print $2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; svn st|awk &amp;#39;{if($1==&amp;#34;m&amp;#34; and index($2,&amp;#34;@&amp;#34;)==0){printf &amp;#34;%s@&amp;#34;,$2}}&amp;#39;|xargs svn ci -m &amp;#34;comments&amp;#34; </description>
     </item>
     
     <item>
@@ -196,42 +122,6 @@ pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\
       <guid>http://www.lanhuzi.com/post/android-so-path-lock/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 &lt;p&gt;接XXSDK的时候java 加载so的时候闪退&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>游戏里面的技能该如何定义？</title>
-      <link>http://www.lanhuzi.com/post/what-is-skill/</link>
-      <pubDate>Wed, 18 Apr 2018 19:43:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/post/what-is-skill/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%AF%BC%E7%81%AB%E7%B4%A2&#34;&gt;导火索&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E4%BB%80%E4%B9%88%E6%98%AF%E6%8A%80%E8%83%BD&#34;&gt;什么是技能？&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E7%99%BE%E5%BA%A6%E7%9A%84%E6%8A%80%E8%83%BD&#34;&gt;百度的技能&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E6%88%91%E7%9A%84%E7%BF%BB%E8%AF%91&#34;&gt;我的翻译&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8E%BB%E6%B7%B1%E7%A9%B6%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98&#34;&gt;为什么要去深究这个问题？&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E4%B8%8D%E5%90%8C%E7%9A%84%E6%8B%86%E8%A7%A3%E4%BC%9A%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%93%E6%9E%84&#34;&gt;不同的拆解会有不同的结构&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%90%88%E7%90%86%E7%9A%84%E5%AE%9A%E4%B9%89%E4%BC%9A%E8%AE%A9%E7%BB%93%E6%9E%84%E6%9B%B4%E6%B8%85%E6%99%B0&#34;&gt;合理的定义会让结构更清晰&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E6%88%91%E7%9A%84%E5%81%9A%E6%B3%95&#34;&gt;我的做法&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E9%80%9A%E9%81%93&#34;&gt;通道&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%85%A8%E9%83%A8%E6%8C%87%E5%90%91%E9%80%9A%E9%81%93&#34;&gt;全部指向通道&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;导火索&#34;&gt;导火索&lt;/h2&gt;
-&lt;p&gt;英雄A 技能1 释放一个火球打敌人身上会产生灼烧3秒，每秒损失50点生命值。&lt;/p&gt;
-&lt;p&gt;火球和灼烧效果是属于这个技能的吗？
-有问过不少策划，他们觉得是。而且他们会随便找个人问下，都会觉得是。这个是我比较不能理解的地方，所以我开始展开我的探索。&lt;/p&gt;</description>
     </item>
     
     <item>

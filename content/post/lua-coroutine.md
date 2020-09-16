@@ -1,8 +1,7 @@
 +++
 title = "巧妙的使用coroutine分散计算量"
-author = ["semgilo"]
 date = 2017-04-28T15:06:00+08:00
-lastmod = 2018-11-16T09:47:07+08:00
+lastmod = 2020-09-16T11:23:11+08:00
 tags = ["lua"]
 categories = ["笔记"]
 draft = false
@@ -42,7 +41,7 @@ for i=1,10 do
     -- do something
     -- ...
     if i % 2 == 0 then
-	coroutine.yield()
+        coroutine.yield()
     end
 end
 ```
@@ -55,7 +54,7 @@ for i=1,10 do
     -- do something
     -- ...
     if os.clock() - nLastClock > 16 then
-	coroutine.yield()
+        coroutine.yield()
     end
 end
 ```

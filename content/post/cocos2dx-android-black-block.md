@@ -1,8 +1,7 @@
 +++
 title = "android etc1 黑块问题"
-author = ["semgilo"]
 date = 2017-05-03T03:40:00+08:00
-lastmod = 2018-11-16T09:45:54+08:00
+lastmod = 2020-09-16T11:14:31+08:00
 tags = ["cocos2dx", "android"]
 categories = ["笔记"]
 draft = false
@@ -31,10 +30,10 @@ draft = false
 
 function ()
     xxx:runAction(cc.Sequence:create(
-	cc.DelayTime:create(0.02),
-	cc.CallFunc:create(function ()
-	    -- ... do something
-	end)))
+        cc.DelayTime:create(0.02),
+        cc.CallFunc:create(function ()
+            -- ... do something
+        end)))
 end
 
 ```

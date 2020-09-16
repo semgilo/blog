@@ -1,0 +1,49 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: mac下svn常用操作命令
+#+DATE: <2018-11-16 星期五 14:33:46>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: SVN
+#+HUGO_CATEGORIES: 分享
+#+HUGO_SECTION: post
+#+HUGO_DRAFT: false
+* svn配置BeyondCompare对比工具
+[[https://www.scootersoftware.com/features.php?zz=kb_vcs_osx][Beyond Compare 官方说明]]
+
+* 常规操作
+** 检出工程
+#+BEGIN_SRC shell
+svn co url
+#+END_SRC
+** 查看当前状态
+#+BEGIN_SRC shell
+svn st
+#+END_SRC
+** 添加文件或者文件夹
+#+BEGIN_SRC shell
+svn add . --force
+#+END_SRC
+** 查看当前修改
+#+BEGIN_SRC shell
+svn diff
+#+END_SRC
+** 其它
+svn help
+
+* 进阶操作
+** 删除所有不存在的文件和文件夹
+#+BEGIN_SRC shell
+svn st|awk '{if($1=="!"){print $2}}'|xargs svn rm
+#+END_SRC
+** 增加？号文件
+#+BEGIN_SRC shell
+svn st|awk '{if($1=="?"){print $2}}'|xargs svn add
+#+END_SRC
+
+** 提交m文件文件
+#+BEGIN_SRC shell
+svn st|awk '{if($1=="m"){print $2}}'|xargs svn ci -m "comments"
+#+END_SRC
+
+#+BEGIN_SRC shell
+svn st|awk '{if($1=="m" and index($2,"@")==0){printf "%s@",$2}}'|xargs svn ci -m "comments"
+#+END_SRC

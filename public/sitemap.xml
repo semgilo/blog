@@ -4,317 +4,232 @@
   
   <url>
     <loc>http://www.lanhuzi.com/categories/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/llvm/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/obfuscate/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/obfuscator/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/</loc>
-    <lastmod>2020-09-15T21:43:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/obfuscator/</loc>
-    <lastmod>2020-05-13T08:43:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/learning/</loc>
-    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <lastmod>2020-09-16T11:22:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/llvm/</loc>
+    <lastmod>2020-09-16T11:22:46+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/learning/learn-llvm-setup/</loc>
-    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <lastmod>2020-09-16T11:22:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/</loc>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2019-11-26T10:29:59+08:00</lastmod>
+    <lastmod>2020-09-16T11:22:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/blog/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/python/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/blog/python-cmdline-framework/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/share/python-cmdline-framework/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/share/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/share/</loc>
-    <lastmod>2019-11-21T17:23:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2020-09-15T21:48:05+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/</loc>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/cocos2dx/</loc>
-    <lastmod>2020-09-15T21:42:27+08:00</lastmod>
+    <lastmod>2020-09-16T11:17:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/note/</loc>
-    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/post/</loc>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/notes/</loc>
-    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/blog/glreadpixels-after-videoplayer/</loc>
-    <lastmod>2020-09-15T21:42:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/notes/glreadpixels-after-videoplayer/</loc>
-    <lastmod>2019-11-19T21:00:18+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/post/glreadpixels-after-videoplayer/</loc>
+    <lastmod>2020-09-16T11:17:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-09-15T21:42:27+08:00</lastmod>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/emacs/</loc>
-    <lastmod>2020-09-15T21:43:25+08:00</lastmod>
+    <lastmod>2020-09-16T11:19:37+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/about-custom-file/</loc>
-    <lastmod>2020-09-15T21:43:25+08:00</lastmod>
+    <lastmod>2020-09-16T11:18:14+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/lisp/</loc>
-    <lastmod>2019-11-15T11:05:18+08:00</lastmod>
+    <lastmod>2020-09-16T11:19:37+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/about-dir-local/</loc>
-    <lastmod>2019-11-15T11:05:18+08:00</lastmod>
+    <lastmod>2020-09-16T11:19:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2020-09-16T11:19:37+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-rendertexture1/</loc>
-    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/cosos2dx/</loc>
-    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/rendertexture/</loc>
-    <lastmod>2019-01-29T16:08:42+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/lucky-confuser/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/%E6%B7%B7%E6%B7%86%E5%99%A8/</loc>
-    <lastmod>2019-01-04T00:14:49+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/regex/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
+    <lastmod>2020-09-16T11:11:06+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/classic-regular-expression-statement/</loc>
-    <lastmod>2019-01-05T18:08:04+08:00</lastmod>
+    <lastmod>2020-09-16T11:11:06+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/ios/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <lastmod>2020-09-16T11:21:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/ios-full-path-issue/</loc>
-    <lastmod>2018-12-12T12:15:05+08:00</lastmod>
+    <lastmod>2020-09-16T11:21:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/tags/blackhole/</loc>
-    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-file-not-found-2.2.6/</loc>
+    <lastmod>2020-09-16T11:15:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/post/blackhole-sdk-introduction/</loc>
-    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/tags/audioengine/</loc>
+    <lastmod>2020-09-16T11:16:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.lanhuzi.com/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2018-12-13T15:01:27+08:00</lastmod>
+    <loc>http://www.lanhuzi.com/post/cocos2dx-fmod-integrating/</loc>
+    <lastmod>2020-09-16T11:16:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.lanhuzi.com/tags/fmod/</loc>
+    <lastmod>2020-09-16T11:16:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/svn-common-operation/</loc>
-    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+    <lastmod>2020-09-16T11:13:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/svn/</loc>
-    <lastmod>2018-11-23T09:59:31+08:00</lastmod>
+    <lastmod>2020-09-16T11:13:17+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/android/</loc>
-    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/android-so-path-lock/</loc>
-    <lastmod>2018-11-16T09:45:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/tags/game/</loc>
-    <lastmod>2020-09-15T21:28:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.lanhuzi.com/post/what-is-skill/</loc>
-    <lastmod>2020-09-15T21:28:00+08:00</lastmod>
+    <lastmod>2020-09-16T11:06:47+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/android-armeabi-lib-lock/</loc>
-    <lastmod>2018-11-16T09:45:09+08:00</lastmod>
+    <lastmod>2020-09-16T11:05:53+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/android-apk-download-cant-open/</loc>
-    <lastmod>2018-11-16T09:44:53+08:00</lastmod>
+    <lastmod>2020-09-16T11:05:02+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/android-sdk-service-stop-problem/</loc>
-    <lastmod>2018-11-16T09:45:20+08:00</lastmod>
+    <lastmod>2020-09-16T11:06:22+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/iap-productid-take-effect-time/</loc>
-    <lastmod>2018-11-16T09:46:55+08:00</lastmod>
+    <lastmod>2020-09-16T11:19:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-android-threads/</loc>
-    <lastmod>2018-11-16T09:46:02+08:00</lastmod>
+    <lastmod>2020-09-16T11:15:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-etc1-crash/</loc>
-    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
+    <lastmod>2020-09-16T11:15:34+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/etc1/</loc>
-    <lastmod>2018-11-16T09:46:12+08:00</lastmod>
+    <lastmod>2020-09-16T11:15:34+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-fileutils-cache/</loc>
-    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+    <lastmod>2020-09-16T11:15:55+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/fileutils/</loc>
-    <lastmod>2018-11-16T09:46:24+08:00</lastmod>
+    <lastmod>2020-09-16T11:15:55+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-android-black-block/</loc>
-    <lastmod>2018-11-16T09:45:54+08:00</lastmod>
+    <lastmod>2020-09-16T11:14:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/cocos2dx-recreate-event/</loc>
-    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/eventdispatcher/</loc>
-    <lastmod>2018-11-16T09:46:44+08:00</lastmod>
+    <lastmod>2020-09-16T11:16:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/tags/lua/</loc>
-    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/lua-utf8-string-length/</loc>
-    <lastmod>2018-11-16T09:47:18+08:00</lastmod>
+    <lastmod>2020-09-16T11:23:21+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.lanhuzi.com/post/lua-coroutine/</loc>
-    <lastmod>2018-11-16T09:47:07+08:00</lastmod>
+    <lastmod>2020-09-16T11:23:11+08:00</lastmod>
   </url>
   
   <url>

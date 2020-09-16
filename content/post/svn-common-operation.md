@@ -1,8 +1,7 @@
 +++
 title = "mac下svn常用操作命令"
-author = ["semgilo"]
 date = 2018-11-16T14:33:00+08:00
-lastmod = 2018-11-23T09:59:31+08:00
+lastmod = 2020-09-16T11:13:17+08:00
 tags = ["SVN"]
 categories = ["分享"]
 draft = false
@@ -70,4 +69,8 @@ svn st|awk '{if($1=="?"){print $2}}'|xargs svn add
 
 ```shell
 svn st|awk '{if($1=="m"){print $2}}'|xargs svn ci -m "comments"
+```
+
+```shell
+svn st|awk '{if($1=="m" and index($2,"@")==0){printf "%s@",$2}}'|xargs svn ci -m "comments"
 ```

@@ -1,0 +1,39 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: android etc1 黑块问题
+#+DATE: <2017-05-03 Wed 03:40>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx android
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION: post
+#+HUGO_DRAFT: false
+
+
+
+* 环境
+接android SDK 
+
+* 问题
+在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+
+* 解决思路
+
+** 查找根源
+一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。
+根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。
+所以部分重载一半或者一些不预料的黑块就出现了。
+
+#+BEGIN_SRC lua
+
+function ()
+    xxx:runAction(cc.Sequence:create(
+        cc.DelayTime:create(0.02),
+        cc.CallFunc:create(function ()
+            -- ... do something
+        end)))
+end
+
+#+END_SRC
+
+** 查找为什么会出现黑块
+* 结果
+完美解决黑块问题

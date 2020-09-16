@@ -1,0 +1,30 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: cocos2dx etc 闪退问题
+#+DATE: <2017-05-16 Tue 10:19>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx etc1 android
+#+HUGO_CATEGORIES: 
+#+HUGO_SECTION: post
+#+HUGO_DRAFT: false
+
+
+
+* 环境
+稳定性测试期
+
+* 问题
+部分机型和部分模拟器会因为ETC1资源导致闪退
+#+BEGIN_SRC java
+07-13 21:59:43.727 E/szipinf (21935): Error reading asset data
+07-13 21:59:43.727 E/szipinf (21935): Unable to access asset data: -1
+#+END_SRC
+* 思路及解决
+** 问题分析
+经过调试发现是因为只有部分ETC1资源没有办法正常加载，于是我就把没办法正常加载的资源取出来找规律，
+然后我发现了它们都有一个相同的问题，就是有大部分的透明区域，就是没有用的区域，大概是因为ETC1格式压缩
+的问题和这些闪退的机型协议不一致所导致的，我也不想去深究。
+** 解决方案
+我尝试在整张图片周围画一个距形的红框，目的让资源四周都有像素，果然闪退解决
+
+* 结果
+  做图工具升级，完美解决

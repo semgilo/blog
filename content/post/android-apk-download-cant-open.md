@@ -1,8 +1,7 @@
 +++
 title = "android apk 下载无法识别"
-author = ["semgilo"]
 date = 2017-08-09T16:15:00+08:00
-lastmod = 2018-11-16T09:44:53+08:00
+lastmod = 2020-09-16T11:05:02+08:00
 tags = ["android"]
 categories = ["笔记"]
 draft = false

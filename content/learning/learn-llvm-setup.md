@@ -1,8 +1,7 @@
 +++
 title = "LLVM学习之一搭建"
-author = ["semgilo"]
 date = 2019-11-26T10:05:00+08:00
-lastmod = 2019-11-26T10:29:59+08:00
+lastmod = 2020-09-16T11:22:46+08:00
 tags = ["llvm"]
 categories = ["学习"]
 draft = false

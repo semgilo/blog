@@ -1,8 +1,7 @@
 +++
 title = "android-armeabi-lib-lock"
-author = ["semgilo"]
 date = 2017-10-13T15:05:00+08:00
-lastmod = 2018-11-16T09:45:09+08:00
+lastmod = 2020-09-16T11:05:53+08:00
 tags = ["android", "cocos2dx"]
 categories = ["笔记"]
 draft = false

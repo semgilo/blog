@@ -1,8 +1,7 @@
 +++
 title = "cocos2dx 重新创建机制"
-author = ["semgilo"]
 date = 2017-04-30T08:29:00+08:00
-lastmod = 2018-11-16T09:46:44+08:00
+lastmod = 2020-09-16T11:16:31+08:00
 tags = ["cocos2dx", "android", "EventDispatcher"]
 categories = ["笔记"]
 draft = false

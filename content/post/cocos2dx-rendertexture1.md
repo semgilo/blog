@@ -1,8 +1,7 @@
 +++
 title = "Cocos2dx优化之RenderTexture"
-author = ["semgilo"]
 date = 2019-01-27T18:21:00+08:00
-lastmod = 2019-01-29T16:08:42+08:00
+lastmod = 2020-09-16T11:16:41+08:00
 tags = ["Cosos2dx", "RenderTexture"]
 categories = ["分享"]
 draft = false

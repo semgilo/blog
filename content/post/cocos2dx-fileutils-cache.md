@@ -1,8 +1,7 @@
 +++
 title = "cocos2dx FileUtils 缓存机制"
-author = ["semgilo"]
 date = 2017-05-12T15:36:00+08:00
-lastmod = 2018-11-16T09:46:24+08:00
+lastmod = 2020-09-16T11:15:55+08:00
 tags = ["cocos2dx", "FileUtils"]
 categories = ["笔记"]
 draft = false
@@ -36,19 +35,19 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
 {
     if (filename.empty())
     {
-	return "";
+        return "";
     }
 
     if (isAbsolutePath(filename))
     {
-	return filename;
+        return filename;
     }
 
     // Already Cached ?
     auto cacheIter = _fullPathCache.find(filename);
     if(cacheIter != _fullPathCache.end())
     {
-	return cacheIter->second;
+        return cacheIter->second;
     }
 
     // Get the new file name.
@@ -58,22 +57,22 @@ std::string FileUtils::fullPathForFilename(const std::string &filename) const
 
     for (const auto& searchIt : _searchPathArray)
     {
-	for (const auto& resolutionIt : _searchResolutionsOrderArray)
-	{
-	    fullpath = this->getPathForFilename(newFilename, resolutionIt, searchIt);
+        for (const auto& resolutionIt : _searchResolutionsOrderArray)
+        {
+            fullpath = this->getPathForFilename(newFilename, resolutionIt, searchIt);
 
-	    if (!fullpath.empty())
-	    {
-		// Using the filename passed in as key.
-		_fullPathCache.insert(std::make_pair(filename, fullpath));
-		return fullpath;
-	    }
+            if (!fullpath.empty())
+            {
+                // Using the filename passed in as key.
+                _fullPathCache.insert(std::make_pair(filename, fullpath));
+                return fullpath;
+            }
 
-	}
+        }
     }
 
     if(isPopupNotify()){
-	CCLOG("cocos2d: fullPathForFilename: No file found at %s. Possible missing file.", filename.c_str());
+        CCLOG("cocos2d: fullPathForFilename: No file found at %s. Possible missing file.", filename.c_str());
     }
 
     // The file wasn't found, return empty string.
