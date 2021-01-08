@@ -5,7 +5,18 @@
     <link>http://www.lanhuzi.com/</link>
     <description>Recent content on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Sep 2020 16:39:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 17:31:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android 10 分区存储适配之保存到相册</title>
+      <link>http://www.lanhuzi.com/android_save_video_to_album/</link>
+      <pubDate>Fri, 08 Jan 2021 17:31:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/android_save_video_to_album/</guid>
+      <description>问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
+问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
+values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.</description>
+    </item>
+    
     <item>
       <title>Cocos2d-x性能优化之CPU</title>
       <link>http://www.lanhuzi.com/cocos-cup-optimization/</link>

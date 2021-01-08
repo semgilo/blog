@@ -83,6 +83,28 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:56:52JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/android-so-path-lock/">android so path 被锁定</a></h2>
+  </header>
+
+  
+  <div class="summary"><h2 id="问题描述">问题描述</h2>
+<p>接XXSDK的时候java 加载so的时候闪退</p></div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/android-so-path-lock/" title="android so path 被锁定">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:54:17JST">Sep 16, 2020</time></li>
       
       
@@ -267,28 +289,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:15:46JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/lua-coroutine/">巧妙的使用coroutine分散计算量</a></h2>
-  </header>
-
-  
-  <div class="summary">问题描述 最近一直在优化android相关的内容 在战斗模块上吃了一个亏，本应该可以忽略的一部分，寻敌跟寻位耗大量的CPU时间导致战斗暴卡
-问题分析 优化算法 一开始是尽量优化整个算法，但游戏本身在寻敌和寻位的复杂度就要有一定的开销，降低了差不多有一半的消耗，但最终还是达不到一个理想的效果
-多线程 考虑到现在android单核计算能力实在有限，就开始考虑用多线程来单独计算战斗模块。 因为战斗是用纯lua写的，如果要用单独纯种就得多开一个luaState，而且数据交互也是比较麻烦，因时间关系就先放下了。
-协程 在lua里面还有一个神器就是协程了，因为战斗模型的一帧是100ms，游戏一界面表现一帧是16ms，所以过程就提供了分担的时间。 方式一
-for i=1,10 do -- do something -- ... if i % 2 == 0 then coroutine.yield() end end 方式二
-local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock() - nLastClock &gt; 16 then coroutine.yield() end end 解决方案 使用协程的方案，一旦在coroutine.yield()前的数据是生效的，切记在表现的时候要把这部分的未完全执行完的帧resume起来</div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -319,6 +319,8 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
       
       <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
@@ -337,8 +339,6 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       
       <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
-      <a href="http://www.lanhuzi.com/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
-      
     </div>
   </section>
 
@@ -355,6 +355,8 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
     </div>
   </section>
   
@@ -370,6 +372,8 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
       <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
@@ -381,8 +385,6 @@ local nLastClock = os.clock() for i=1,10 do -- do something -- ... if os.clock()
       <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
       
       <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
-      
-      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
     </div>
   </section>

@@ -83,6 +83,29 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/android_save_video_to_album/">android 10 分区存储适配之保存到相册</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
+问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &lt;uses-permission android:name=&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34; android:maxSdkVersion=&#34;28&#34; /&gt;    设备 权限添加 maxSdkVersion=&ldquo;28&rdquo; 未添加 maxSdkVersion=&ldquo;28&rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
+values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &lt;uses-permission android:name=&#34;android.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/android_save_video_to_album/" title="android 10 分区存储适配之保存到相册">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T21:42:56JST">Sep 16, 2020</time></li>
       
       
@@ -296,28 +319,6 @@ fmod官方文档
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:56:52JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/android-so-path-lock/">android so path 被锁定</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="问题描述">问题描述</h2>
-<p>接XXSDK的时候java 加载so的时候闪退</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/android-so-path-lock/" title="android so path 被锁定">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -348,6 +349,8 @@ fmod官方文档
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
       
       <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
@@ -366,8 +369,6 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
-      <a href="http://www.lanhuzi.com/android-so-path-lock/" class="list-group-item">android so path 被锁定</a>
-      
     </div>
   </section>
 
@@ -384,6 +385,8 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
       
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
     </div>
   </section>
   
@@ -399,6 +402,8 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
       <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
@@ -410,8 +415,6 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
       
       <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
-      
-      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
       
     </div>
   </section>

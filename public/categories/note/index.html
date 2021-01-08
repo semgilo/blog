@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/categories/note/index.xml">
+
+<link rel="canonical" href="http://www.lanhuzi.com/categories/note/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>note - 蓝胡子</title>
+    
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">蓝胡子</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    
+    <header class="page-header">
+      <h1>note</h1>
+    </header>
+    
+
+    <ul class="p-articles">
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/android_save_video_to_album/">android 10 分区存储适配之保存到相册</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
+问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &lt;uses-permission android:name=&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34; android:maxSdkVersion=&#34;28&#34; /&gt;    设备 权限添加 maxSdkVersion=&ldquo;28&rdquo; 未添加 maxSdkVersion=&ldquo;28&rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
+values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &lt;uses-permission android:name=&#34;android.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/android_save_video_to_album/" title="android 10 分区存储适配之保存到相册">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+    </ul>
+
+    
+
+
+  </div>
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
+      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
+      
+      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
+      
+      <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
+      
+      <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
+      
+      <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
