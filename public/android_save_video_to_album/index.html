@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>android 10 分区存储适配之保存到相册 - 蓝胡子</title>
     
-<meta name="description" content="问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.">
+<meta name="description" content="&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;&lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;">
 
 <meta property="og:title" content="android 10 分区存储适配之保存到相册 - 蓝胡子">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://www.lanhuzi.com/android_save_video_to_album/">
 <meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
 <meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content="问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.">
+<meta property="og:description" content="&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;&lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="蓝胡子">
 <meta name="twitter:url" content="http://www.lanhuzi.com/android_save_video_to_album/">
 <meta name="twitter:title" content="android 10 分区存储适配之保存到相册 - 蓝胡子">
-<meta name="twitter:description" content="问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.">
+<meta name="twitter:description" content="&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;&lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;">
 <meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
 
 
@@ -50,7 +50,7 @@
       "width": 800
     },
     "datePublished": "2021-01-08T17:31:00JST",
-    "dateModified": "2021-01-08T22:32:47JST",
+    "dateModified": "2021-01-12T11:24:34JST",
     "author": {
       "@type": "Person",
       "name": "蓝胡子"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败\n问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  \u0026lt;uses-permission android:name=\u0026#34;android.permission.WRITE_EXTERNAL_STORAGE\u0026#34; android:maxSdkVersion=\u0026#34;28\u0026#34; \/\u0026gt;    设备 权限添加 maxSdkVersion=\u0026ldquo;28\u0026rdquo; 未添加 maxSdkVersion=\u0026ldquo;28\u0026rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8\nvalues.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 \u0026lt;uses-permission android:name=\u0026#34;android."
+    "description": "\u003ch2 id=\u0022问题描述\u0022\u003e问题描述\u003c\/h2\u003e\n\u003cp\u003e当 targetSdkVersion 设置高于 29 后，分享拷贝失败\u003c\/p\u003e"
   }
 </script>
 
@@ -141,7 +141,7 @@ if (!doNotTrack) {
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T11:24:34JST">Jan 12, 2021</time></li>
       
       
     </ul>
@@ -301,7 +301,7 @@ if (!doNotTrack) {
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://www.lanhuzi.com/categories/note/">note</a></li>
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
           
         </ul>
       </div>
@@ -399,8 +399,6 @@ if (!doNotTrack) {
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
-      
-      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
     </div>
   </section>

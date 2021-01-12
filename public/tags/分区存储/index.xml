@@ -12,9 +12,8 @@
       <pubDate>Fri, 08 Jan 2021 17:31:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/android_save_video_to_album/</guid>
-      <description>问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
-问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
-values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.</description>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;</description>
     </item>
     
   </channel>

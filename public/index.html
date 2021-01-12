@@ -83,7 +83,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T10:57:20JST">Jan 12, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T11:24:22JST">Jan 12, 2021</time></li>
       
       
     </ul>
@@ -91,8 +91,8 @@ if (!doNotTrack) {
   </header>
 
   
-  <div class="summary">问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常
-问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;&amp; fileLen &gt; 0) { // continue download  List&lt;Header&gt; list = new ArrayList&lt;Header&gt;(); list.add(new BasicHeader(&#34;Range&#34;, &#34;bytes=&#34; + fileLen + &#34;-&#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &gt; 0) { downloader.</div>
+  <div class="summary"><h2 id="问题描述">问题描述</h2>
+<p>下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常</p></div>
 
   
   <footer>
@@ -105,7 +105,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T11:24:34JST">Jan 12, 2021</time></li>
       
       
     </ul>
@@ -113,9 +113,8 @@ if (!doNotTrack) {
   </header>
 
   
-  <div class="summary">问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
-问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &lt;uses-permission android:name=&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34; android:maxSdkVersion=&#34;28&#34; /&gt;    设备 权限添加 maxSdkVersion=&ldquo;28&rdquo; 未添加 maxSdkVersion=&ldquo;28&rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
-values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &lt;uses-permission android:name=&#34;android.</div>
+  <div class="summary"><h2 id="问题描述">问题描述</h2>
+<p>当 targetSdkVersion 设置高于 29 后，分享拷贝失败</p></div>
 
   
   <footer>
@@ -387,8 +386,6 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
       <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
-      
-      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
     </div>
   </section>

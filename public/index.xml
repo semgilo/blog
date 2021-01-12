@@ -12,8 +12,8 @@
       <pubDate>Tue, 12 Jan 2021 10:28:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/</guid>
-      <description>问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常
-问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;amp;&amp;amp; fileLen &amp;gt; 0) { // continue download  List&amp;lt;Header&amp;gt; list = new ArrayList&amp;lt;Header&amp;gt;(); list.add(new BasicHeader(&amp;#34;Range&amp;#34;, &amp;#34;bytes=&amp;#34; + fileLen + &amp;#34;-&amp;#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &amp;gt; 0) { downloader.</description>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,9 +22,8 @@
       <pubDate>Fri, 08 Jan 2021 17:31:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/android_save_video_to_album/</guid>
-      <description>问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
-问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &amp;lt;uses-permission android:name=&amp;#34;android.permission.WRITE_EXTERNAL_STORAGE&amp;#34; android:maxSdkVersion=&amp;#34;28&amp;#34; /&amp;gt;    设备 权限添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo; 未添加 maxSdkVersion=&amp;ldquo;28&amp;rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
-values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &amp;lt;uses-permission android:name=&amp;#34;android.</description>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;</description>
     </item>
     
     <item>
