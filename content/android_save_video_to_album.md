@@ -2,15 +2,16 @@
 title = "android 10 分区存储适配之保存到相册"
 author = ["Donghai Ruan"]
 date = 2021-01-08T17:31:00+08:00
-lastmod = 2021-01-08T22:32:47+08:00
+lastmod = 2021-01-12T11:24:34+08:00
 tags = ["android10", "保存到相册", "分区存储"]
-categories = ["note"]
+categories = ["笔记"]
 draft = false
 +++
 
 ## 问题描述 {#问题描述}
 
 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
+<!--more-->
 
 
 ## 问题分析 {#问题分析}

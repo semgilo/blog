@@ -2,7 +2,7 @@
 title = "cocos2dx downloader 断点续传问题"
 author = ["Donghai Ruan"]
 date = 2021-01-12T10:28:00+08:00
-lastmod = 2021-01-12T10:57:20+08:00
+lastmod = 2021-01-12T11:24:22+08:00
 tags = ["cocos2dx", "downloader", "断点续传问题"]
 categories = ["笔记"]
 draft = false
@@ -11,6 +11,7 @@ draft = false
 ## 问题描述 {#问题描述}
 
 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常
+<!--more-->
 
 
 ## 问题分析 {#问题分析}
