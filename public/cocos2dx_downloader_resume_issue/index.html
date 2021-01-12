@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>cocos2dx downloader 断点续传问题 - 蓝胡子</title>
+    
+<meta name="description" content="问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;amp;&amp;amp; fileLen &amp;gt; 0) { // continue download  List&amp;lt;Header&amp;gt; list = new ArrayList&amp;lt;Header&amp;gt;(); list.add(new BasicHeader(&amp;#34;Range&amp;#34;, &amp;#34;bytes=&amp;#34; &#43; fileLen &#43; &amp;#34;-&amp;#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &amp;gt; 0) { downloader.">
+
+<meta property="og:title" content="cocos2dx downloader 断点续传问题 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;amp;&amp;amp; fileLen &amp;gt; 0) { // continue download  List&amp;lt;Header&amp;gt; list = new ArrayList&amp;lt;Header&amp;gt;(); list.add(new BasicHeader(&amp;#34;Range&amp;#34;, &amp;#34;bytes=&amp;#34; &#43; fileLen &#43; &amp;#34;-&amp;#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &amp;gt; 0) { downloader.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/">
+<meta name="twitter:title" content="cocos2dx downloader 断点续传问题 - 蓝胡子">
+<meta name="twitter:description" content="问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;amp;&amp;amp; fileLen &amp;gt; 0) { // continue download  List&amp;lt;Header&amp;gt; list = new ArrayList&amp;lt;Header&amp;gt;(); list.add(new BasicHeader(&amp;#34;Range&amp;#34;, &amp;#34;bytes=&amp;#34; &#43; fileLen &#43; &amp;#34;-&amp;#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &amp;gt; 0) { downloader.">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "cocos2dx downloader 断点续传问题 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2021-01-12T10:28:00JST",
+    "dateModified": "2021-01-12T10:57:20JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常\n问题分析 Android的Downloader是通过requst header来实现断点续传 \/\/ 在Cocos2dxDownloader里面createTask里面 if (supportResuming \u0026amp;\u0026amp; fileLen \u0026gt; 0) { \/\/ continue download  List\u0026lt;Header\u0026gt; list = new ArrayList\u0026lt;Header\u0026gt;(); list.add(new BasicHeader(\u0026#34;Range\u0026#34;, \u0026#34;bytes=\u0026#34; \u002b fileLen \u002b \u0026#34;-\u0026#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds \u0026gt; 0) { downloader."
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">蓝胡子</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li class="active">cocos2dx downloader 断点续传问题</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T10:57:20JST">Jan 12, 2021</time></li>
+      
+      
+    </ul>
+
+    <h1 class="title">cocos2dx downloader 断点续传问题</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="问题描述">问题描述</h2>
+<p>下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常</p>
+<h2 id="问题分析">问题分析</h2>
+<h3 id="android的downloader是通过requst-header来实现断点续传">Android的Downloader是通过requst header来实现断点续传</h3>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// 在Cocos2dxDownloader里面createTask里面
+</span><span class="c1"></span><span class="k">if</span> <span class="o">(</span><span class="n">supportResuming</span> <span class="o">&amp;&amp;</span> <span class="n">fileLen</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// continue download
+</span><span class="c1"></span>    <span class="n">List</span><span class="o">&lt;</span><span class="n">Header</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Header</span><span class="o">&gt;();</span>
+    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">BasicHeader</span><span class="o">(</span><span class="s">&#34;Range&#34;</span><span class="o">,</span> <span class="s">&#34;bytes=&#34;</span> <span class="o">+</span> <span class="n">fileLen</span> <span class="o">+</span> <span class="s">&#34;-&#34;</span><span class="o">));</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">toArray</span><span class="o">(</span><span class="k">new</span> <span class="n">Header</span><span class="o">[</span><span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">()]);</span>
+<span class="o">}</span>
+</code></pre></div><h3 id="当切换网络的时候依旧是使用旧的header数据-缓存文件也没有还原-导致下载的最终数据比原数据大">当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大</h3>
+<h2 id="解决方案">解决方案</h2>
+<h3 id="修改重连次数为0">修改重连次数为0</h3>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="n">Cocos2dxDownloader</span> <span class="nf">createDownloader</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="kt">int</span> <span class="n">timeoutInSeconds</span><span class="o">,</span> <span class="n">String</span> <span class="n">tempFileNameSufix</span><span class="o">,</span> <span class="kt">int</span> <span class="n">countOfMaxProcessingTasks</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Cocos2dxDownloader</span> <span class="n">downloader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cocos2dxDownloader</span><span class="o">();</span>
+    <span class="n">downloader</span><span class="o">.</span><span class="na">_id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+
+    <span class="n">downloader</span><span class="o">.</span><span class="na">_httpClient</span><span class="o">.</span><span class="na">setEnableRedirects</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">timeoutInSeconds</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">downloader</span><span class="o">.</span><span class="na">_httpClient</span><span class="o">.</span><span class="na">setMaxRetriesAndTimeout</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">timeoutInSeconds</span> <span class="o">*</span> <span class="n">1000</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="n">downloader</span><span class="o">.</span><span class="na">_httpClient</span><span class="o">.</span><span class="na">setMaxRetriesAndTimeout</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">0</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// downloader._httpClient.setMaxRetriesAndTimeout(3, timeoutInSeconds * 1000);
+</span><span class="c1"></span>    <span class="n">downloader</span><span class="o">.</span><span class="na">_httpClient</span><span class="o">.</span><span class="na">allowRetryExceptionClass</span><span class="o">(</span><span class="n">javax</span><span class="o">.</span><span class="na">net</span><span class="o">.</span><span class="na">ssl</span><span class="o">.</span><span class="na">SSLException</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+    <span class="c1">//disable url auto decode
+</span><span class="c1"></span>    <span class="c1">//fix https://github.com/cocos2d/cocos2d-x/issues/18949
+</span><span class="c1"></span>    <span class="n">downloader</span><span class="o">.</span><span class="na">_httpClient</span><span class="o">.</span><span class="na">setURLEncodingEnabled</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+
+    <span class="n">downloader</span><span class="o">.</span><span class="na">_tempFileNameSufix</span> <span class="o">=</span> <span class="n">tempFileNameSufix</span><span class="o">;</span>
+    <span class="n">downloader</span><span class="o">.</span><span class="na">_countOfMaxProcessingTasks</span> <span class="o">=</span> <span class="n">countOfMaxProcessingTasks</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">downloader</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/downloader/">downloader</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0%E9%97%AE%E9%A2%98/">断点续传问题</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
+      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
+      
+      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
+      
+      <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
+      
+      <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
+      
+      <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

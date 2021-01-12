@@ -6,70 +6,16 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.75.1" />
 
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.lanhuzi.com/tags/%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0%E9%97%AE%E9%A2%98/index.xml">
 
-
-<link rel="canonical" href="http://www.lanhuzi.com/android-sdk-service-stop-problem/">
+<link rel="canonical" href="http://www.lanhuzi.com/tags/%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0%E9%97%AE%E9%A2%98/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Android SDK 不会自己删除服务问题 - 蓝胡子</title>
+    <title>断点续传问题 - 蓝胡子</title>
     
-<meta name="description" content="&lt;h2 id=&#34;问题详述&#34;&gt;问题详述&lt;/h2&gt;&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;">
-
-<meta property="og:title" content="Android SDK 不会自己删除服务问题 - 蓝胡子">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://www.lanhuzi.com/android-sdk-service-stop-problem/">
-<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
-<meta property="og:site_name" content="蓝胡子">
-<meta property="og:description" content="&lt;h2 id=&#34;问题详述&#34;&gt;问题详述&lt;/h2&gt;&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="蓝胡子">
-<meta name="twitter:url" content="http://www.lanhuzi.com/android-sdk-service-stop-problem/">
-<meta name="twitter:title" content="Android SDK 不会自己删除服务问题 - 蓝胡子">
-<meta name="twitter:description" content="&lt;h2 id=&#34;问题详述&#34;&gt;问题详述&lt;/h2&gt;&lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;">
-<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"http:\/\/www.lanhuzi.com\/"
-    },
-    "headline": "Android SDK 不会自己删除服务问题 - 蓝胡子",
-    "image": {
-      "@type": "ImageObject",
-      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2017-07-26T16:04:00JST",
-    "dateModified": "2020-09-16T14:56:08JST",
-    "author": {
-      "@type": "Person",
-      "name": "蓝胡子"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "蓝胡子",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "\u003ch2 id=\u0022问题详述\u0022\u003e问题详述\u003c\/h2\u003e\n\u003cp\u003e接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。\u003c\/p\u003e"
-  }
-</script>
-
-
     <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
     
 
@@ -130,99 +76,42 @@ if (!doNotTrack) {
 <div class="row">
   <div class="col-md-8">
 
-    <nav class="p-crumb">
-      <ol class="breadcrumb">
-        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        
-        <li class="active">Android SDK 不会自己删除服务问题</li>
-      </ol>
-    </nav>
+    
+    <header class="page-header">
+      <h1>断点续传问题</h1>
+    </header>
+    
 
-    <article class="single">
+    <ul class="p-articles">
+      
+      <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:56:08JST">Sep 16, 2020</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T10:57:20JST">Jan 12, 2021</time></li>
       
       
     </ul>
-
-    <h1 class="title">Android SDK 不会自己删除服务问题</h1>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/">cocos2dx downloader 断点续传问题</a></h2>
   </header>
 
   
+  <div class="summary">问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常
+问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;&amp; fileLen &gt; 0) { // continue download  List&lt;Header&gt; list = new ArrayList&lt;Header&gt;(); list.add(new BasicHeader(&#34;Range&#34;, &#34;bytes=&#34; + fileLen + &#34;-&#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &gt; 0) { downloader.</div>
 
-  <div class="article-body"><h2 id="问题详述">问题详述</h2>
-<p>接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。</p>
-<h2 id="问题分析">问题分析</h2>
-<p>打开游戏后台发现游戏里面一直有一个服务存在，是SDK的浮窗服务，经过跟渠道交流后，主要有因为SDK
-如果浮窗没有初始化成功，就会主动退出游戏。
-还有一种情况是服务本身会自起动，所以如果一进游戏未初始化好，服务因为自启动会没有成功导致崩溃</p>
-<h2 id="解决方案">解决方案</h2>
-<p>修改SDK
-在Apllication的onCreate方法里面把浮窗服务先停止并关闭自启动</p></div>
-
-  <footer class="article-footer">
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">CATEGORIES</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
-    
-    <section class="bordered">
-      <header>
-        <div class="panel-title">TAGS</div>
-      </header>
-      <div>
-        <ul class="p-terms">
-          
-          <li><a href="http://www.lanhuzi.com/tags/android/">android</a></li>
-          
-          <li><a href="http://www.lanhuzi.com/tags/cocos2dx/">cocos2dx</a></li>
-          
-        </ul>
-      </div>
-    </section>
-    
-    
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" title="cocos2dx downloader 断点续传问题">Read More…</a>
   </footer>
-
+  
 </article>
+</li>
+      
+    </ul>
+
+    
 
 
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
-
   <div class="col-md-4">
     
 <aside class="l-sidebar">

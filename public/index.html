@@ -83,6 +83,28 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T10:57:20JST">Jan 12, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/">cocos2dx downloader 断点续传问题</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 下载过程中突然切换 4G 到 wifi 或者不同 wifi 切换时候，会导致下载后的文件异常
+问题分析 Android的Downloader是通过requst header来实现断点续传 // 在Cocos2dxDownloader里面createTask里面 if (supportResuming &amp;&amp; fileLen &gt; 0) { // continue download  List&lt;Header&gt; list = new ArrayList&lt;Header&gt;(); list.add(new BasicHeader(&#34;Range&#34;, &#34;bytes=&#34; + fileLen + &#34;-&#34;)); headers = list.toArray(new Header[list.size()]); } 当切换网络的时候依旧是使用旧的header数据，缓存文件也没有还原，导致下载的最终数据比原数据大 解决方案 修改重连次数为0 public static Cocos2dxDownloader createDownloader(int id, int timeoutInSeconds, String tempFileNameSufix, int countOfMaxProcessingTasks) { Cocos2dxDownloader downloader = new Cocos2dxDownloader(); downloader._id = id; downloader._httpClient.setEnableRedirects(true); if (timeoutInSeconds &gt; 0) { downloader.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" title="cocos2dx downloader 断点续传问题">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
       
       
@@ -300,25 +322,6 @@ fmod官方文档
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:59:41JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/svn-common-operation/">mac下svn常用操作命令</a></h2>
-  </header>
-
-  
-  <div class="summary">svn配置BeyondCompare对比工具 Beyond Compare 官方说明
-常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
-进阶操作 删除所有不存在的文件和文件夹 svn st|awk &#39;{if($1==&#34;!&#34;){print $2}}&#39;|xargs svn rm 增加？号文件 svn st|awk &#39;{if($1==&#34;?&#34;){print $2}}&#39;|xargs svn add 提交m文件文件 svn st|awk &#39;{if($1==&#34;m&#34;){print $2}}&#39;|xargs svn ci -m &#34;comments&#34; svn st|awk &#39;{if($1==&#34;m&#34; and index($2,&#34;@&#34;)==0){printf &#34;%s@&#34;,$2}}&#39;|xargs svn ci -m &#34;comments&#34; </div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -349,6 +352,8 @@ fmod官方文档
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
@@ -366,8 +371,6 @@ fmod官方文档
       <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
       <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
-      
-      <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
     </div>
   </section>
@@ -408,13 +411,13 @@ fmod官方文档
       
       <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
       
+      <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
+      
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
       
       <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
       <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
-      
-      <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
       
     </div>
   </section>

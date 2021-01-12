@@ -83,6 +83,25 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:59:41JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/svn-common-operation/">mac下svn常用操作命令</a></h2>
+  </header>
+
+  
+  <div class="summary">svn配置BeyondCompare对比工具 Beyond Compare 官方说明
+常规操作 检出工程 svn co url 查看当前状态 svn st 添加文件或者文件夹 svn add . --force 查看当前修改 svn diff 其它 svn help
+进阶操作 删除所有不存在的文件和文件夹 svn st|awk &#39;{if($1==&#34;!&#34;){print $2}}&#39;|xargs svn rm 增加？号文件 svn st|awk &#39;{if($1==&#34;?&#34;){print $2}}&#39;|xargs svn add 提交m文件文件 svn st|awk &#39;{if($1==&#34;m&#34;){print $2}}&#39;|xargs svn ci -m &#34;comments&#34; svn st|awk &#39;{if($1==&#34;m&#34; and index($2,&#34;@&#34;)==0){printf &#34;%s@&#34;,$2}}&#39;|xargs svn ci -m &#34;comments&#34; </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:56:52JST">Sep 16, 2020</time></li>
       
       
@@ -272,23 +291,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:15:54JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/lua-utf8-string-length/">如何在lua正确识别字符串长度</a></h2>
-  </header>
-
-  
-  <div class="summary">function getCharacterLen(str) local nStrLen = 0 for uchar in string.gfind(replaceNewLine(str), &#34;[%z\1-\127\194-\244][\128-\191]*&#34;) do if string.len(uchar) == 3 then nStrLen = nStrLen + 2 else nStrLen = nStrLen + 1 end end return nStrLen end </div>
-
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -319,6 +321,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
@@ -336,8 +340,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
       <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
-      
-      <a href="http://www.lanhuzi.com/svn-common-operation/" class="list-group-item">mac下svn常用操作命令</a>
       
     </div>
   </section>
@@ -378,13 +380,13 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
       
+      <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
+      
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
       
       <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
       <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
-      
-      <a href="http://www.lanhuzi.com/tags/fmod" class="list-group-item">fmod</a>
       
     </div>
   </section>
