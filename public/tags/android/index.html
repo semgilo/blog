@@ -87,6 +87,30 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-22T11:28:18JST">Jan 22, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/android_split_creen_adaption/">android 分屏适配</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题
+问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&ldquo;screenSize|smallestScreenSize|screenLayout|orientation&rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&gt; Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView
+当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView
+需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&gt; c++ -&gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &#34;smallestScreenSize|density|screenLayout&#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/android_split_creen_adaption/" title="android 分屏适配">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:56:52JST">Sep 16, 2020</time></li>
       
       
@@ -272,6 +296,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
       
+      <a href="http://www.lanhuzi.com/android_split_creen_adaption/" class="list-group-item">android 分屏适配</a>
+      
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
@@ -287,8 +313,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
       
       <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
-      
-      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
       
     </div>
   </section>

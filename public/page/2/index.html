@@ -83,6 +83,31 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:09:49JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/">Cosos2dx fmod 声音引擎集成</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 配置  文件 win32 ios android   lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17
+fmod官方文档
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external 拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto 修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34; // 2.添加导入 bool LuaStack::init(void) { ... register_all_cocos2dx_fmod(_state); ... return true; } win32 添加代码到工程   配置libs ios 配置静态库   配置搜索路径 1.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" title="Cosos2dx fmod 声音引擎集成">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:59:41JST">Sep 16, 2020</time></li>
       
       
@@ -269,28 +294,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
 </article>
 </li>
       
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:11:24JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx-recreate-event/">cocos2dx 重新创建机制</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="问题描述">问题描述</h2>
-<p>SDK在游戏里面切换activity的时候花屏</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/cocos2dx-recreate-event/" title="cocos2dx 重新创建机制">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
     </ul>
 
     
@@ -323,6 +326,8 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       
       <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
       
+      <a href="http://www.lanhuzi.com/android_split_creen_adaption/" class="list-group-item">android 分屏适配</a>
+      
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
       <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
@@ -338,8 +343,6 @@ mActivity:runOnGLThread(new Runnable(){ public void run() { // xxoo xxoo  } }) �
       <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
       
       <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
-      
-      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
       
     </div>
   </section>

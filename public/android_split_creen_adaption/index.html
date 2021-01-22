@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/android_split_creen_adaption/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>android 分屏适配 - 蓝胡子</title>
+    
+<meta name="description" content="问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&amp;ldquo;screenSize|smallestScreenSize|screenLayout|orientation&amp;rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&amp;gt; Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c&#43;&#43; -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&amp;gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .">
+
+<meta property="og:title" content="android 分屏适配 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/android_split_creen_adaption/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&amp;ldquo;screenSize|smallestScreenSize|screenLayout|orientation&amp;rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&amp;gt; Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c&#43;&#43; -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&amp;gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/android_split_creen_adaption/">
+<meta name="twitter:title" content="android 分屏适配 - 蓝胡子">
+<meta name="twitter:description" content="问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&amp;ldquo;screenSize|smallestScreenSize|screenLayout|orientation&amp;rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&amp;gt; Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c&#43;&#43; -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&amp;gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "android 分屏适配 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2021-01-09T14:32:00JST",
+    "dateModified": "2021-01-22T11:28:18JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题\n问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=\u0026ldquo;screenSize|smallestScreenSize|screenLayout|orientation\u0026rdquo; 判断方法 \/\/ Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() \/\/ 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -\u0026gt; Cocos2dxGLSurfaceView -\u0026gt; Cocos2dxRender -\u0026gt; GLView\n当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -\u0026gt; Cocos2dxRender -\u0026gt; GLView\n需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -\u0026gt; c\u002b\u002b -\u0026gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 \/\/ android:configChanges \u0026#34;smallestScreenSize|density|screenLayout\u0026#34; 传递尺寸更改信息 \/\/ cocos\/client\/platform\/android\/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-\u0026gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { \/\/ ."
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/about/">蓝胡子</a></li>
+              
+              
+            </ul>
+            
+          </div>
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li class="active">android 分屏适配</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-22T11:28:18JST">Jan 22, 2021</time></li>
+      
+      
+    </ul>
+
+    <h1 class="title">android 分屏适配</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="问题描述">问题描述</h2>
+<p>由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题</p>
+<h2 id="问题分析">问题分析</h2>
+<h3 id="官方文档"><a href="https://developer.android.com/guide/topics/ui/multi-window">官方文档</a></h3>
+<h4 id="android-7-dot-0-开始支持-multi-windows">android 7.0 开始支持 multi-windows</h4>
+<h4 id="android-8-dot-0-支持画中画">android 8.0 支持画中画</h4>
+<h4 id="多窗口模式不会更改-activity-生命周期">多窗口模式不会更改 Activity 生命周期</h4>
+<h4 id="适配标识-android-resizeableactivity">适配标识 android:resizeableActivity</h4>
+<h4 id="画中画支持-android-supportspictureinpicture">画中画支持 android:supportsPictureInPicture</h4>
+<h4 id="配置更改-android-configchanges-screensize-smallestscreensize-screenlayout-orientation">配置更改 android:configChanges=&ldquo;screenSize|smallestScreenSize|screenLayout|orientation&rdquo;</h4>
+<h4 id="判断方法">判断方法</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">// Activity 提供以下方法来支持多窗口显示。
+</span><span class="c1"></span><span class="n">isInMultiWindowMode</span><span class="o">()</span>
+<span class="c1">// 调用该方法可确认 Activity 是否处于多窗口模式。
+</span><span class="c1"></span><span class="n">isInPictureInPictureMode</span><span class="o">()</span>
+</code></pre></div><h4 id="生命周期">生命周期</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">onMultiWindowModeChanged</span><span class="o">()</span>
+<span class="n">onPictureInPictureModeChanged</span><span class="o">()</span>
+</code></pre></div><h3 id="cocos2d-x-的-glview-创建流程">Cocos2d-x 的 GlView 创建流程</h3>
+<p>Cocos2dxActivity -&gt; Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView</p>
+<h3 id="当屏幕尺寸发生改变的">当屏幕尺寸发生改变的</h3>
+<p>Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView</p>
+<h3 id="需要处理的问题">需要处理的问题</h3>
+<h4 id="当窗口大小发生改变的时候不重新创建openglview">当窗口大小发生改变的时候不重新创建OpenGLView</h4>
+<h4 id="窗口大小改变的事件传递-java-c-plus-plus-lua">窗口大小改变的事件传递 java -&gt; c++ -&gt; lua</h4>
+<h4 id="窗口大小改变后点击事件位置适配问题">窗口大小改变后点击事件位置适配问题</h4>
+<h4 id="窗口大小改变后游戏界面的适配">窗口大小改变后游戏界面的适配</h4>
+<h2 id="解决方案">解决方案</h2>
+<h3 id="在androidmanifest-dot-xml添加下列参数-让openglview不因为调整大小而重建">在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建</h3>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml">// android:configChanges
+&#34;smallestScreenSize|density|screenLayout&#34;
+</code></pre></div><h3 id="传递尺寸更改信息">传递尺寸更改信息</h3>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">// cocos/client/platform/android/javaactivity-android.cpp
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span>  <span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">thiz</span><span class="p">,</span> <span class="n">jint</span> <span class="n">w</span><span class="p">,</span> <span class="n">jint</span> <span class="n">h</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">cocos2d</span><span class="o">::</span><span class="n">Application</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">applicationScreenSizeChanged</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><ul>
+<li><input checked="" disabled="" type="checkbox"> 传递给lua</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">void</span> <span class="n">AppDelegate</span><span class="o">::</span><span class="n">applicationScreenSizeChanged</span><span class="p">(</span><span class="kt">int</span> <span class="n">newWidth</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newHeight</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// ...
+</span><span class="c1"></span>    <span class="k">auto</span> <span class="n">engine</span> <span class="o">=</span> <span class="n">LuaEngine</span><span class="o">::</span><span class="n">getInstance</span><span class="p">();</span>
+    <span class="n">LuaStack</span><span class="o">*</span> <span class="n">luaStack</span> <span class="o">=</span> <span class="n">engine</span><span class="o">-&gt;</span><span class="n">getLuaStack</span><span class="p">();</span>
+    <span class="n">luaStack</span><span class="o">-&gt;</span><span class="n">pushInt</span><span class="p">(</span><span class="n">newWidth</span><span class="p">);</span>
+    <span class="n">luaStack</span><span class="o">-&gt;</span><span class="n">pushInt</span><span class="p">(</span><span class="n">newHeight</span><span class="p">);</span>
+    <span class="n">luaStack</span><span class="o">-&gt;</span><span class="n">executeGlobalFunction</span><span class="p">(</span><span class="s">&#34;applicationScreenSizeChanged&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">luaStack</span><span class="o">-&gt;</span><span class="n">clean</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">function</span> <span class="nf">applicationScreenSizeChanged</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+    <span class="n">update</span><span class="p">(</span><span class="s2">&#34;game/ui/base/AlignM&#34;</span><span class="p">);</span>
+    <span class="n">EventMgr.fire</span><span class="p">(</span><span class="n">event.GLVIEW_SIZE_CHANGED</span><span class="p">,</span> <span class="p">{</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">});</span>
+    <span class="kd">local</span> <span class="n">forms</span> <span class="o">=</span> <span class="n">CS</span><span class="p">():</span><span class="n">getFormList</span><span class="p">();</span>
+    <span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="kr">in</span> <span class="n">ipairs</span><span class="p">(</span><span class="n">forms</span><span class="p">)</span> <span class="kr">do</span>
+        <span class="kr">if</span> <span class="n">v.resize</span> <span class="kr">then</span>
+            <span class="n">trace</span><span class="p">(</span><span class="s2">&#34;NativeInterface&#34;</span><span class="p">,</span> <span class="n">string.format</span><span class="p">(</span><span class="s2">&#34;%s: resize&#34;</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span><span class="n">getName</span><span class="p">()))</span>
+            <span class="n">v</span><span class="p">:</span><span class="n">resize</span><span class="p">()</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div><h3 id="当屏幕大小改变后需要对director里面数据进行更新">当屏幕大小改变后需要对Director里面数据进行更新</h3>
+<div class="highlight"><pre class="chroma"><code class="language-c++" data-lang="c++"><span class="c1">// CCDirecotr 添加onGLViewSizeChanged(int width, int height)
+</span><span class="c1"></span><span class="kt">void</span> <span class="n">Director</span><span class="o">::</span><span class="n">onScreenSizeChanged</span><span class="p">(</span><span class="kt">int</span> <span class="n">width</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// 更新窗口大小
+</span><span class="c1"></span>    <span class="n">_winSizeInPoints</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span>
+    <span class="n">_winSizeInPoints</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">;</span>
+
+    <span class="c1">// 重建状态标签及位置
+</span><span class="c1"></span>    <span class="n">createStatsLabel</span><span class="p">();</span>
+
+    <span class="c1">// 重新设置GL相关值
+</span><span class="c1"></span>    <span class="n">setGLDefaultValues</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="当屏幕尺寸大小发生改变后-lua界面相关适配">当屏幕尺寸大小发生改变后，lua界面相关适配 <!-- raw HTML omitted -->[0%]<!-- raw HTML omitted --></h3>
+<h4 id="抛出屏幕尺寸更改事件--glview-size-changed">抛出屏幕尺寸更改事件(GLVIEW_SIZE_CHANGED)</h4>
+<h4 id="截图没有及时更新">截图没有及时更新</h4>
+<h4 id="使用-setshifting-导致屏幕切换后要重新设置">使用 setShifting 导致屏幕切换后要重新设置</h4>
+<h4 id="使用-initscrollgridsvertical-之后-scrollview-大小发生改变-没有更新">使用 initScrollGridsVertical 之后，ScrollView 大小发生改变，没有更新</h4>
+<h4 id="界面走光问题-特效或者图片需要增加尺寸">界面走光问题,特效或者图片需要增加尺寸</h4>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/android/">android</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/split-screen/">split-screen</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/%E5%88%86%E5%B1%8F/">分屏</a></li>
+          
+          <li><a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D/">适配</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
+      <a href="http://www.lanhuzi.com/android_split_creen_adaption/" class="list-group-item">android 分屏适配</a>
+      
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
+      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
+      
+      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
+      
+      <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
+      
+      <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
+      
+      <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
+      
+      <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
+      
+      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
+      
+      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
