@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RenderTexture on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/rendertexture/</link>
+    <description>Recent content in RenderTexture on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 30 Apr 2021 15:20:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/rendertexture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>当CCScrollView在RenderTexture可能裁剪框适配有问题</title>
+      <link>http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/</link>
+      <pubDate>Fri, 30 Apr 2021 15:20:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;当 CCScrollView 在 RenderTexture 可能裁剪框适配有问题&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -83,6 +83,25 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:02:58JST">Sep 16, 2020</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx-android-black-block/">android etc1 黑块问题</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 在SDK返回的时候，部分UI会出现黑块，LOG会提示Opengl GL 502等错误
+问题分析 一开始我的处理方案是把那些异常的资源重新加载，是可以解决大部分问题，但觉得这并不上策。于是我再继续找根源。。。 根源是因为SDK在初始化|登录|支付的回调中去可能去调用到我们的UI，这个回调的线程并不是*Cocos2dxUI线程*，这样子操作UI是不能保证先后顺序，这个时候android机子会触发重新加载资源的时机。 所以部分重载一半或者一些不可预料的黑块就出现了。
+解决方案 function () xxx:runAction(cc.Sequence:create( cc.DelayTime:create(0.02), cc.CallFunc:create(function () -- ... do something end))) end </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:11:24JST">Sep 16, 2020</time></li>
       
       
@@ -194,9 +213,11 @@ Mail:semgilo@gmail.com</div>
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/" class="list-group-item">当CCScrollView在RenderTexture可能裁剪框适配有问题</a>
+      
       <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
       
-      <a href="http://www.lanhuzi.com/android_split_creen_adaption/" class="list-group-item">android 分屏适配</a>
+      <a href="http://www.lanhuzi.com/android_split_screen_adaptation/" class="list-group-item">android 分屏适配</a>
       
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
@@ -211,8 +232,6 @@ Mail:semgilo@gmail.com</div>
       <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
       <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
-      
-      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
       
     </div>
   </section>
@@ -245,6 +264,8 @@ Mail:semgilo@gmail.com</div>
       
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
+      <a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D" class="list-group-item">适配</a>
+      
       <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
       
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
@@ -256,8 +277,6 @@ Mail:semgilo@gmail.com</div>
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
       
       <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
-      
-      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
       
     </div>
   </section>

@@ -5,13 +5,23 @@
     <link>http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D/</link>
     <description>Recent content in 适配 on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 Jan 2021 14:32:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 15:20:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>当CCScrollView在RenderTexture可能裁剪框适配有问题</title>
+      <link>http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/</link>
+      <pubDate>Fri, 30 Apr 2021 15:20:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;当 CCScrollView 在 RenderTexture 可能裁剪框适配有问题&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>android 分屏适配</title>
-      <link>http://www.lanhuzi.com/android_split_creen_adaption/</link>
+      <link>http://www.lanhuzi.com/android_split_screen_adaptation/</link>
       <pubDate>Sat, 09 Jan 2021 14:32:00 +0800</pubDate>
       
-      <guid>http://www.lanhuzi.com/android_split_creen_adaption/</guid>
+      <guid>http://www.lanhuzi.com/android_split_screen_adaptation/</guid>
       <description>问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题
 问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&amp;ldquo;screenSize|smallestScreenSize|screenLayout|orientation&amp;rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&amp;gt; Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView
 当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView
