@@ -53,18 +53,6 @@ if (!doNotTrack) {
           </div>
 
           
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">蓝胡子</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
 
         </div>
       </nav>
@@ -83,7 +71,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-04-30T15:38:00JST">Apr 30, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:25JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -105,7 +93,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T11:24:22JST">Jan 12, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:23JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -127,7 +115,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-22T11:32:11JST">Jan 22, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:09JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -138,7 +126,7 @@ if (!doNotTrack) {
   <div class="summary">问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题
 问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&ldquo;screenSize|smallestScreenSize|screenLayout|orientation&rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&gt; Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView
 当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&gt; Cocos2dxRender -&gt; GLView
-需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&gt; c++ -&gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &#34;smallestScreenSize|density|screenLayout&#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .</div>
+需要处理的问题 当窗口大小发生改变的时候不重新创建 OpenGLView 窗口大小改变的事件传递 java -&gt; c++ -&gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在 AndroidManifest.xml 添加下列参数，让 OpenGLView 不因为调整大小而重建 // android:configChanges &#34;smallestScreenSize|density|screenLayout&#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.</div>
 
   
   <footer>
@@ -151,7 +139,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-12T11:24:34JST">Jan 12, 2021</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:08JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -173,41 +161,16 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T21:42:56JST">Sep 16, 2020</time></li>
-      
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:11JST">Jun 16, 2021</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/note/">note</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/cocos-cup-optimization/">Cocos2d-x性能优化之CPU</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/note/">Notes</a></h2>
   </header>
 
   
-  <div class="summary"><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<ul>
-<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
-<li><a href="#%E6%9F%A5%E6%89%BE%E6%80%A7%E8%83%BD%E7%9A%84%E7%93%B6%E9%A2%88">查找性能的瓶颈</a>
-<ul>
-<li><a href="#%E5%B7%A5%E5%85%B7%E7%9A%84%E9%80%89%E6%8B%A9">工具的选择</a></li>
-<li><a href="#%E5%BC%80%E5%A7%8B%E5%88%86%E6%9E%90">开始分析</a></li>
-</ul>
-</li>
-<li><a href="#%E6%96%B9%E6%A1%88%E9%80%89%E6%8B%A9">方案选择</a>
-<ul>
-<li><a href="#%E5%87%8F%E5%B0%91%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9">减少更新内容</a></li>
-<li><a href="#%E4%B8%8D%E6%9B%B4%E6%96%B0%E4%B8%8D%E5%BF%85%E8%A6%81%E6%98%BE%E7%A4%BA%E7%9A%84%E5%8A%A8%E7%94%BB">不更新不必要显示的动画</a></li>
-</ul>
-</li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
-</ul>
-<!-- raw HTML omitted -->
-<h2 id="前言">前言</h2>
-<p>优化从来不是凭感觉去看代码，而是利用有效的工具，去测出游戏的性能瓶颈，然后找到解决方法。
-最近在给一款游戏做CPU优化，就把过程记录下来，分享一下，欢迎纠正讨论。</p></div>
+  <div class="summary"></div>
 
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/cocos-cup-optimization/" title="Cocos2d-x性能优化之CPU">Read More…</a>
-  </footer>
   
 </article>
 </li>
@@ -215,31 +178,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T21:34:46JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/obfuscator/">模拟人工混淆器 2代</a></h2>
-  </header>
-
-  
-  <div class="summary"><h2 id="功能展示">功能展示</h2>
-<p>之前有写过一个用简单版本的混淆器，主要是使用正则表达来解析和混淆代码，但这个方式误混和兼容性是一个很头大的问题，维护带给了我很大的麻烦，
-所以我一直在寻找一个代替正则的方式，或者不要以正则为主的方式，最后还是找到了。
-这些并不重要，最重要的是功能升级了哪些。</p></div>
-
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/obfuscator/" title="模拟人工混淆器 2代">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:13:07JST">Sep 16, 2020</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:26JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -262,29 +201,7 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T21:35:03JST">Sep 16, 2020</time></li>
-      
-      
-    </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/lucky-confuser/">模拟人工的混淆器</a></h2>
-  </header>
-
-  
-  <div class="summary">个人使用混淆器背景 简单的垃圾代码生成器 https://github.com/semgilo/gen-code
-开源编译混淆工具：obfuscator https://github.com/obfuscator-llvm/obfuscator
-升级版本混淆工具：Hikari https://github.com/HikariObfuscator/Hikari
-专业加密软件 公司购买的 几维加密 顶象加密
-其它 有一个让我有点“震惊”的混淆工具，做得非常的简陋的界面，一个月需要3K，各种全局替换。希望你们没有被坑。 我只是稍微吐槽一下。
-特色介绍 目前支持C++和ObjC两个语言 效果截图 为了演示精准程度，特别找了一个比较垃圾的旧代码过来混淆。 即将支持功能 方法添加额外参数 资源混淆 垃圾方法 垃圾变量 垃圾类 提供混淆工程服务（收费） 稳定后可能会考虑开源 如果有需要工程混淆，可以联系博主 QQ微信同号：9737935</div>
-
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T14:58:57JST">Sep 16, 2020</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:12JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -294,8 +211,12 @@ if (!doNotTrack) {
   
   <div class="summary">推荐学习地方 http://www.zjmainstay.cn/
 会持续更新中 python 需要
-pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&#39; 双引号里面的内容 r&#39;\&#34;(?:[^&#34;\\]|\\.)*\&#34;&#39; 注释 (*) r&#39;/[*][\s\S]+?[*]/&#39; 选取方法块(objc) r&#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&lt;rec&gt;\{(?:[^{}]+|(?&amp;rec))*\})&#39; % VAR_TYPE </div>
+pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&#39; 双引号里面的内容 r&#39;\&#34;(?:[^&#34;\\]|\\.)*\&#34;&#39; 注释 (*) r&#39;/[*][\s\S]+?[*]/&#39; 选取方法块(objc) r&#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&lt;rec&gt;\{(?:[^{}]+|(?&amp;rec))*\})&#39; % VAR_TYPE 命名修改 命名规则 -- 替换可能为关键字的对象为指定字符串 \b(?:n|t|p|str|obj|f|b|e)End\b ended -- 替换命名规则 (?&lt;!cc.)\b(?:n|t|p|str|e|obj|f|b)([A-Z]+) \L$1 -- 替换配置方法ch_xxx ch_(\w+)(\(.*\)) cfg[&#34;formula&#34;].$1$2 -- 替换读表方式 -- 替换类结构 C([A-Z]\w+) = (class\(&#34;\1&#34;[\S\s]*) local C$1 = $2\nreturn C$1 -- 替换类的使用 (?&lt;!function[ ])(?&lt;!function[ ][ ])C([A-Z]\w+)(?:\:create|\.new)(\(.*\)) core.battle.$1$2$3 -- 替换以 C 开头的命令方式 (?&lt;!\.)(?&lt;!_)\bC[A-Z](?![A-Z]{2,}$)[a-zA-Z]+$ -- 删除 core.的命令方式 (?&lt;!\.)(?&lt;!\&#34;)core\. -- 替表格命名格式 ([cC]onfig\.</div>
 
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" title="经典正则表达式语句">Read More…</a>
+  </footer>
   
 </article>
 </li>
@@ -303,7 +224,7 @@ pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2020-09-16T15:14:17JST">Sep 16, 2020</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:28JST">Jun 16, 2021</time></li>
       
       
     </ul>
@@ -318,6 +239,50 @@ pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\
   
   <footer>
     <a href="http://www.lanhuzi.com/ios-full-path-issue/" title="ios 获取全路径问题">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:18JST">Jun 16, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/">cocos2dx 2.2.6 file not found</a></h2>
+  </header>
+
+  
+  <div class="summary">问题描述 今天需求弄一个旧项目，于是就是官方下了一个2.2.6的版本，下载按官方配置各种
+&lt;string&gt; file not found &lt;cctype&gt; file not found 解决方案 解决方法：
+1.cocos2dx.xcodeproj ==&gt; BuildSetting ==&gt; IOS Development Target 修改为：8.0 2.bitcode 修改 NO </div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:21JST">Jun 16, 2021</time></li>
+      
+      
+    </ul>
+    <h2 class="title"><a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/">Cosos2dx fmod 声音引擎集成</a></h2>
+  </header>
+
+  
+  <div class="summary">环境 配置  文件 win32 ios android   lua中使用 备注  在FMODAudioEngine类中记得添加CC_DLL（动态库导出标记）    环境 Cocos2d-x: 3.17
+fmod官方文档
+教程文件
+配置 文件 拷贝fmod文件夹 frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ external 拷贝lua导出文件lua_fmod_auto.hpp和lua_fmod_auto.cpp frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ auto 修改CCLuaStack.cpp 文件路径：frameworks⁩ ▸ ⁨cocos2d-x⁩ ▸ cocos ▸ scripting ▸ lua-bindings ▸ munual
+// 1.添加引用 #include &#34;scripting/lua-bindings/auto/lua_fmod_auto.hpp&#34; // 2.添加导入 bool LuaStack::init(void) { ... register_all_cocos2dx_fmod(_state); ... return true; } win32 添加代码到工程   配置libs ios 配置静态库   配置搜索路径 1.</div>
+
+  
+  <footer>
+    <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" title="Cosos2dx fmod 声音引擎集成">Read More…</a>
   </footer>
   
 </article>
@@ -361,17 +326,17 @@ pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\
       
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
-      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
-      
-      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      <a href="http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/" class="list-group-item">Cocos2dx android 分屏适配</a>
       
       <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
-      
-      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
       
       <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
       <a href="http://www.lanhuzi.com/ios-full-path-issue/" class="list-group-item">ios 获取全路径问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-file-not-found-2.2.6/" class="list-group-item">cocos2dx 2.2.6 file not found</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx-fmod-integrating/" class="list-group-item">Cosos2dx fmod 声音引擎集成</a>
       
     </div>
   </section>
@@ -387,7 +352,7 @@ pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\
       
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
-      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
     </div>
   </section>
@@ -402,21 +367,21 @@ pip install regex VAR_TYPE = r&#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
+      <a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D" class="list-group-item">适配</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
       
-      <a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D" class="list-group-item">适配</a>
+      <a href="http://www.lanhuzi.com/tags/%E5%88%86%E5%B1%8F" class="list-group-item">分屏</a>
       
       <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
       
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
-      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
-      
       <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
       
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
-      
-      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
       
     </div>
   </section>

@@ -1,0 +1,12 @@
+#+TITLE: anddroid QQ助手
+
+* 解决方案
+** 文档
+[[https://developer.android.com/guide/topics/ui/accessibility/service][无障碍模式]]
+
+** 处理流程
+1、进游戏 QQ 聊天消息界面
+2、找到有红点的对话
+3、滚动聊天界面收集分析聊天纪录
+4、将收集到的内容发送指定 API 检查
+5、对有问题的玩家进行处理

@@ -17,5 +17,14 @@
 对应资源，如果资源格式被破坏后，就没办法取到fullpath.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>iap 产品生效时间</title>
+      <link>http://www.lanhuzi.com/iap-productid-take-effect-time/</link>
+      <pubDate>Thu, 20 Jul 2017 19:13:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/iap-productid-take-effect-time/</guid>
+      <description>换了一个开发者帐号发布应该，结果内购一直提示“无效产品ID”，实际上是需要24小时后才会生效的。 官方文档 https://developer.apple.com/library/content/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,7 +1,8 @@
 +++
 title = "cocos2dx etc 闪退问题"
+author = ["Donghai Ruan"]
 date = 2017-05-16T10:19:00+08:00
-lastmod = 2020-09-16T15:06:26+08:00
+lastmod = 2021-06-16T10:18:17+08:00
 tags = ["cocos2dx", "etc1", "android"]
 draft = false
 +++

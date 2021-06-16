@@ -53,18 +53,6 @@ if (!doNotTrack) {
           </div>
 
           
-          <div id="navbar" class="collapse navbar-collapse">
-            
-            <ul class="nav navbar-nav navbar-right">
-              
-              
-              <li><a href="/about/">蓝胡子</a></li>
-              
-              
-            </ul>
-            
-          </div>
-          
 
         </div>
       </nav>
@@ -87,22 +75,17 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-01-08T22:32:47JST">Jan 8, 2021</time></li>
-      
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-06-16T10:18:11JST">Jun 16, 2021</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://www.lanhuzi.com/note/">note</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://www.lanhuzi.com/android_save_video_to_album/">android 10 分区存储适配之保存到相册</a></h2>
+    <h2 class="title"><a href="http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/">Cocos2dx android 分屏适配</a></h2>
   </header>
 
   
-  <div class="summary">问题描述 当 targetSdkVersion 设置高于 29 后，分享拷贝失败
-问题分析 android 10 以后采用分区存储权限说明  对权限申请做限制，否则在 android10 以下的设备会获取权限失败  &lt;uses-permission android:name=&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34; android:maxSdkVersion=&#34;28&#34; /&gt;    设备 权限添加 maxSdkVersion=&ldquo;28&rdquo; 未添加 maxSdkVersion=&ldquo;28&rdquo;     android 6 yes no   android 10 yes yes   android 11 yes yes     对 android 10 以后不进行申请 WRITE_EXTERNAL_STORAGE，会一直返回失败  相对路径于 DCIM 会导致一些手机拷贝失败 已知问题设备：小米 8
-values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) 解决方案 修改 compileSdkVersion 和 targetSdkVersion 为 29 权限声明 &lt;uses-permission android:name=&#34;android.</div>
+  <div class="summary">需求 对 Huawei 的分屏进行适配
+分析 </div>
 
-  
-  <footer>
-    <a href="http://www.lanhuzi.com/android_save_video_to_album/" title="android 10 分区存储适配之保存到相册">Read More…</a>
-  </footer>
   
 </article>
 </li>
@@ -123,17 +106,17 @@ values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) �
     </div>
     <div class="list-group">
       
+      <a href="http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/" class="list-group-item">当CCScrollView在RenderTexture可能裁剪框适配有问题</a>
+      
       <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
+      <a href="http://www.lanhuzi.com/android_split_screen_adaptation/" class="list-group-item">android 分屏适配</a>
       
       <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
       
-      <a href="http://www.lanhuzi.com/cocos-cup-optimization/" class="list-group-item">Cocos2d-x性能优化之CPU</a>
-      
-      <a href="http://www.lanhuzi.com/obfuscator/" class="list-group-item">模拟人工混淆器 2代</a>
+      <a href="http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/" class="list-group-item">Cocos2dx android 分屏适配</a>
       
       <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
-      
-      <a href="http://www.lanhuzi.com/lucky-confuser/" class="list-group-item">模拟人工的混淆器</a>
       
       <a href="http://www.lanhuzi.com/classic-regular-expression-statement/" class="list-group-item">经典正则表达式语句</a>
       
@@ -157,8 +140,6 @@ values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) �
       
       <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
       
-      <a href="http://www.lanhuzi.com/categories/%E5%B7%A5%E5%85%B7" class="list-group-item">工具</a>
-      
       <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
       
     </div>
@@ -174,21 +155,21 @@ values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) �
       
       <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
       
+      <a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D" class="list-group-item">适配</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
       <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/%E5%88%86%E5%B1%8F" class="list-group-item">分屏</a>
       
       <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
       
       <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
       
-      <a href="http://www.lanhuzi.com/tags/cpu" class="list-group-item">cpu</a>
-      
       <a href="http://www.lanhuzi.com/tags/downloader" class="list-group-item">downloader</a>
       
       <a href="http://www.lanhuzi.com/tags/etc1" class="list-group-item">etc1</a>
-      
-      <a href="http://www.lanhuzi.com/tags/eventdispatcher" class="list-group-item">eventdispatcher</a>
-      
-      <a href="http://www.lanhuzi.com/tags/fileutils" class="list-group-item">fileutils</a>
       
     </div>
   </section>
@@ -208,7 +189,7 @@ values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DCIM) �
         <p><span class="h-logo">&copy; 蓝胡子</span></p>
         <aside>
           <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p>备案：<a href="https://console.cloud.tencent.com/beian">闽ICP备15021519号-1</a>.</p>
+          <p>备案：<a href="https://beian.miit.gov.cn/">闽ICP备15021519号-1</a>.</p>
         </aside>
       </div>
     </footer>

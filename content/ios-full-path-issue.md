@@ -1,7 +1,8 @@
 +++
 title = "ios 获取全路径问题"
+author = ["Donghai Ruan"]
 date = 2018-12-12T12:05:00+08:00
-lastmod = 2020-09-16T15:14:17+08:00
+lastmod = 2021-06-16T10:18:28+08:00
 tags = ["ios"]
 categories = ["笔记"]
 draft = false

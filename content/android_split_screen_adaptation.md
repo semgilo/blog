@@ -2,7 +2,7 @@
 title = "android 分屏适配"
 author = ["Donghai Ruan"]
 date = 2021-01-09T14:32:00+08:00
-lastmod = 2021-01-22T11:32:11+08:00
+lastmod = 2021-06-16T10:18:09+08:00
 tags = ["android", "split-screen", "分屏", "适配"]
 categories = ["笔记"]
 draft = false
@@ -68,7 +68,7 @@ Cocos2dxGLSurfaceView -> Cocos2dxRender -> GLView
 ### 需要处理的问题 {#需要处理的问题}
 
 
-#### 当窗口大小发生改变的时候不重新创建OpenGLView {#当窗口大小发生改变的时候不重新创建openglview}
+#### 当窗口大小发生改变的时候不重新创建 OpenGLView {#当窗口大小发生改变的时候不重新创建-openglview}
 
 
 #### 窗口大小改变的事件传递 java -> c++ -> lua {#窗口大小改变的事件传递-java-c-plus-plus-lua}
@@ -83,7 +83,7 @@ Cocos2dxGLSurfaceView -> Cocos2dxRender -> GLView
 ## 解决方案 {#解决方案}
 
 
-### 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 {#在androidmanifest-dot-xml添加下列参数-让openglview不因为调整大小而重建}
+### 在 AndroidManifest.xml 添加下列参数，让 OpenGLView 不因为调整大小而重建 {#在-androidmanifest-dot-xml-添加下列参数-让-openglview-不因为调整大小而重建}
 
 ```xml
 // android:configChanges
@@ -101,7 +101,7 @@ void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv*  env,
 }
 ```
 
--   [X] 传递给lua
+-   [X] 传递给 lua
 
 <!--listend-->
 
@@ -133,7 +133,7 @@ end
 ```
 
 
-### 当屏幕大小改变后需要对Director里面数据进行更新 {#当屏幕大小改变后需要对director里面数据进行更新}
+### 当屏幕大小改变后需要对 Director 里面数据进行更新 {#当屏幕大小改变后需要对-director-里面数据进行更新}
 
 ```c++
 // CCDirecotr 添加onGLViewSizeChanged(int width, int height)
@@ -152,7 +152,7 @@ void Director::onScreenSizeChanged(int width, int height)
 ```
 
 
-### 当屏幕尺寸大小发生改变后，lua界面相关适配 <code>[0%]</code> {#当屏幕尺寸大小发生改变后-lua界面相关适配}
+### 当屏幕尺寸大小发生改变后，lua 界面相关适配 <code>[0%]</code> {#当屏幕尺寸大小发生改变后-lua-界面相关适配}
 
 
 #### 抛出屏幕尺寸更改事件(GLVIEW\_SIZE\_CHANGED) {#抛出屏幕尺寸更改事件--glview-size-changed}
@@ -168,3 +168,16 @@ void Director::onScreenSizeChanged(int width, int height)
 
 
 #### 界面走光问题,特效或者图片需要增加尺寸 {#界面走光问题-特效或者图片需要增加尺寸}
+
+
+#### 更新过程中没有收到切换事件 {#更新过程中没有收到切换事件}
+
+UOB->wizcall("CF():redrawGrids(true)")
+
+UOB->wizcall("local node = CF().node CF().scrollView = findChildByName(node, \\"CT/scroll\_view\\")")
+
+UOB->wizcall("return CF().scrollView:getPositionX()")
+UOB->wizcall("CF().pv = findChildByName(CF().node, \\"CT/page\_view\\")")
+
+find\_object\_by\_rid("FEGH4E4000H670")->set("door\_opened", 1);
+G\_BROADCAST\_INVOKE(GROUP\_D, "notify\_updated", find\_object\_by\_rid("FEGH4E4000H670")->get\_detail());

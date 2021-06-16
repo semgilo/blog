@@ -35,7 +35,7 @@
       <description>问题描述 由于 android 可以开启分屏和华为的折叠屏导致游戏适配问题
 问题分析 官方文档 android 7.0 开始支持 multi-windows android 8.0 支持画中画 多窗口模式不会更改 Activity 生命周期 适配标识 android:resizeableActivity 画中画支持 android:supportsPictureInPicture 配置更改 android:configChanges=&amp;ldquo;screenSize|smallestScreenSize|screenLayout|orientation&amp;rdquo; 判断方法 // Activity 提供以下方法来支持多窗口显示。 isInMultiWindowMode() // 调用该方法可确认 Activity 是否处于多窗口模式。 isInPictureInPictureMode() 生命周期 onMultiWindowModeChanged() onPictureInPictureModeChanged() Cocos2d-x 的 GlView 创建流程 Cocos2dxActivity -&amp;gt; Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView
 当屏幕尺寸发生改变的 Cocos2dxGLSurfaceView -&amp;gt; Cocos2dxRender -&amp;gt; GLView
-需要处理的问题 当窗口大小发生改变的时候不重新创建OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c++ -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在AndroidManifest.xml添加下列参数，让OpenGLView不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.cpp void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeOnSurfaceChanged(JNIEnv* env, jobject thiz, jint w, jint h) { cocos2d::Application::getInstance()-&amp;gt;applicationScreenSizeChanged(w, h); }  传递给lua  void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight) { // .</description>
+需要处理的问题 当窗口大小发生改变的时候不重新创建 OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c++ -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在 AndroidManifest.xml 添加下列参数，让 OpenGLView 不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
       <guid>http://www.lanhuzi.com/classic-regular-expression-statement/</guid>
       <description>推荐学习地方 http://www.zjmainstay.cn/
 会持续更新中 python 需要
-pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE </description>
+pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE 命名修改 命名规则 -- 替换可能为关键字的对象为指定字符串 \b(?:n|t|p|str|obj|f|b|e)End\b ended -- 替换命名规则 (?&amp;lt;!cc.)\b(?:n|t|p|str|e|obj|f|b)([A-Z]+) \L$1 -- 替换配置方法ch_xxx ch_(\w+)(\(.*\)) cfg[&amp;#34;formula&amp;#34;].$1$2 -- 替换读表方式 -- 替换类结构 C([A-Z]\w+) = (class\(&amp;#34;\1&amp;#34;[\S\s]*) local C$1 = $2\nreturn C$1 -- 替换类的使用 (?&amp;lt;!function[ ])(?&amp;lt;!function[ ][ ])C([A-Z]\w+)(?:\:create|\.new)(\(.*\)) core.battle.$1$2$3 -- 替换以 C 开头的命令方式 (?&amp;lt;!\.)(?&amp;lt;!_)\bC[A-Z](?![A-Z]{2,}$)[a-zA-Z]+$ -- 删除 core.的命令方式 (?&amp;lt;!\.)(?&amp;lt;!\&amp;#34;)core\. -- 替表格命名格式 ([cC]onfig\.</description>
     </item>
     
     <item>
@@ -131,6 +131,15 @@ pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\
       <guid>http://www.lanhuzi.com/android-sdk-service-stop-problem/</guid>
       <description>&lt;h2 id=&#34;问题详述&#34;&gt;问题详述&lt;/h2&gt;
 &lt;p&gt;接android SDK 游戏退出或者崩溃后，快速进入游戏会一直崩溃。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iap 产品生效时间</title>
+      <link>http://www.lanhuzi.com/iap-productid-take-effect-time/</link>
+      <pubDate>Thu, 20 Jul 2017 19:13:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/iap-productid-take-effect-time/</guid>
+      <description>换了一个开发者帐号发布应该，结果内购一直提示“无效产品ID”，实际上是需要24小时后才会生效的。 官方文档 https://developer.apple.com/library/content/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_</description>
     </item>
     
     <item>

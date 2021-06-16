@@ -1,7 +1,8 @@
 +++
 title = "cocos2dx 2.2.6 file not found"
+author = ["Donghai Ruan"]
 date = 2018-12-03T22:03:00+08:00
-lastmod = 2020-09-16T15:07:40+08:00
+lastmod = 2021-06-16T10:18:18+08:00
 tags = ["cocos2dx"]
 categories = ["笔记"]
 draft = false

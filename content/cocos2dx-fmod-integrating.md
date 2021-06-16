@@ -1,7 +1,8 @@
 +++
 title = "Cosos2dx fmod 声音引擎集成"
+author = ["Donghai Ruan"]
 date = 2018-11-22T15:17:00+08:00
-lastmod = 2020-09-16T15:09:49+08:00
+lastmod = 2021-06-16T10:18:21+08:00
 tags = ["Cocos2dx", "fmod", "audioengine"]
 categories = ["分享"]
 draft = false
@@ -86,7 +87,7 @@ bool LuaStack::init(void)
 #### 配置libs {#配置libs}
 
 ![](/images/fmod/win/add_lib_search_path.png)
-![](/images/fmod/win/add_libs.png)
+![](/Images/fmod/win/add_libs.png)
 
 
 ### ios {#ios}

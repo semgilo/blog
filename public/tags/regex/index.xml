@@ -14,7 +14,7 @@
       <guid>http://www.lanhuzi.com/classic-regular-expression-statement/</guid>
       <description>推荐学习地方 http://www.zjmainstay.cn/
 会持续更新中 python 需要
-pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE </description>
+pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE 命名修改 命名规则 -- 替换可能为关键字的对象为指定字符串 \b(?:n|t|p|str|obj|f|b|e)End\b ended -- 替换命名规则 (?&amp;lt;!cc.)\b(?:n|t|p|str|e|obj|f|b)([A-Z]+) \L$1 -- 替换配置方法ch_xxx ch_(\w+)(\(.*\)) cfg[&amp;#34;formula&amp;#34;].$1$2 -- 替换读表方式 -- 替换类结构 C([A-Z]\w+) = (class\(&amp;#34;\1&amp;#34;[\S\s]*) local C$1 = $2\nreturn C$1 -- 替换类的使用 (?&amp;lt;!function[ ])(?&amp;lt;!function[ ][ ])C([A-Z]\w+)(?:\:create|\.new)(\(.*\)) core.battle.$1$2$3 -- 替换以 C 开头的命令方式 (?&amp;lt;!\.)(?&amp;lt;!_)\bC[A-Z](?![A-Z]{2,}$)[a-zA-Z]+$ -- 删除 core.的命令方式 (?&amp;lt;!\.)(?&amp;lt;!\&amp;#34;)core\. -- 替表格命名格式 ([cC]onfig\.</description>
     </item>
     
   </channel>

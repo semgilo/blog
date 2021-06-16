@@ -1,0 +1,13 @@
+#+HUGO_BASE_DIR: ../../../
+#+TITLE: Cocos2dx android 分屏适配
+#+DATE: <2020-12-29 Tuesday 14:47:08>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: Cocos2dx android 分屏 适配
+#+HUGO_CATEGORIES: note
+#+HUGO_SECTION: note
+#+HUGO_DRAFT: false
+
+* 需求
+对 Huawei 的分屏进行适配
+
+* 分析

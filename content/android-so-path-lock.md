@@ -1,7 +1,8 @@
 +++
 title = "android so path 被锁定"
+author = ["Donghai Ruan"]
 date = 2018-10-31T01:44:00+08:00
-lastmod = 2020-09-16T14:56:52+08:00
+lastmod = 2021-06-16T10:18:05+08:00
 tags = ["android", "cocos2dx"]
 categories = ["笔记"]
 draft = false

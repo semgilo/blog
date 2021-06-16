@@ -1,7 +1,8 @@
 +++
 title = "Android Studio Build Framework"
+author = ["Donghai Ruan"]
 date = 2019-05-24T20:35:00+08:00
-lastmod = 2020-09-16T14:57:42+08:00
+lastmod = 2021-06-16T10:18:07+08:00
 tags = ["cocos2dx", "as", "android"]
 categories = ["分享"]
 draft = true

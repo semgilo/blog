@@ -1,0 +1,54 @@
+#+title: 服务器框架设计
+#+roam_alias:
+
+#+BEGIN_SRC plantuml :file ./server-framework.png
+@startuml
+actor User
+
+package "产品线" {
+
+}
+
+database "Mysql" {
+
+}
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:./server-framework.png]]
+
+
+* 战斗结构图
+#+begin_src plantuml file ./battle.png
+partition SkillSystem
+(*) --> ===B1===
+end partition
+
+partition Battle
+--> Aura
+--> ===B2===
+
+===B1=== --> Bullet
+--> ===B2===
+
+===B1=== --> Magic
+--> ===B2===
+
+partition Entity
+===B1=== -> (*)
+--> [do skill] ===B1===
+===B1=== -> Buff
+end partition
+
+-->===B2===
+end partition
+
+partition Channel
+--> Channel
+end partition
+
+#+end_src
+
+#+RESULTS:
+[[file:c:/Users/ruandh/AppData/Local/Temp/babel-ZvS582/plantuml-OL7HWM.png]]

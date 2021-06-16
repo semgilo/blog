@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/note/</link>
+    <description>Recent content in Notes on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 Dec 2020 14:47:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cocos2dx android 分屏适配</title>
+      <link>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</link>
+      <pubDate>Tue, 29 Dec 2020 14:47:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</guid>
+      <description>需求 对 Huawei 的分屏进行适配
+分析 </description>
+    </item>
+    
+  </channel>
+</rss>

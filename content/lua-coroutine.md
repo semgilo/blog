@@ -1,7 +1,8 @@
 +++
 title = "巧妙的使用coroutine分散计算量"
+author = ["Donghai Ruan"]
 date = 2017-04-28T15:06:00+08:00
-lastmod = 2020-09-16T15:15:46+08:00
+lastmod = 2021-06-16T10:18:30+08:00
 tags = ["lua"]
 categories = ["笔记"]
 draft = false

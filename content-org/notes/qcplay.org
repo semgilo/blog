@@ -1,0 +1,234 @@
+#+CATEGORY: Note
+#+FILETAGS: Note
+
+* 游戏框架笔记
+** 远程调试
+通过服务端下发命令方式
+'user=UOB
+'user=get_all_users()[0]
+user->wizcall("alert('hello')")
+
+** 服务器
+product共享：\\10.2.48.226\share\everyone\fog
+脚本生成：%ROOT\server\compile\build_config_standalone.bat
+启动脚本：%ROOT\server\start_gs.bat
+handle处理:%ROOT\server_scripts\gs\cmds\normal
+协议地址：%ROOT\server\server_scripts\etc\comm
+
+** 客户端
+启动脚本：%ROOT\client\runtime\win32\client_disableIDE.bat
+编译目录：%ROOT\client\build
+
+* 雷霆兼容性
+| 设备    | 问题     | 链接 | 备注                |
+| LG-D631 | 启动崩溃 | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199002919][链接]] | 疑似HttpRequest问题 |
+|        |          |      |                     |
+** 崩溃
+*** 启动崩溃
+| 机型                | 连接 | 备注       |
+| LG D631             | 详情 | 机型未找到 |
+| Galaxy S3(SGH-T999) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021152][详情]] | 机型未找到 |
+
+
+*** 选择“服不服”崩溃
+| 机型                       | 连接 | 备注       |
+| HTC Desire 612(HTC331ZLVW) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021157][详情]] | 机型未找到 [[https://bugly.qq.com/v2/crash-reporting/blocks/4d74cf3944/93214/report?pid=1&search=4.4.3&searchType=osVersion&bundleId=com.ltgames.android.snail&channelId=&version=all&tagList=&start=0&date=all][Bugly]] [[http://10.2.48.229/browse/FOGC-8245][FOGC-8245]] |
+
+*** 崩溃
+| 机型                        | 连接 | 备注                                                            |
+| Galaxy Tab 4 8.0(SM-T330NU) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=198998478][详情]] | 设备容易出现Texture丢失黑色底，崩溃时内存1268/1500,疑似内存不足 |
+|-----------------------------+------+-----------------------------------------------------------------|
+| GALAXY S5(SM-G900V)         | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=198998482][详情]] | 机型未找到                                                      |
+| LG G3 S(D724)               | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021144][详情]] | 机型未找到                                                      |
+| Galaxy S III CDMA(SPH-L710) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021147][详情]] | 机型未找到                                                      |
+| SM-J700F(SM-J700F)          | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199019088][详情]] | 机型未找到                                                      |
+| Galaxy Avant(SM-G386T1)     | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021145][详情]] | 机型未找到                                                      |
+| Moto G4                     | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=198998222][详情]] | 机型未找到                                                      |
+| GALAXY Tab 3 8.0(SM-T310)   | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199008598][详情]] | 机型未找到                                                      |
+| Xperia T3(D5103)            | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199008589][详情]] | 机型未找到                                                      |
+| GALAXY Tab 3 10.1(GT-P5210) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199026229][详情]] | 机型未找到                                                      |                            |      |                                                                 |
+
+机子基本上是这旧机型，RAM大部分是1G或者1.5G，可用在150M~300M
+用Galaxy Tab 4 8.0测试了下游戏，进去会出现各种问题闪退
+崩溃日志主要片段：
+#+begin_src shell
+07-02 14:41:55.073 766-1440/? I/WindowState: WIN DEATH: Window{316ce5d8 u0 d0 com.ltgames.android.snail/org.cocos2dx.lua.AppActivity}
+07-02 14:41:55.073 766-1440/? W/WindowManager: Force-removing child win Window{a1a1b6d u0 d0 SurfaceView} from container Window{316ce5d8 u0 d0 com.ltgames.android.snail/org.cocos2dx.lua.AppActivity}
+07-02 14:41:55.073 232-429/? I/SurfaceFlinger: id=774 Removed TurfaceView (3/13)
+07-02 14:41:55.073 766-1440/? D/WindowManager: beginLayoutLw mStatusBar.isVisibleLw() = false, statusBarTransient=false, displayId=0
+07-02 14:41:55.073 263-23277/? W/AudioFlinger: session id 97 not found for pid 3676
+07-02 14:41:55.073 263-23277/? V/AudioSink: --- close
+07-02 14:41:55.073 263-23277/? I/AudioPlayer: reset out
+07-02 14:41:55.073 263-23277/? I/AudioPlayer: exit Offload
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: reset_l() mAudioPlayer successfully deleted
+07-02 14:41:55.073 232-832/? I/SurfaceFlinger: id=774 Removed TurfaceView (-2/13)
+07-02 14:41:55.073 766-1440/? D/InputDispatcher: Focus left window: 3676
+07-02 14:41:55.073 263-23277/? I/SecVideoCapture: SecVideoCapture destructor
+07-02 14:41:55.073 766-3325/? W/ActivityManager: Scheduling restart of crashed service com.ltgames.android.snail/cn.thinkingdata.android.TDQuitSafelyService$TDKeepAliveService in 102604ms
+07-02 14:41:55.073 263-23277/? I/SecVideoCapture: reset
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecCapture clearg
+07-02 14:41:55.073 263-23277/? I/SecMediaClock: SecMediaClock destructor
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecMediaClock clear
+07-02 14:41:55.073 263-23277/? V/StagefrightPlayer: ~StagefrightPlayer
+07-02 14:41:55.073 263-23277/? V/StagefrightPlayer: reset
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: reset_l()
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: notifyListner_l() msg (8-MEDIA_STOPPED), ext1 (0), ext2 (0)
+07-02 14:41:55.073 766-1440/? D/WindowManager: beginLayoutLw mStatusBar.isVisibleLw() = false, statusBarTransient=false, displayId=0
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: cancelPlayerEvents (keepNotifications=0)
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mAudioTrackVector clear
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: reset_l() mAudioPlayer successfully deleted
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecCapture clear
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecMediaClock clear
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: destructor
+07-02 14:41:55.073 232-431/? I/SurfaceFlinger: id=773 Removed BppActivity (3/12)
+07-02 14:41:55.073 232-832/? I/SurfaceFlinger: id=773 Removed BppActivity (-2/12)
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: reset_l()
+07-02 14:41:55.073 766-1440/? D/WindowManager: beginLayoutLw mStatusBar.isVisibleLw() = false, statusBarTransient=false, displayId=0
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: notifyListner_l() msg (8-MEDIA_STOPPED), ext1 (0), ext2 (0)
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: cancelPlayerEvents (keepNotifications=0)
+07-02 14:41:55.073 766-1440/? D/PowerManagerService: [api] [s] userActivity : event: 0 flags: 0 (uid: 1000 pid: 766) eventTime = 364518109
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mAudioTrackVector clear
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: reset_l() mAudioPlayer successfully deleted
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecCapture clear
+07-02 14:41:55.073 263-23277/? V/AwesomePlayer: mSecMediaClock clear
+07-02 14:41:55.073 263-23277/? V/AudioSink: +++ close
+07-02 14:41:55.073 263-23277/? V/AudioSink: --- close
+07-02 14:41:55.083 766-1440/? D/PowerManagerService: [api] release WakeLock flags=0x2000000a tag=WindowManager uid=1000 pid=766 (0x0)
+07-02 14:41:55.083 263-4938/? V/audio_hw_primary: out_drain
+07-02 14:41:55.083 263-4935/? V/audio_hw_primary: offload_thread_loop RUNNING
+07-02 14:41:55.083 263-4938/? I/AudioFlinger: release offload lock for AudioOut_62 with stop
+07-02 14:41:55.083 263-5173/? I/SEC_BASE_COMP: SEC_OMX_ComponentStateSet: Cur(2) -> Dest(1)
+07-02 14:41:55.083 766-1440/? D/PowerManagerService: [api] applyWakeLockFlagsOnReleaseLocked : userActivityNoUpdateLocked is called : SCREEN_BRIGHT_WAKE_LOCK        'WindowManager' ON_AFTER_RELEASE (uid=1000, pid=766, ws=WorkSource{10369}) (elapsedTime=103632)
+07-02 14:41:55.093 766-3325/? W/ActivityManager: Force removing ActivityRecord{bc552af u0 com.ltgames.android.snail/org.cocos2dx.lua.AppActivity t670}: app died, no saved state
+07-02 14:41:55.093 766-3325/? D/FocusedStackFrame: Set to : 0
+#+end_src
+
+** 优化
+*** SDK切换帐号
+| 机型                       | 连接 | 备注   |
+| HTC Desire 612(HTC331ZLVW) | [[http://realneo.testin.cn/detail?adaptId=tt28eb8b7c92ec7bf6312172e0002061&reportId=199021157][详情]] | 已修复 |
+
+* 启动HttpRequest多次同时请求导致崩溃问题
+| 测试20次启动     | 未做处理 | 加线程锁 | 使用3.17.2版 | 使用非curl版 |
+| 请求代码未改动版 |        3 |        0 | 未测试       | 未测试       |
+| 请求次数*10      |        8 |        5 | 3            | 未           |
+
+* 判断办内外
+** 依据
+1.判断sim运营商 [[https://blog.csdn.net/tomlucky1024/article/details/83019040][参考]]
+2.判断手机国家语言
+3.定位
+4.IP（这个暂时不考虑）
+** 方案
+#+begin_src lua
+function isUserInChina() {
+    -- 判断运营商
+    local simOperator = getSimOperator();
+    if (simOperator == "中国移动" or simOperator == "中国联通" or simOperator == "中国电信") {
+        return true;
+    }
+    -- 判断位置
+    local location = getLocationIfAllow();
+    if (location and location in China) {
+        return true;
+    }
+    -- 系统语言并不能访问google
+    local sysLang = getSysLang();
+    if (sysLang == "简体" and network.connect("www.google.com") == false) {
+        return true
+    }
+    return false;
+}
+#+end_src
+
+* 测试的 TD key
+#+begin_src
+b627514623094fb18fb97b321b4ea895
+#+end_src
+
+* 3 月 5 日崩溃查找
+** 问题分析
+*** 查看对应 MD1ZFDRJL6WS70 在 3 月 5 日就只有这个崩溃
+*** [[https://bugly.qq.com/v2/crash-reporting/crashes/0d30dee0d4/265652?pid=2&crashDataType=unSystemExit][连接]] 显示这个崩溃的来源是因为 PositionFrame::onEnter 的时候_node 是野指针导致
+*** 可能来自奖励界面的动画
+
+
+local duration, effect; duration, effect = playEffect(CF().node, "gold_trophy", 0, 0, function(frameIndex) cclog(frameIndex) if frameIndex == 13 then effect:removeFromParent(); effect:release(); end end);
+
+
+UOB->wizcall("local duration, effect; duration, effect = playEffect(CF().node, \"gold_trophy\", 0, 0, function (frameIndex) cclog(frameIndex) if frameIndex == 13 then effect:removeFromParent(); effect:release(); end end);")
+
+* 处理声音 channel 没有找到的问题
+* QQ 监控
+| 模块          | 完成情怀 | 周期预计  |
+| 任务框架      | 待完善   | 2021/4/10 |
+| 收集 Q 号信息 | 完成     | 2021/4/10 |
+| 收集 Q 群信息 | 完成     | 2021/4/10 |
+| 收集成员信息  | 完成     | 2021/4/10 |
+| 收集聊天纪录  | 完成     | 2021/4/10 |
+| 修改群名片    | 完成     | 2021/4/10 |
+| 本地存储      | 完成     | 2021/4/10 |
+| 网络通信      | 未完成   | 2021/4/10 |
+| @人发消息     | 未完成   | 2021/4/10 |
+| 指定人发消息  | 未完成   | 2021/4/10 |
+| 踢人操作      | 未完成   | 2021/4/10 |
+| 撤回消息      | 未完成   | 2021/4/17 |
+| 正式环境测试  | 未完成   | 2021/4/17 |
+
+
+** 加配置
+*** 群号
+*** 游戏参数配置
+*** 悬浮窗
+*** 日志使用文件形式
+
+* 收集资源卡顿
+** shiny 性能分析
+| 模块                    | 首次 | 再次 |
+| Effect+AnimationChacheM | 70ms | 32ms |
+| getWChar+utf8           | 18ms | 10ms |
+| pGetDistance            | 5ms  | 3ms  |
+| LOAD_RUN                | 30ms | 0ms  |
+
+* 文本显示优化
+** 修改为行字数22（实测21合适）
+** 修改水平缩放为88%（考虑到部分已经带有值，对node:setScaleX进行扩展）
+** 条件
+*** 检测字个数
+*** 判断种族
+*** 渲染长度
+
+* 性能优化
+** 贵重物品界面二级弹窗不太顺畅
+*** 主要是PageView的创建 (考虑把它的时候延后，避开弹出的过程卡顿)
+
+** 蜗牛信息界面加载较久
+*** query的使用量级过大(184833)，很容易将一些效率不高的操作(getEquipmentsByType)，放大非常多倍
+*** profiler本身是会有消耗，如果量级很大会影响结果
+
+** 做截屏处理
+- UICloneDevice
+
+** 多界面叠加优化
+- UICollectionPieceSelect
+- UICollectionAssignPieceSelect
+- UITaskMain
+- UIMailBox
+- UISonUp
+- UIResearchMain
+- UIMonitorList
+- UIMonitorAdsSetting
+- UIMonitorShopSetting
+- UIMonitorDesc
+- UIMonitorGroupCoinSetting
+- UIMonitorQuestSetting
+- UIMonitorLotterySetting
+- UIMonitorTourStartSetting
+- UIMonitorCountrySelect
+- UIMonitorQuestTypeSelect
+- UIMonitorQuestSubSetting
+- UIMonitorMushroomSetting
+- UICat
+- UIPostcardInfo
+- UIEnergyCube
+- UICommonPackage

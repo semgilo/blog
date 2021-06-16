@@ -1,7 +1,8 @@
 +++
 title = "mac下svn常用操作命令"
+author = ["Donghai Ruan"]
 date = 2018-11-16T14:33:00+08:00
-lastmod = 2020-09-16T14:59:41+08:00
+lastmod = 2021-06-16T10:18:13+08:00
 tags = ["SVN"]
 categories = ["分享"]
 draft = false

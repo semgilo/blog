@@ -1,0 +1,75 @@
+#+CATEGORY: Note
+#+FILETAGS: Note
+
+* 命令行
+#+begin_src lua
+-- 抛出事件
+UOB->wizcall("EventMgr.fire(event.ADS_VIDEO, { channel = \"1\", codeId  = 1, status  = \"failed\", rid = \"1\"});")
+
+UOB->wizcall("return InnerAdsM.needPlayInnerAd()")  -- 查看是否需要播放内置广告
+UOB->wizcall("return InnerAdsM.willPlay()") -- 查看是否有概率播放广告
+UOB->wizcall("return UserDefault.getStringForKey('inner_ad_rate')") -- 查看概率
+UOB->wizcall("return UserDefault.getStringForKey('inner_ad_time')") -- 查看概率
+UOB->wizcall("return InnerAdsM.playAd")
+UOB->wizcall("return cc.FileUtils:getInstance():getStringFromFile('src/game/module/InnerAdsM.lua')")
+UOB->wizcall("InnerAdsM.needPlayInnerAd = function () return true end")
+
+-- 下载相关
+UOB->wizcall("DownloaderM.addDownloadTask('http://10.2.49.159/videos/111.mp4', cc.FileUtils:getInstance():getWritablePath()..'1.mp4', function (...) cclog('%O', {...}) end, function (...) cclog('%O', {...}) end)")
+UOB->wizcall("return watch(cc.FileUtils:getInstance():getSearchPaths())")
+
+-- 测试lua异常
+user->wizcall("CS():runAction(cc.CallFunc:create(function () local a = 1 / nil end))")
+UOB->wizcall(" local sp = cc.Sprite:create() CS():addChild(sp, 123) CS():runAction(cc.CallFunc:create(function () sp:getPosition() end))")
+UOB->wizcall(" local sp = cc.Sprite:create() CS():addChild(sp, 123)")
+UOB->wizcall("BugrptAgent.testLuaCrash()")
+UOB->wizcall("BugrptAgent.testNativeCrash()")
+UOB->wizcall("alert(getLocStr('app_not_installed'))")
+
+UOB->clear_status("SPECIAL_VISITOR")
+UOB->apply_status("SPECIAL_VISITOR",(["class_id":60425]))
+UOB->wizcall("GDM.execute('skip_story')")
+UOB->wizcall("GDM.execute('CLIENT', {cmd='skip_story'})")
+
+
+UOB->wizcall("'cc.Director:getInstance():getOpenGLView():getFrameSize()")
+UOB->wizcall("update('game/ui/base/AlignM')")
+UOB->wizcall("CF():redraw()")
+
+
+user->wizcall("EventMgr.fire(event.CHANNEL_PAY_RESULT, { channel = \"appstore\", sku=\"com.test.sku.8\", gameOrderId=\"1123123\", success=false, err=\"domain=123123213&code=123123213&description=fsdfsdfsdf\"});")
+
+UOB->wizcall("snapshotAndSave(CF(), \"123.png\")")
+UOB->wizcall("saveImageToAlbumIfNeed(cc.FileUtils:getInstance():getWritablePath()..\"123.png\", \"123.png\", function (...) print(...) end)")
+
+CS():runAction(cc.RepeatForever:create(cc.Sequence:create(cc.DelayTime:create(1), cc.CallFunc:create(function() tryReleaseMemory(true) end))))
+#+end_src
+
+* GUI
+** 物种战争
+*** 俱乐部
+**** 设置俱乐部等级 5
+**** 传送门一键完成
+*** 物种战争
+**** 去掉俱乐部冷却
+
+*** bs 输入指令
+#+begin_src lua
+ob=child_objects(GROUP_OB, 1)[0]
+ob->set("door_opened", 1)
+G_BROADCAST_INVOKE(GROUP_D, "notify_updated", ob->get_detail());
+#+end_src
+
+#+RESULTS:
+
+** 开启屏蔽字库
+#+begin_src c
+// 默认开启
+//绿盾开关(单个gs执行下就可以了)
+//开启
+GREEN_SHIELD_D->open_function();
+//关闭
+GREEN_SHIELD_D->close_function();
+// 设置非审核时间0-8点（默认禁止时间为 0 到 8 点）
+SERVER_STATUS_D->set_server_status(MODULE_SWITCH_FORBID_MODIFY_TIME, ({ 0, 8}));
+#+end_src

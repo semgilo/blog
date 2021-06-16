@@ -1,0 +1,31 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: 当CCScrollView在RenderTexture可能裁剪框适配有问题
+#+DATE: <2021-04-30 Friday 15:20:16>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS: cocos2dx RenderTexture ScrollView 适配
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION:
+#+HUGO_DRAFT: false
+
+* 问题描述
+当 CCScrollView 在 RenderTexture 可能裁剪框适配有问题
+<!--more-->
+
+* 问题分析
+** 有问题的是 CCScrollView，聊天出问题的是 CCTableView（其基类是 CCScrollView)
+** 有问题的情况，当 RenderTexture 里面的 viewport 与 GLView 的 viewport 不一致的时候
+** CCScrollView 使用的是 glScissor 方式进行裁剪，主要影响方法 CCScrollView::getViewRect()
+* 解决方案
+** 在 RenderTexture 里面添加获取当前绘制的实例对象接口（CCRenderTexture::getRenderingInstatnce()）
+** 在 CCScrollView 里面添加对 RenderTexture 的适配
+#+begin_src C++
+auto rt = RenderTexture::getRenderingInstance();
+if (rt != nullptr) {
+    auto frameSize = Director::getInstance()->getOpenGLView()->getFrameSize();
+    auto viewport = rt->getVirtualViewport();
+    screenPos.x = screenPos.x * viewport.size.width / frameSize.width + viewport.origin.x;
+    screenPos.y = screenPos.y * viewport.size.height / frameSize.height + viewport.origin.y;
+    scaleX *= viewport.size.width / frameSize.width;
+    scaleY *= viewport.size.height / frameSize.height;
+}
+#+end_src

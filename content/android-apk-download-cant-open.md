@@ -1,7 +1,8 @@
 +++
 title = "android apk 下载无法识别"
+author = ["Donghai Ruan"]
 date = 2017-08-09T16:15:00+08:00
-lastmod = 2020-09-16T14:53:00+08:00
+lastmod = 2021-06-16T10:18:01+08:00
 tags = ["android"]
 categories = ["笔记"]
 draft = false
