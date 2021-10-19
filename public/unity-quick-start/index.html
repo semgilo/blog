@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+
+<link rel="canonical" href="http://www.lanhuzi.com/unity-quick-start/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Unity快速入门 - 蓝胡子</title>
+    
+<meta name="description" content="C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C&#43;&#43;的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接&#43;-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.">
+
+<meta property="og:title" content="Unity快速入门 - 蓝胡子">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.lanhuzi.com/unity-quick-start/">
+<meta property="og:image" content="http://www.lanhuzi.com/images/default.png">
+<meta property="og:site_name" content="蓝胡子">
+<meta property="og:description" content="C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C&#43;&#43;的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接&#43;-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="蓝胡子">
+<meta name="twitter:url" content="http://www.lanhuzi.com/unity-quick-start/">
+<meta name="twitter:title" content="Unity快速入门 - 蓝胡子">
+<meta name="twitter:description" content="C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C&#43;&#43;的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接&#43;-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.">
+<meta name="twitter:image" content="http://www.lanhuzi.com/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http:\/\/www.lanhuzi.com\/"
+    },
+    "headline": "Unity快速入门 - 蓝胡子",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http:\/\/www.lanhuzi.com\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2021-06-19T15:35:00JST",
+    "dateModified": "2021-10-19T09:44:05JST",
+    "author": {
+      "@type": "Person",
+      "name": "蓝胡子"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "蓝胡子",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http:\/\/www.lanhuzi.com\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C\u002b\u002b的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接\u002b-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =\u0026gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application."
+  }
+</script>
+
+
+    <link href="http://www.lanhuzi.com/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-129516066-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.lanhuzi.com/">蓝胡子</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://www.lanhuzi.com/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li class="active">Unity快速入门</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2021-10-19T09:44:05JST">Oct 19, 2021</time></li>
+      
+      
+    </ul>
+
+    <h1 class="title">Unity快速入门</h1>
+  </header>
+
+  
+
+  <div class="article-body"><h2 id="c-特色语法--部分是-unity-支持的">C#特色语法(部分是 Unity 支持的)</h2>
+<h3 id="特别两个关键字">特别两个关键字</h3>
+<h4 id="ref">ref</h4>
+<ul>
+<li>引用传递</li>
+<li>跟 C++的引用传递是一样的</li>
+</ul>
+<h4 id="out">out</h4>
+<ul>
+<li>从字义理解它是想把值传到外面来</li>
+<li>是引用参数</li>
+</ul>
+<h4 id="差异">差异</h4>
+<ul>
+<li>用途上不一样，在一定意义上 ref 是可以替代 out</li>
+<li>值初始化方式，out 的值在外部并不处理，只是提供地址</li>
+</ul>
+<h3 id="特色点">特色点</h3>
+<h4 id="delegate">Delegate</h4>
+<ul>
+<li>直接代理方法</li>
+<li>可以直接合并多个操作</li>
+<li>直接+-操作</li>
+</ul>
+<h4 id="coroutine">Coroutine</h4>
+<ul>
+<li>启动后根据返来的 IEnumerlator 来选择 Resume</li>
+<li>跳出协程 yield break;</li>
+<li>下一帧 yield return null;</li>
+<li>延迟一段时间 yield return new Delay</li>
+<li>根据指定条件 yield return new WaitUtil(() =&gt; {return condition;});</li>
+<li>可以嵌套其它 IEnumerator</li>
+</ul>
+<h4 id="atribute-p">Atribute p</h4>
+<ul>
+<li>有点像宏定义</li>
+<li>提前声明一些结编译器知道的内容，会比宏看起来更直观一些</li>
+</ul>
+<h4 id="indexer">Indexer</h4>
+<ul>
+<li>把索引进一步的抽象出来</li>
+</ul>
+<h4 id="property">Property</h4>
+<ul>
+<li>跟 objc 的有点像，但写法不一样</li>
+</ul>
+<h2 id="unity">Unity</h2>
+<h3 id="界面的处理">界面的处理</h3>
+<h4 id="脚本的挂载方式-直接通过-c-luabehaviour">脚本的挂载方式，直接通过 C#（LuaBehaviour）</h4>
+<h4 id="直接在-lua-里面搞">直接在 Lua 里面搞</h4>
+<h3 id="几个路径说明">几个路径说明</h3>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>可读写</th>
+<th>说明</th>
+<th>Editor</th>
+<th>android</th>
+<th>ios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application.dataPath</td>
+<td>只读</td>
+<td>相当是游戏根目录</td>
+<td>Assets</td>
+<td>apk 目录</td>
+<td>xxx.app/Data</td>
+</tr>
+<tr>
+<td>Application.streamingAssetsPath</td>
+<td>只读</td>
+<td>存放一些二进制文件</td>
+<td>StreamingAssets</td>
+<td>assets</td>
+<td>xxx.app/Data/Raw</td>
+</tr>
+<tr>
+<td>Application.persistentDataPath</td>
+<td>可读写</td>
+<td>本地存储，即下载位置</td>
+<td>运行时生成</td>
+<td>data/files/</td>
+<td>Documents</td>
+</tr>
+<tr>
+<td>Application.temporaryCachePath</td>
+<td></td>
+<td>临时数据缓存目录</td>
+<td></td>
+<td>data/cache</td>
+<td>Library/Caches</td>
+</tr>
+</tbody>
+</table>
+<h3 id="camera">Camera</h3>
+<h4 id="透视模式">透视模式</h4>
+<p>转化屏幕坐标时候得注意 z 轴的距离</p>
+<h3 id="层级管理">层级管理</h3>
+<h4 id="sort-layer">Sort Layer</h4>
+<p>可以定义自己 Layer 是第一级排序，在 Layer 里面还可以进行二级排序</p>
+<h3 id="pixels-per-unit">Pixels Per Unit</h3>
+<h4 id="资源导入时候设置">资源导入时候设置</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>UI 一般默认用 100</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>TileMap 则根据块大小，一般是设置为与块大小一致比如（64*64）设置为 64</li>
+</ul>
+<h2 id="xlua">xLua</h2>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://www.lanhuzi.com/tags/unity/">Unity</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lanhuzi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/photoshop-effect-shader/" class="list-group-item">实现photoshop里面的各种效果</a>
+      
+      <a href="http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/" class="list-group-item">实现photoshop里面的各种效果</a>
+      
+      <a href="http://www.lanhuzi.com/unity-quick-start/" class="list-group-item">Unity快速入门</a>
+      
+      <a href="http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/quick_start/" class="list-group-item">Unity快速入门</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/" class="list-group-item">当CCScrollView在RenderTexture可能裁剪框适配有问题</a>
+      
+      <a href="http://www.lanhuzi.com/cocos2dx_downloader_resume_issue/" class="list-group-item">cocos2dx downloader 断点续传问题</a>
+      
+      <a href="http://www.lanhuzi.com/android_split_screen_adaptation/" class="list-group-item">android 分屏适配</a>
+      
+      <a href="http://www.lanhuzi.com/android_save_video_to_album/" class="list-group-item">android 10 分区存储适配之保存到相册</a>
+      
+      <a href="http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/" class="list-group-item">Cocos2dx android 分屏适配</a>
+      
+      <a href="http://www.lanhuzi.com/glreadpixels-after-videoplayer/" class="list-group-item">在IOS13.2里面播放视频后调用glReadPixels问题</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/categories/%E7%AC%94%E8%AE%B0" class="list-group-item">笔记</a>
+      
+      <a href="http://www.lanhuzi.com/categories/%E5%88%86%E4%BA%AB" class="list-group-item">分享</a>
+      
+      <a href="http://www.lanhuzi.com/categories/note" class="list-group-item">note</a>
+      
+      <a href="http://www.lanhuzi.com/categories/unity" class="list-group-item">unity</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://www.lanhuzi.com/tags/cocos2dx" class="list-group-item">cocos2dx</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android" class="list-group-item">android</a>
+      
+      <a href="http://www.lanhuzi.com/tags/unity" class="list-group-item">unity</a>
+      
+      <a href="http://www.lanhuzi.com/tags/%E9%80%82%E9%85%8D" class="list-group-item">适配</a>
+      
+      <a href="http://www.lanhuzi.com/tags/ios" class="list-group-item">ios</a>
+      
+      <a href="http://www.lanhuzi.com/tags/lua" class="list-group-item">lua</a>
+      
+      <a href="http://www.lanhuzi.com/tags/shader" class="list-group-item">shader</a>
+      
+      <a href="http://www.lanhuzi.com/tags/%E5%88%86%E5%B1%8F" class="list-group-item">分屏</a>
+      
+      <a href="http://www.lanhuzi.com/tags/android10" class="list-group-item">android10</a>
+      
+      <a href="http://www.lanhuzi.com/tags/audioengine" class="list-group-item">audioengine</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; 蓝胡子</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p>备案：<a href="https://beian.miit.gov.cn/">闽ICP备15021519号-1</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

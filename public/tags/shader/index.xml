@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shader on 蓝胡子</title>
+    <link>http://www.lanhuzi.com/tags/shader/</link>
+    <description>Recent content in Shader on 蓝胡子</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Oct 2021 10:46:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/tags/shader/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实现photoshop里面的各种效果</title>
+      <link>http://www.lanhuzi.com/photoshop-effect-shader/</link>
+      <pubDate>Mon, 18 Oct 2021 10:46:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/photoshop-effect-shader/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;需要配置美术实现，photoshop 里面的各种效果，比如叠加效果，强光。。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>实现photoshop里面的各种效果</title>
+      <link>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</link>
+      <pubDate>Mon, 18 Oct 2021 10:46:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;需要配置美术实现，photoshop 里面的各种效果，比如叠加效果，强光。。。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

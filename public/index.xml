@@ -5,7 +5,45 @@
     <link>http://www.lanhuzi.com/</link>
     <description>Recent content on 蓝胡子</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Apr 2021 15:20:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 10:46:00 +0800</lastBuildDate><atom:link href="http://www.lanhuzi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实现photoshop里面的各种效果</title>
+      <link>http://www.lanhuzi.com/photoshop-effect-shader/</link>
+      <pubDate>Mon, 18 Oct 2021 10:46:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/photoshop-effect-shader/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;需要配置美术实现，photoshop 里面的各种效果，比如叠加效果，强光。。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>实现photoshop里面的各种效果</title>
+      <link>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</link>
+      <pubDate>Mon, 18 Oct 2021 10:46:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</guid>
+      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;需要配置美术实现，photoshop 里面的各种效果，比如叠加效果，强光。。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unity快速入门</title>
+      <link>http://www.lanhuzi.com/unity-quick-start/</link>
+      <pubDate>Sat, 19 Jun 2021 15:35:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/unity-quick-start/</guid>
+      <description>C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C++的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接+-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.</description>
+    </item>
+    
+    <item>
+      <title>Unity快速入门</title>
+      <link>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/quick_start/</link>
+      <pubDate>Sat, 19 Jun 2021 15:35:00 +0800</pubDate>
+      
+      <guid>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/quick_start/</guid>
+      <description>C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C++的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接+-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.</description>
+    </item>
+    
     <item>
       <title>当CCScrollView在RenderTexture可能裁剪框适配有问题</title>
       <link>http://www.lanhuzi.com/cocos2dx_scrollview_in_rendertexture/</link>
@@ -77,7 +115,7 @@
       <guid>http://www.lanhuzi.com/classic-regular-expression-statement/</guid>
       <description>推荐学习地方 http://www.zjmainstay.cn/
 会持续更新中 python 需要
-pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE 命名修改 命名规则 -- 替换可能为关键字的对象为指定字符串 \b(?:n|t|p|str|obj|f|b|e)End\b ended -- 替换命名规则 (?&amp;lt;!cc.)\b(?:n|t|p|str|e|obj|f|b)([A-Z]+) \L$1 -- 替换配置方法ch_xxx ch_(\w+)(\(.*\)) cfg[&amp;#34;formula&amp;#34;].$1$2 -- 替换读表方式 -- 替换类结构 C([A-Z]\w+) = (class\(&amp;#34;\1&amp;#34;[\S\s]*) local C$1 = $2\nreturn C$1 -- 替换类的使用 (?&amp;lt;!function[ ])(?&amp;lt;!function[ ][ ])C([A-Z]\w+)(?:\:create|\.new)(\(.*\)) core.battle.$1$2$3 -- 替换以 C 开头的命令方式 (?&amp;lt;!\.)(?&amp;lt;!_)\bC[A-Z](?![A-Z]{2,}$)[a-zA-Z]+$ -- 删除 core.的命令方式 (?&amp;lt;!\.)(?&amp;lt;!\&amp;#34;)core\. -- 替表格命名格式 ([cC]onfig\.</description>
+pip install regex VAR_TYPE = r&amp;#39;id|void|int|bool|BOOL|float|double|\bCG[\w]+\b|\bUI[\w]+\b|\bNS[\w]+\b|[\w]+[ ]*\*[ ]*&amp;#39; 双引号里面的内容 r&amp;#39;\&amp;#34;(?:[^&amp;#34;\\]|\\.)*\&amp;#34;&amp;#39; 注释 (*) r&amp;#39;/[*][\s\S]+?[*]/&amp;#39; 选取方法块(objc) r&amp;#39;[ ]*[+-][ ]*\((%s)\)[ ]*(\w+)[ ]*(:.*)?[ ]*[\s]+?(?&amp;lt;rec&amp;gt;\{(?:[^{}]+|(?&amp;amp;rec))*\})&amp;#39; % VAR_TYPE 命名修改 命名规则 -- 替换可能为关键字的对象为指定字符串 \b(?:n|t|p|str|obj|f|b|e)End\b ended -- 替换命名规则 (?&amp;lt;!cc.)\b(?:n|t|p|str|e|obj|f|b)([A-Z]+) \L$1 -- 替换配置方法ch_xxx ch_(\w+)(\(.*\)) cfg[&amp;#34;formula&amp;#34;].$1$2 -- 替换读表方式 -- 替换类结构 C([A-Z]\w+) = (class\(&amp;#34;\1&amp;#34;[\S\s]*) local C$1 = $2\nreturn C$1 -- 替换类的使用 (?&amp;lt;!function[ ])(?&amp;lt;!function[ ][ ])C([A-Z]\w+)(?:\:create|\.new)(\(.*\)) core.battle.$1$2$3 -- 替换以 C 开头的命令方式 (?&amp;lt;!\.)\bC([A-Z](?![A-Z]{3,}\b)[A-Za-z0-9]+)\b(?![ ]*=[ ]\d+) -- 删除 core.的命令方式 (?</description>
     </item>
     
     <item>
