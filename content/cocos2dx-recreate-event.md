@@ -2,7 +2,7 @@
 title = "cocos2dx 重新创建机制"
 author = ["Donghai Ruan"]
 date = 2017-04-30T08:29:00+08:00
-lastmod = 2021-06-16T10:18:22+08:00
+lastmod = 2021-10-19T09:43:52+08:00
 tags = ["cocos2dx", "android", "EventDispatcher"]
 categories = ["笔记"]
 draft = false

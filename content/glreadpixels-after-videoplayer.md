@@ -2,7 +2,7 @@
 title = "在IOS13.2里面播放视频后调用glReadPixels问题"
 author = ["Donghai Ruan"]
 date = 2019-11-19T17:10:00+08:00
-lastmod = 2021-06-16T10:18:26+08:00
+lastmod = 2021-10-19T09:43:57+08:00
 tags = ["cocos2dx"]
 categories = ["笔记"]
 draft = false

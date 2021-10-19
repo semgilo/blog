@@ -2,7 +2,7 @@
 title = "iap 产品生效时间"
 author = ["Donghai Ruan"]
 date = 2017-07-20T19:13:00+08:00
-lastmod = 2021-06-16T10:18:27+08:00
+lastmod = 2021-10-19T09:43:58+08:00
 tags = ["ios"]
 categories = ["笔记"]
 draft = false

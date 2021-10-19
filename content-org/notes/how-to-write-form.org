@@ -1,0 +1,138 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: 如何写一个界面
+#+DATE: <2021-10-19 Tuesday 09:42:27>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS:
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION:
+#+HUGO_DRAFT: true
+
+* Unity 操作部分
+** 1、在目标场景上面创建 Panel,并修改对应名字（例如 UILogin）
+** 2、结构
+*** BG   背景
+*** CT   内容
+*** TP   顶部
+*** BT   底部
+
+* Lua 操作部分
+** 新建对应名字 LuaBehaviour（例如：UILogin）,下面是示例代码
+#+begin_src lua
+-- UILogin.lua
+-- Created by ruandh 2021-06-28
+-- 登录主场景
+
+-- 定义类，继承BaseForm
+UILogin = class("UILogin", BaseForm);
+
+-- 需要在unity面板操作的对象
+UILogin.__attribs = {
+    btnNotice = "GameObject",
+    btnMessageBox = "GameObject",
+    btnAlert = "GameObject",
+    btnIndicator = "GameObject",
+    btnLogin = "GameObject",
+};
+
+-- 初始化
+function UILogin:init(...)
+
+end
+
+-- 启动对应MonoBehaviour的 Start
+function UILogin:onStart()
+    UILogin.super.onStart(self);
+
+    LoginM.requestServerList();
+end
+
+-- 启动对应MonoBehaviour的 Update
+function UILogin:onUpdate(dt)
+    -- 数据发生变化时更新
+    self:updateViewIfDirty("entry", self.updateEntryView);
+end
+
+-- 更新入口
+function UILogin:updateEntryView()
+    self.btnLogin:SetActive(LoginM.getLoginStage() >= LoginState.PF_2);
+end
+
+-- 注册游戏事件
+function UILogin:registerGameEvents()
+    -- 关注登录事件
+    self:registerEvent(event.REQUEST_SERVER_LIST_RESULT, function (args)
+        if args.code == 200 then
+            local loginInfo = LoginM.getLastLoginInfo();
+            if loginInfo then
+                LoginM.auth(loginInfo.account, loginInfo.channel, loginInfo.zone);
+            else
+                RS():showForm("UILoginAccount");
+            end
+        else
+            RS():showMessageBox(LocM.getStr("system_tip"), LocM.getStr("request_server_list_fail"),
+                LocM.getStr("retry"), function ()
+                    LoginM.requestServerList();
+                end,
+                LocM.getStr("cancel"));
+        end
+    end);
+
+
+    -- 用户认证事件
+    self:registerEvent(event.CHANNEL_AUTH_RESULT, function (args)
+        if args.code == 0 then
+            LoginM.setLoginStage(LoginState.PF_2);
+            self:dirtyView("entry");
+        end
+    end);
+end
+
+-- 注册UI事件
+function UILogin:registerUIEvents()
+    -- 显示公告
+    ui.addClickEvent(self.btnNotice, function()
+        Director:getInstance():showForm("UINotice", 1, "hello");
+    end);
+
+    -- 显示确定对话框
+    ui.addClickEvent(self.btnMessageBox, function()
+        Director:getInstance():showMessageBox("系统提示", "今天的日常任务还没有完成哦，抓紧去做？",
+            "确定", function ()
+            print("选择确定");
+        end, "取消", function ()
+            print("选择取消");
+        end);
+    end);
+
+    -- 显示飘字对话框
+    ui.addClickEvent(self.btnAlert, function()
+        Director:getInstance():showAlert("你还是先去找别人吧");
+    end);
+
+    -- 显示指示对话框
+    ui.addClickEvent(self.btnIndicator, function()
+        Director:getInstance():showIndicator("疯狂加载中", 5);
+    end);
+
+    -- 登录
+    ui.addClickEvent(self.btnLogin, function()
+        LoginM.login();
+    end);
+end
+#+end_src
+
+*** 目录位置：Assets/LuaScripts/game/behaviour/form/
+
+*** 引入文件：Assets/LuaScripts/game/behaviour/form/init.lua
+
+** 页面操作
+*** 显示界面
+#+begin_src lua
+-- RS()取到RunningScene，在Abbr里面定义的
+RS():showForm("UILogin");
+#+end_src
+*** 关闭界面
+#+begin_src lua
+RS():removeForm(self);
+RS():popForm();
+#+end_src

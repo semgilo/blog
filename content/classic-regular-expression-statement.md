@@ -2,7 +2,7 @@
 title = "经典正则表达式语句"
 author = ["Donghai Ruan"]
 date = 2018-12-24T18:10:00+08:00
-lastmod = 2021-06-16T10:18:12+08:00
+lastmod = 2021-10-19T09:43:40+08:00
 tags = ["regex"]
 categories = ["笔记"]
 draft = false
@@ -75,7 +75,7 @@ local C$1 = $2\nreturn C$1
 core.battle.$1$2$3
 
 -- 替换以 C 开头的命令方式
-(?<!\.)(?<!_)\bC[A-Z](?![A-Z]{2,}$)[a-zA-Z]+$
+(?<!\.)\bC([A-Z](?![A-Z]{3,}\b)[A-Za-z0-9]+)\b(?![ ]*=[ ]\d+)
 
 -- 删除 core.的命令方式
 (?<!\.)(?<!\")core\.

@@ -1,0 +1,124 @@
+#+HUGO_BASE_DIR: ../../..
+#+TITLE: unity客户端选择
+#+DATE: <2021-10-19 Tuesday 09:38:17>
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TAGS:
+#+HUGO_CATEGORIES: 笔记
+#+HUGO_SECTION:
+#+HUGO_DRAFT: false
+
+* 为什么选择
+** xlua or tolua, why?
+xlua
+|          | xlua | tolua  |
+| 维护团队 | 腾讯 | 个人   |
+| 活跃程度 | 活跃 | 不活跃 |
+| 代码规范 | 较好 | 一般   |
+
+** c# or lua, why?
+*** lua
+- 热更新方案成熟
+- 使用 Luajit 目前性能会比 ILRuntime 好一些
+
+** ugui or ngui, why?
+ugui,随着发展 ugui 已经成为主流的 UI 框架了
+|          | ugui      | ngui |
+| 来源       | 内置      | 插件 |
+| 维护团队 | unity 官方 | 个人 |
+
+** 资源如何管理
+*** 代码资源
+**** C#
+放在 Scripts,打包的时候自己会加载进去
+**** lua
+- 正常开发时：LuaScripts
+- 打包成 AssetBundle, 并使用.lua.bytes 格式（Unity 不识别后缀为.lua 文件）
+
+*** 非代码资源
+统一放在 AssetsPackage 里面，按需要打成 AssetBundle
+命令规则：类型/功能
+**** Textures
+**** Audios
+**** Prefabs
+***** Animations
+**** Models
+
+*** Scenes
+单独放在工程就行
+
+*** 启动更新流程
+
+** 目录结构
+*** 划分规则
+- 以功能为一级，类型为一级
+- 以类型为一级，功能为二级
+
+*** 介绍
+**** Assets
+***** AssetsPackage                            资源打包管理目录
+******* Lua
+******* Audios
+******* Textures
+******* Models
+******* Prefabs
+*****
+***** Editor                                   编辑器扩展
+***** LuaScripts                               lua 代码
+****** config                                 配置表（自动生成）
+****** core                                   核心部分（存放不会涉及游戏逻辑相关）
+******* 3rd                                  一些第三方 lua 库
+******* base                                 基础封装代码
+******* extend                               对 lua 本身库的扩展
+******* network                              网络相关代码
+******* platform                             与平台相关代码（android, ios)
+******* module                               核心固定的模块
+****** game                                   游戏部分（存放游戏逻辑相关部分）
+******* operation                            操作以（cmd 开头的）
+******* clone                                克隆对象
+******* cmd                                  消息处理(msg 开头的)
+******* loc                                  本地化
+******* module                               游戏逻辑模块
+******* formula                              公式
+******* define                               定义
+******* behaviour                            与 Unity 编辑器绑定
+******** scene                              场景
+******** form                               页面
+******** unit                               单元（指示器、弹窗）
+******** ...                                其它
+****** updater                                更新器
+***** Plugins                                  各个平台插件资源
+***** Scenes                                   Unity 场景
+***** Scripts                                  c#代码
+****** Framework                              框架代码
+***** ThridLib                                 第三方插件
+***** XLua                                     XLua 框架代码
+**** Library                                  Unity 库资源
+**** Packages                                 Unity 包配置信息
+**** ProjectSettings                          Unity 工程相关设定
+
+
+** others
+*** 代码结构写法
+**** ESC 写法
+把代码当成脚本 Component, 然后在对应的生命周期函数（Awake, Start, Update, LateUpdate, ...）做相应处理
+充分利用 Unity 的编辑功能
+
+**** 传统写法
+从 Unity 挂一个 GameObject 提供对游戏驱动，即游戏对象的操作是通过总驱动进行刷新
+
+
+* 问题收集
+** 资源目录规划
+- 以功能为一级，类型为一级
+- 以类型为一级，功能为二级
+
+* 问题
+** 文件命名
+** 模块转模型问题
+** 全局不销毁的写法
+
+* 想法
+** 关于模型和模块的选择
+*** 模块（面向对象）
+**** 通过面向对象思想让代码更贴近思维
+**** 更方便各种代码的复用
