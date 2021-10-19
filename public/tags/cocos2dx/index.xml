@@ -27,16 +27,6 @@
     </item>
     
     <item>
-      <title>Cocos2dx android 分屏适配</title>
-      <link>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</link>
-      <pubDate>Tue, 29 Dec 2020 14:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</guid>
-      <description>需求 对 Huawei 的分屏进行适配
-分析 </description>
-    </item>
-    
-    <item>
       <title>在IOS13.2里面播放视频后调用glReadPixels问题</title>
       <link>http://www.lanhuzi.com/glreadpixels-after-videoplayer/</link>
       <pubDate>Tue, 19 Nov 2019 17:10:00 +0800</pubDate>

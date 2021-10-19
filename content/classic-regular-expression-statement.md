@@ -2,7 +2,7 @@
 title = "经典正则表达式语句"
 author = ["Donghai Ruan"]
 date = 2018-12-24T18:10:00+08:00
-lastmod = 2021-10-19T09:43:40+08:00
+lastmod = 2021-10-19T10:34:13+08:00
 tags = ["regex"]
 categories = ["笔记"]
 draft = false

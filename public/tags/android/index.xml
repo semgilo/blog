@@ -19,16 +19,6 @@
     </item>
     
     <item>
-      <title>Cocos2dx android 分屏适配</title>
-      <link>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</link>
-      <pubDate>Tue, 29 Dec 2020 14:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</guid>
-      <description>需求 对 Huawei 的分屏进行适配
-分析 </description>
-    </item>
-    
-    <item>
       <title>android so path 被锁定</title>
       <link>http://www.lanhuzi.com/android-so-path-lock/</link>
       <pubDate>Wed, 31 Oct 2018 01:44:00 +0800</pubDate>

@@ -2,7 +2,7 @@
 title = "cocos2dx android ui and gl threads"
 author = ["Donghai Ruan"]
 date = 2017-05-19T01:18:00+08:00
-lastmod = 2021-10-19T09:43:45+08:00
+lastmod = 2021-10-19T10:34:17+08:00
 tags = ["cocos2dx", "android"]
 categories = ["笔记"]
 draft = false

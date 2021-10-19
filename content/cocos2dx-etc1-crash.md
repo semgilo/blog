@@ -2,7 +2,7 @@
 title = "cocos2dx etc 闪退问题"
 author = ["Donghai Ruan"]
 date = 2017-05-16T10:19:00+08:00
-lastmod = 2021-10-19T09:43:46+08:00
+lastmod = 2021-10-19T10:34:19+08:00
 tags = ["cocos2dx", "etc1", "android"]
 draft = false
 +++

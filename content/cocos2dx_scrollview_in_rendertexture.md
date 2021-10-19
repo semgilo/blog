@@ -2,7 +2,7 @@
 title = "当CCScrollView在RenderTexture可能裁剪框适配有问题"
 author = ["Donghai Ruan"]
 date = 2021-04-30T15:20:00+08:00
-lastmod = 2021-10-19T09:43:55+08:00
+lastmod = 2021-10-19T10:34:27+08:00
 tags = ["cocos2dx", "RenderTexture", "ScrollView", "适配"]
 categories = ["笔记"]
 draft = false

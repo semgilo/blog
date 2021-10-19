@@ -2,7 +2,7 @@
 title = "cocos2dx downloader 断点续传问题"
 author = ["Donghai Ruan"]
 date = 2021-01-12T10:28:00+08:00
-lastmod = 2021-10-19T09:43:54+08:00
+lastmod = 2021-10-19T10:34:26+08:00
 tags = ["cocos2dx", "downloader", "断点续传问题"]
 categories = ["笔记"]
 draft = false

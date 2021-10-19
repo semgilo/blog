@@ -18,15 +18,5 @@
 需要处理的问题 当窗口大小发生改变的时候不重新创建 OpenGLView 窗口大小改变的事件传递 java -&amp;gt; c++ -&amp;gt; lua 窗口大小改变后点击事件位置适配问题 窗口大小改变后游戏界面的适配 解决方案 在 AndroidManifest.xml 添加下列参数，让 OpenGLView 不因为调整大小而重建 // android:configChanges &amp;#34;smallestScreenSize|density|screenLayout&amp;#34; 传递尺寸更改信息 // cocos/client/platform/android/javaactivity-android.</description>
     </item>
     
-    <item>
-      <title>Cocos2dx android 分屏适配</title>
-      <link>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</link>
-      <pubDate>Tue, 29 Dec 2020 14:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</guid>
-      <description>需求 对 Huawei 的分屏进行适配
-分析 </description>
-    </item>
-    
   </channel>
 </rss>

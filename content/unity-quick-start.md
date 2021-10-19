@@ -2,7 +2,7 @@
 title = "Unity快速入门"
 author = ["Donghai Ruan"]
 date = 2021-06-19T15:35:00+08:00
-lastmod = 2021-10-19T09:44:05+08:00
+lastmod = 2021-10-19T10:34:38+08:00
 tags = ["Unity"]
 categories = ["笔记"]
 draft = false

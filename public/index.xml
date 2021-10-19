@@ -17,30 +17,11 @@
     </item>
     
     <item>
-      <title>实现photoshop里面的各种效果</title>
-      <link>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</link>
-      <pubDate>Mon, 18 Oct 2021 10:46:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/photoshop-effect-shader/</guid>
-      <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
-&lt;p&gt;需要配置美术实现，photoshop 里面的各种效果，比如叠加效果，强光。。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Unity快速入门</title>
       <link>http://www.lanhuzi.com/unity-quick-start/</link>
       <pubDate>Sat, 19 Jun 2021 15:35:00 +0800</pubDate>
       
       <guid>http://www.lanhuzi.com/unity-quick-start/</guid>
-      <description>C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C++的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接+-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.</description>
-    </item>
-    
-    <item>
-      <title>Unity快速入门</title>
-      <link>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/quick_start/</link>
-      <pubDate>Sat, 19 Jun 2021 15:35:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/%E7%AC%94%E8%AE%B0/quick_start/</guid>
       <description>C#特色语法(部分是 Unity 支持的) 特别两个关键字 ref  引用传递 跟 C++的引用传递是一样的  out  从字义理解它是想把值传到外面来 是引用参数  差异  用途上不一样，在一定意义上 ref 是可以替代 out 值初始化方式，out 的值在外部并不处理，只是提供地址  特色点 Delegate  直接代理方法 可以直接合并多个操作 直接+-操作  Coroutine  启动后根据返来的 IEnumerlator 来选择 Resume 跳出协程 yield break; 下一帧 yield return null; 延迟一段时间 yield return new Delay 根据指定条件 yield return new WaitUtil(() =&amp;gt; {return condition;}); 可以嵌套其它 IEnumerator  Atribute p  有点像宏定义 提前声明一些结编译器知道的内容，会比宏看起来更直观一些  Indexer  把索引进一步的抽象出来  Property  跟 objc 的有点像，但写法不一样  Unity 界面的处理 脚本的挂载方式，直接通过 C#（LuaBehaviour） 直接在 Lua 里面搞 几个路径说明    路径 可读写 说明 Editor android ios     Application.</description>
     </item>
     
@@ -84,16 +65,6 @@
       <guid>http://www.lanhuzi.com/android_save_video_to_album/</guid>
       <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;当 targetSdkVersion 设置高于 29 后，分享拷贝失败&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Cocos2dx android 分屏适配</title>
-      <link>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</link>
-      <pubDate>Tue, 29 Dec 2020 14:47:00 +0800</pubDate>
-      
-      <guid>http://www.lanhuzi.com/note/cocos2dx-split-screen-adaption/</guid>
-      <description>需求 对 Huawei 的分屏进行适配
-分析 </description>
     </item>
     
     <item>

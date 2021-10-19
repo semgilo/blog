@@ -2,7 +2,7 @@
 title = "android 分屏适配"
 author = ["Donghai Ruan"]
 date = 2021-01-09T14:32:00+08:00
-lastmod = 2021-10-19T09:43:39+08:00
+lastmod = 2021-10-19T10:34:11+08:00
 tags = ["android", "split-screen", "分屏", "适配"]
 categories = ["笔记"]
 draft = false
